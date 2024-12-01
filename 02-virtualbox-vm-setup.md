@@ -38,7 +38,11 @@ In this chapter, I'll walk through the process of creating and configuring a vir
 
 ### VM Creation Wizard - Name, Path, OS Type, and Version
 ![VM Creation Wizard - Name, Path, OS Type, and Version](screenshots/01-vm-creation-wizard-name-path-os-type-version.png)  
-*Input the VM name and path, and select the OS type and version.*
+*Input the VM name and path, and select the OS type and version. Choose **Linux** as the type and set the version to **Red Hat (64-bit)**, ensuring it matches the distribution to be installed (e.g., CentOS Stream 9 64-bit).*
+
+### VM Creation Wizard - Hardware Configuration
+![VM Creation Wizard - OS Type and Version Selection](screenshots/02-vm-creation-wizard-os-type-version-selection.png)  
+*Allocate RAM to the VM, with a minimum of 2 GB (2048 MB) recommended for CentOS Stream 9, adjustable based on resources and workload. Keep the default of 1 CPU core, which can be increased later as needed for performance.*
 
 ---
 
