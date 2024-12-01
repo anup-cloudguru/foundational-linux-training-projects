@@ -44,6 +44,10 @@ In this chapter, I'll walk through the process of creating and configuring a vir
 ![VM Creation Wizard - OS Type and Version Selection](screenshots/02-vm-creation-wizard-os-type-version-selection.png)  
 *Allocate RAM to the VM, with a minimum of 2 GB (2048 MB) recommended for CentOS Stream 9, adjustable based on resources and workload. Keep the default of 1 CPU core, which can be increased later as needed for performance.*
 
+### VM Creation Wizard - Hard Disk Configuration
+![VM Creation Wizard - Hard Disk Configuration](screenshots/03-vm-creation-wizard-hard-disk-configuration.png)  
+*Create a new virtual hard disk or use an existing one. Choose **VDI (VirtualBox Disk Image)** as the disk type and decide between **dynamically allocated** or **fixed size** based on preference. Set the disk size to 20 GB or more for the OS and applications.*
+
 ---
 
 ## Note
