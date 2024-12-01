@@ -49,6 +49,14 @@ In this chapter, I will guide you through the process of creating and configurin
 ![VM Creation Wizard - Hard Disk Configuration](screenshots/03-vm-creation-wizard-hard-disk-configuration.png)  
 *Create a new virtual hard disk or select an existing one. Choose **VDI (VirtualBox Disk Image)** as the disk type and decide between **dynamically allocated** or **fixed size** based on your needs. Set the disk size to at least 20 GB for the operating system and any additional software.*
 
+### Accessing the VM Settings
+![Accessing the VM Settings](screenshots/04-accessing-vm-settings.png)  
+*Select the VM and click on the “Settings” button to configure its options.*
+
+### Configuring the Network Adapter
+![Configuring the Network Adapter](screenshots/05-configuring-network-adapter.png)  
+*Navigate to the **Network** tab and change the network adapter from **NAT** to **Bridged Adapter** for improved connectivity. This setting will place the VM on the same network as your host machine, allowing it to communicate with other devices and access the internet like a physical machine.*
+
 ---
 
 ## Conclusion
