@@ -10,6 +10,12 @@ In this chapter, I'll walk through the process of creating and configuring a vir
 ### 1. Launch VirtualBox
 - Open **VirtualBox** from your system menu or desktop shortcut.
 
+### VirtualBox Main Window
+![VirtualBox Main Window](screenshots/00-virtualbox-main-window-new-button-highlighted.png)  
+*Purpose: To help users locate the "New" button to start creating a new VM.*
+
+---
+
 ### 2. Create a New Virtual Machine
 - Click on **"New"** to start the virtual machine setup wizard.
 - Enter a name for the VM as **"CentOS Stream 9"**. Note that this is the VM's name in VirtualBox and not the hostname. The hostname will be set during the installation of the operating system.
