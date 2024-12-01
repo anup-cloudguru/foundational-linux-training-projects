@@ -15,10 +15,10 @@ This chapter covers the steps to download and install VirtualBox on your system 
 ![VirtualBox Installer Start](screenshots/02-virtualbox-installer-start.png)  
 *Figure 2: VirtualBox Installer Start*
 
-![VirtualBox Installation Progress](screenshots/03-virtualbox-install-progress.png)  
+![VirtualBox Installation Progress](screenshots/03-virtualbox-installation-progress.png)  
 *Figure 3: VirtualBox Installation Progress*
 
-![VirtualBox Installation Finish](screenshots/04-virtualbox-install-finish.png)  
+![VirtualBox Installation Finish](screenshots/04-virtualbox-installation-finish.png)  
 *Figure 4: VirtualBox Installation Finish*
 
 ![VirtualBox First Launch](screenshots/05-virtualbox-first-launch.png)  
