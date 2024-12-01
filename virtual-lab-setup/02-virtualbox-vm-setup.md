@@ -34,27 +34,27 @@ In this chapter, I will guide you through the process of creating and configurin
 ## Screenshots
 
 ### VirtualBox Main Window
-![VirtualBox Main Window](foundational-linux-training-projects/screenshots/00-virtualbox-main-window-new-button-highlighted.png)  
+![VirtualBox Main Window](../../screenshots/00-virtualbox-main-window-new-button-highlighted.png)  
 *Locate the "New" button to start the creation of a new VM.*
 
 ### VM Creation Wizard - Name, Path, OS Type, and Version
-![VM Creation Wizard - Name, Path, OS Type, and Version](foundational-linux-training-projects/screenshots/01-vm-creation-wizard-name-path-os-type-version.png)  
+![VM Creation Wizard - Name, Path, OS Type, and Version](../../screenshots/01-vm-creation-wizard-name-path-os-type-version.png)  
 *Enter the VM name, specify the path, and select the OS type and version. Choose **Linux** as the type and set the version to **Red Hat (64-bit)** to match CentOS Stream 9.*
 
 ### VM Creation Wizard - Hardware Configuration
-![VM Creation Wizard - OS Type and Version Selection](foundational-linux-training-projects/screenshots/02-vm-creation-wizard-os-type-version-selection.png)  
+![VM Creation Wizard - OS Type and Version Selection](../../screenshots/02-vm-creation-wizard-os-type-version-selection.png)  
 *Allocate RAM to the VM. A minimum of 2 GB (2048 MB) is recommended for CentOS Stream 9, which can be adjusted based on your system's capacity and workload. Keep the default setting of 1 CPU core, which you can increase later for better performance.*
 
 ### VM Creation Wizard - Hard Disk Configuration
-![VM Creation Wizard - Hard Disk Configuration](foundational-linux-training-projects/screenshots/03-vm-creation-wizard-hard-disk-configuration.png)  
+![VM Creation Wizard - Hard Disk Configuration](../../screenshots/03-vm-creation-wizard-hard-disk-configuration.png)  
 *Create a new virtual hard disk or select an existing one. Choose **VDI (VirtualBox Disk Image)** as the disk type and decide between **dynamically allocated** or **fixed size** based on your needs. Set the disk size to at least 20 GB for the operating system and any additional software.*
 
 ### Accessing the VM Settings
-![Accessing the VM Settings](foundational-linux-training-projects/screenshots/04-accessing-vm-settings.png)  
+![Accessing the VM Settings](../../screenshots/04-accessing-vm-settings.png)  
 *Select the VM and click on the “Settings” button to configure its options.*
 
 ### Configuring the Network Adapter
-![Configuring the Network Adapter](foundational-linux-training-projects/screenshots/05-configuring-network-adapter.png)  
+![Configuring the Network Adapter](../../screenshots/05-configuring-network-adapter.png)  
 *Navigate to the **Network** tab and change the network adapter from **NAT** to **Bridged Adapter** for improved connectivity. This setting will place the VM on the same network as your host machine, allowing it to communicate with other devices and access the internet like a physical machine.*
 
 ---
