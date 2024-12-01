@@ -1,6 +1,6 @@
 # Linux Training Projects
 
-This repository, **linux-training-projects**, is a comprehensive collection of projects and exercises inspired by the *"Complete Linux Training Course to Get Your Dream IT Job 2024"* by **Imran Afzal**. The purpose of this repository is to document my journey of learning and practical application of Linux fundamentals. Through this project, I aim to build a solid foundation in Linux, preparing for real-world scenarios and enhancing my cloud engineering skills.
+This repository, **linux-training-projects**, is a comprehensive collection of projects and exercises inspired by the *"Complete Linux Training Course to Get Your Dream IT Job 2024"* by **Imran Afzal**. The purpose of this repository is to document my journey of learning and practical application of Linux fundamentals. Through this project, I aim to build a solid foundation in Linux, preparing for real-world scenarios and enhancing my skills.
 
 ## Key Objectives:
 1. **Virtual Machine Setup**: Instructions for setting up and configuring virtual machines using VirtualBox for hands-on practice. This foundational step ensures a functional environment for learning and executing Linux commands and configurations.
