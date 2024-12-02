@@ -1,4 +1,5 @@
-# 04: Taking Snapshots in VirtualBox
+*Module 1: Virtual Lab Setup*
+# Taking Snapshots in VirtualBox
 
 ## Introduction  
 In this chapter, we will explore the concept of snapshots in VirtualBox. Snapshots are a powerful feature that allows you to save the state of a virtual machine at a specific point in time. This is particularly useful for testing, experimentation, and rollback scenarios.
