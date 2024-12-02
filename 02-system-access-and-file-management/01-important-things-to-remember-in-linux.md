@@ -1,5 +1,5 @@
 *Module 2: System Access and File Management*
-## Chapter 1: Important Things to Remember in Linux  
+## Important Things to Remember in Linux  
 
 In this chapter, we will cover some of the critical concepts and practices you should always keep in mind when working with Linux systems.  
 
