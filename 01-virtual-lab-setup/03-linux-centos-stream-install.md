@@ -1,4 +1,4 @@
-*Virtual Lab Setup*
+*Module 1: Virtual Lab Setup*
 # Download and Install Linux (CentOS Stream 9)
 
 In this chapter, we will cover how to download and install the CentOS Stream 9 operating system. This chapter provides detailed instructions to set up CentOS Stream 9 in our virtual environment.
