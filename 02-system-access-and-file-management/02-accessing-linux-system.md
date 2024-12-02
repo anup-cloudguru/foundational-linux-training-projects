@@ -1,7 +1,5 @@
 *Module 2: System Access and File Management*
-# Module 3: System Access and File Management
-
-## Chapter 2: Accessing Linux Systems
+# Accessing Linux Systems
 
 In this chapter, we will delve into the two primary methods of accessing a Linux system: **Console Access** and **Remote Access**.
 
