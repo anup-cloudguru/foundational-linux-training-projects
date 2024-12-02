@@ -71,8 +71,8 @@ In this chapter, we will cover how to download and install the CentOS Stream 9 o
 *Attach the CentOS ISO file to the virtual machine.*
 
 ### 3. Installation Menu
-![Installation Menu](screenshots/centos-installation-menu.png)
-*Purpose: To display the installation menu for CentOS Stream 9.*
+![Installation Menu](screenshots/03-centos-installation-menu.png)
+*Installation menu for CentOS Stream 9.*
 
 ### 4. Installation Summary Screen
 ![Installation Summary](screenshots/centos-installation-summary.png)
