@@ -1,4 +1,5 @@
-### **Download and Install Linux (CentOS Stream 9)**
+*Virtual Lab Setup*
+# Download and Install Linux (CentOS Stream 9)
 
 In this chapter, we will cover how to download and install the CentOS Stream 9 operating system. This chapter provides detailed instructions to set up CentOS Stream 9 in our virtual environment.
 
@@ -62,7 +63,7 @@ In this chapter, we will cover how to download and install the CentOS Stream 9 o
 
 ### 1. CentOS Download Page
 ![CentOS Download Page](screenshots/01-centos-download-page.png)
-*Purpose: To show users where to download the CentOS Stream 9 ISO image.*
+*Download the CentOS Stream 9 ISO image.*
 
 ### 2. Attach ISO to Virtual Machine
 ![Attach ISO](screenshots/attach-centos-iso.png)
