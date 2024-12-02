@@ -1,16 +1,16 @@
 *Module 2: System Access and File Management*
 # Accessing Linux Machine via SSH
 
-## Introduction  
+### Introduction
 In this chapter, we will explore how to access a Linux machine remotely through different platforms: Windows SSH client, Mac Terminal, and Linux Terminal. SSH (Secure Shell) is a protocol used to securely access and manage remote systems.
 
-**What We Will Learn:**  
+**What We Will Learn:**
 - How to access a Linux machine from Windows, macOS, and Linux.
 - Finding your Linux machine's IP address.
 
 ---
 
-### **1. Finding the IP Address of the Linux Machine**
+### 1. Finding the IP Address of the Linux Machine
 
 Before connecting, you need to find the IP address of your Linux machine:
 
@@ -38,7 +38,7 @@ Before connecting, you need to find the IP address of your Linux machine:
 
 ---
 
-### **2. Accessing Linux Machine via Windows SSH Client**
+### 2. Accessing Linux Machine via Windows SSH Client
 
 If you are using Windows 10 or later, you can use the built-in SSH client from the command prompt:
 
@@ -72,7 +72,7 @@ If you are using Windows 10 or later, you can use the built-in SSH client from t
 
 ---
 
-### **3. Accessing Linux Machine via Mac Terminal**
+### 3. Accessing Linux Machine via Mac Terminal
 
 For Mac users, follow these steps to connect using Terminal:
 
@@ -105,7 +105,7 @@ For Mac users, follow these steps to connect using Terminal:
 
 ---
 
-### **4. Accessing Linux Machine via Linux Terminal**
+### 4. Accessing Linux Machine via Linux Terminal
 
 If you are using Linux, the process is similar to macOS:
 
@@ -138,7 +138,7 @@ If you are using Linux, the process is similar to macOS:
 
 ---
 
-## **Conclusion**
+## Conclusion
 
 Accessing a Linux machine is seamless, whether you’re on Windows, macOS, or Linux. You can use either `ssh -l <username> <IP_address>` or `ssh <username>@<IP_address>` formats, and both will work for your remote connection needs. Ensure that you have the correct IP address and credentials for a successful connection.
 
