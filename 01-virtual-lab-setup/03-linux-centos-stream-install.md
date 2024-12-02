@@ -37,23 +37,35 @@ In this chapter, we will cover how to download and install the CentOS Stream 9 o
 
 ### Step 4: Configure Installation Settings
 
-1. Select the language and keyboard layout for the installation and click **"Continue"**.
-2. On the **Installation Summary** screen:
-   - **Date & Time**: Set the correct time zone for your region.
-   - **Software Selection**: Choose **"Minimal Install"** for a lightweight server setup, or select additional packages as needed.
-   - **Installation Destination**: Select the virtual hard disk created in the previous chapter and click **"Done"**.
-   - **Network & Hostname**: Enable the network adapter to ensure internet access during and after installation. Optionally, set the hostname for the system.
+On the **Installation Summary** screen, review and adjust the following settings:
+
+**Localization:**
+
+- **Language and Keyboard Layout**: Select the appropriate language and keyboard layout for the installation (e.g., English (India), English (India, with rupee)), and click **"Continue"**.
+- **Date & Time**: Set the correct time zone for your region (e.g., Asia/Kolkata).
+- **Language Support**: Ensure your preferred language is selected.
+
+**Software:**
+
+- **Installation Source**: This is typically set to **Local Media** if the ISO file is attached. No changes are needed here.
+- **Software Selection**: The screenshot shows **Server with GUI** selected. Choose this if you need a graphical interface; otherwise, select **Minimal Install** for a lightweight server setup.
+
+**System:**
+
+- **Installation Destination**: Select the virtual hard disk created in the previous chapter. If needed, modify the partitioning options or leave the default **Automatic Partitioning**. Click **Done** to save.
+- **KDUMP**: Leave this enabled unless you have specific requirements to disable it.
+- **Network & Hostname**: Ensure the network adapter is enabled for internet access. Optionally, assign a hostname for the system (e.g., centos-vm.local).
+
+**User Settings:**
+
+- **Root Password**: Set a strong root password to secure the system.
+- **User Creation**: Create a new user account with administrator privileges. This is recommended for better security than using the root account for daily tasks.
+
+Click **"Begin Installation"** to start the installation process.
 
 ---
 
-### Step 5: Begin Installation
-
-1. Click **"Begin Installation"** to start the installation process.
-2. During installation, set the **root password** and optionally create a new user account with administrator privileges.
-
----
-
-### Step 6: Complete the Installation
+### Step 5: Complete the Installation
 
 1. Once the installation is complete, click **"Reboot"** to restart the virtual machine.
 2. Ensure the ISO is detached from the virtual machine to boot from the installed operating system.
@@ -75,7 +87,7 @@ In this chapter, we will cover how to download and install the CentOS Stream 9 o
 *Installation menu for CentOS Stream 9.*
 
 ### 4. Installation Summary Screen
-![Installation Summary](screenshots/centos-installation-summary.png)
+![Installation Summary](screenshots/04-centos-installation-summary.png)
 *Purpose: To show the options available on the installation summary screen.*
 
 ---
