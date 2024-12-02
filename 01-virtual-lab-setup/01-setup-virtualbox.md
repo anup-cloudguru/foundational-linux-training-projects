@@ -1,3 +1,4 @@
+*Module 1: Virtual Lab Setup*
 # Chapter 1: Download and Install VirtualBox
 
 ## Introduction
