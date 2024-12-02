@@ -81,6 +81,4 @@ ssh root@192.168.1.100
 ### **Conclusion**  
 In this chapter, we examined the fundamentals of accessing a Linux system through console and remote methods. Remote access, especially via SSH, is a crucial practice in professional settings for efficient server management.
 
-In the next chapter, we will dive into the Linux File System Structure, covering how to navigate and manage files and directories.
-
 ---
