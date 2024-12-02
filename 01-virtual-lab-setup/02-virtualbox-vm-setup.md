@@ -1,4 +1,5 @@
-# Chapter 2: Creating and Configuring a Virtual Machine
+*Module 1: Virtual Lab Setup*
+# Creating and Configuring a Virtual Machine
 
 ## Introduction
 In this chapter, I will guide you through the process of creating and configuring a virtual machine (VM) using VirtualBox. This is a crucial first step in preparing for the next chapter, where I'll demonstrate how to download, install, and set up CentOS Stream 9, a popular Linux distribution, within this virtual environment.
