@@ -88,7 +88,11 @@ Click **"Begin Installation"** to start the installation process.
 
 ### 4. Installation Summary Screen
 ![Installation Summary](screenshots/04-centos-installation-summary.png)
-*Purpose: To show the options available on the installation summary screen.*
+*Options available on the installation summary screen.*
+
+### 5. CentOS Home Screen
+![CentOS Home Screen](screenshots/05-centos-home-screen.png)
+*Initial view of the CentOS home screen after installation.*
 
 ---
 
