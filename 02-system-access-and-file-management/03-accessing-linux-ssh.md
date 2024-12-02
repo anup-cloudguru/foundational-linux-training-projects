@@ -1,5 +1,5 @@
 *Module 2: System Access and File Management*
-# Accessing Linux Machines via SSH
+# Accessing Linux Machine via SSH
 
 ## Introduction  
 In this chapter, we will explore how to access a Linux machine remotely through different platforms: Windows SSH client, Mac Terminal, and Linux Terminal. SSH (Secure Shell) is a protocol used to securely access and manage remote systems.
