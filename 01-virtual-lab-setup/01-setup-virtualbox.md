@@ -1,5 +1,5 @@
 *Module 1: Virtual Lab Setup*
-# Chapter 1: Download and Install VirtualBox
+# Download and Install VirtualBox
 
 ## Introduction
 In this chapter, we'll walk through the steps to download and install VirtualBox on our system. This will set up a foundational lab that supports our learning of Linux basics and prepares us for future topics.
