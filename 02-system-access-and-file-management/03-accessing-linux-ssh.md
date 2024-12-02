@@ -10,7 +10,35 @@ In this chapter, we will explore how to access a Linux machine remotely through 
 
 ---
 
-### **1. Accessing Linux Machine via Windows SSH Client**
+### **1. Finding the IP Address of the Linux Machine**
+
+Before connecting, you need to find the IP address of your Linux machine:
+
+1. **Access the Linux Console**: Open your virtual machine or physical machine running Linux.
+2. **Run the Command**:
+   - For most recent Linux distributions, use:
+     ```bash
+     ip addr
+     ```
+   - Older distributions may use:
+     ```bash
+     ifconfig
+     ```
+3. **Identify the IP Address**:
+   - Look for the `enp0S3` or equivalent interface and note the IP address (e.g., `10.253.1.22`).
+   - If `ifconfig` is not available, install it using:
+     ```bash
+     sudo yum install net-tools
+     ```
+
+**Screenshot Example**:  
+*Command output displaying the IP address*  
+![Find IP Address](screenshots/04-find-ip-address.png)  
+*Identify the correct network interface and IP address.*
+
+---
+
+### **2. Accessing Linux Machine via Windows SSH Client**
 
 If you are using Windows 10 or later, you can use the built-in SSH client from the command prompt:
 
@@ -44,7 +72,7 @@ If you are using Windows 10 or later, you can use the built-in SSH client from t
 
 ---
 
-### **2. Accessing Linux Machine via Mac Terminal**
+### **3. Accessing Linux Machine via Mac Terminal**
 
 For Mac users, follow these steps to connect using Terminal:
 
@@ -77,7 +105,7 @@ For Mac users, follow these steps to connect using Terminal:
 
 ---
 
-### **3. Accessing Linux Machine via Linux Terminal**
+### **4. Accessing Linux Machine via Linux Terminal**
 
 If you are using Linux, the process is similar to macOS:
 
@@ -107,34 +135,6 @@ If you are using Linux, the process is similar to macOS:
 *Linux Terminal displaying SSH connection*  
 ![Linux Terminal SSH Command](screenshots/04-linux-terminal-ssh.png)  
 *Successful login to the Linux machine.*
-
----
-
-### **4. Finding the IP Address of the Linux Machine**
-
-Before connecting, you need to find the IP address of your Linux machine:
-
-1. **Access the Linux Console**: Open your virtual machine or physical machine running Linux.
-2. **Run the Command**:
-   - For most recent Linux distributions, use:
-     ```bash
-     ip addr
-     ```
-   - Older distributions may use:
-     ```bash
-     ifconfig
-     ```
-3. **Identify the IP Address**:
-   - Look for the `enp0S3` or equivalent interface and note the IP address (e.g., `10.253.1.22`).
-   - If `ifconfig` is not available, install it using:
-     ```bash
-     sudo yum install net-tools
-     ```
-
-**Screenshot Example**:  
-*Command output displaying the IP address*  
-![Find IP Address](screenshots/04-find-ip-address.png)  
-*Identify the correct network interface and IP address.*
 
 ---
 
