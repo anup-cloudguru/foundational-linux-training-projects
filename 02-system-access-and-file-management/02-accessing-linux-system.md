@@ -1,7 +1,4 @@
-Here's a refined and polished version of your content:
-
----
-
+*Module 2: System Access and File Management*
 # Module 3: System Access and File Management
 
 ## Chapter 2: Accessing Linux Systems
