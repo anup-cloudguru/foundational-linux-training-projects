@@ -61,7 +61,7 @@ In this chapter, we will cover how to download and install the CentOS Stream 9 o
 ## Screenshots
 
 ### 1. CentOS Download Page
-![CentOS Download Page](screenshots/centos-download-page.png)
+![CentOS Download Page](screenshots/01-centos-download-page.png)
 *Purpose: To show users where to download the CentOS Stream 9 ISO image.*
 
 ### 2. Attach ISO to Virtual Machine
