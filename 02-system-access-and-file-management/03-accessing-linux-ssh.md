@@ -6,8 +6,7 @@ In this chapter, we will explore how to access a Linux machine remotely through 
 
 **What We Will Learn:**  
 - How to access a Linux machine from Windows, macOS, and Linux.
-- Step-by-step instructions for connecting using both formats of the SSH command.
-- Important considerations for finding your Linux machine's IP address.
+- Finding your Linux machine's IP address.
 
 ---
 
