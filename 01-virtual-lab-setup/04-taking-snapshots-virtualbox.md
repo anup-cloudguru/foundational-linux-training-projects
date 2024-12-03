@@ -61,7 +61,7 @@ In this chapter, we will explore the concept of snapshots in VirtualBox. Snapsho
 *Create a new snapshot with a name and description.*  
 
 ### 3. Restore Snapshot  
-![Restore Snapshot](03-restore-snapshot-previous-state.png)  
+![Restore Snapshot](screenshots/03-restore-snapshot-previous-state.png)  
 *Restore the virtual machine to a previous snapshot.*  
 
 ### 4. Delete Snapshot  
