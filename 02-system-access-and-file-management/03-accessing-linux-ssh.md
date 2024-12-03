@@ -33,7 +33,7 @@ Before connecting, you need to find the IP address of your Linux machine:
 
 **Screenshot Example**:  
 *Command output displaying the IP address*  
-![Find IP Address](screenshots/04-find-ip-address.png)  
+![Find IP Address](screenshots/01-find-ip-address-output.png)  
 *Identify the correct network interface and IP address.*
 
 ---
