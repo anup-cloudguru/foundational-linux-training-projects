@@ -57,7 +57,7 @@ In this chapter, we will explore the concept of snapshots in VirtualBox. Snapsho
 *Navigate to the snapshot manager in VirtualBox.*  
 
 ### 2. Take Snapshot  
-![Take Snapshot](screenshots/04-take-snapshot.png)  
+![Take Snapshot](screenshots/02-take-snapshot-new-name-description.png)  
 *Create a new snapshot with a name and description.*  
 
 ### 3. Restore Snapshot  
