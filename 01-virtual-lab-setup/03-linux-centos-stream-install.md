@@ -96,3 +96,5 @@ Click **"Begin Installation"** to start the installation process.
 The CentOS Stream 9 installation is now complete. The virtual machine is ready for further configuration and use. In the next chapter, we'll explore post-installation setup and basic commands to get started with CentOS Stream 9.
 
 Feel free to continue to the next chapter, where I'll guide you through post-installation tasks for CentOS Stream 9!
+
+---
