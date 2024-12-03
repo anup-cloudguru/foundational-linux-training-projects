@@ -65,7 +65,7 @@ In this chapter, we will explore the concept of snapshots in VirtualBox. Snapsho
 *Restore the virtual machine to a previous snapshot.*  
 
 ### 4. Delete Snapshot  
-![Delete Snapshot](screenshots/04-delete-snapshot.png)  
+![Delete Snapshot](screenshots/04-delete-snapshot-unwanted.png)  
 *Remove an unwanted snapshot.*  
 
 ---
