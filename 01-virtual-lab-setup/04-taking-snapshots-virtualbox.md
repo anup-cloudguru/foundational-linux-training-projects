@@ -72,3 +72,5 @@ In this chapter, we will explore the concept of snapshots in VirtualBox. Snapsho
 
 ## Note  
 Snapshots are not substitutes for full backups. Use them for short-term purposes and regularly back up your virtual machines for long-term protection. Additionally, be aware that having multiple snapshots can consume a significant amount of disk space and potentially impact system performance.
+
+---
