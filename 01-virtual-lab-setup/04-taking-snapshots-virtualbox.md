@@ -53,7 +53,7 @@ In this chapter, we will explore the concept of snapshots in VirtualBox. Snapsho
 ## Screenshots  
 
 ### 1. Snapshot Manager  
-![Snapshot Manager](screenshots/04-snapshot-manager.png)  
+![Snapshot Manager](screenshots/01-virtualbox-snapshot-manager-overview.png)  
 *Navigate to the snapshot manager in VirtualBox.*  
 
 ### 2. Take Snapshot  
