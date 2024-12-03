@@ -1,7 +1,7 @@
-*Module 1: Virtual Lab Setup*
-# Download and Install Linux (CentOS Stream 9)
+# Module 1: Virtual Lab Setup  
+## Chapter 3: Download and Install Linux (CentOS Stream 9)  
 
-## Introduction
+### Introduction  
 In this chapter, we will cover how to download and install the CentOS Stream 9 operating system. This chapter provides detailed instructions to set up CentOS Stream 9 in our virtual environment.
 
 **What We Will Learn:**
@@ -40,24 +40,20 @@ In this chapter, we will cover how to download and install the CentOS Stream 9 o
 On the **Installation Summary** screen, review and adjust the following settings:
 
 **Localization:**
-
 - **Language and Keyboard Layout**: Select the appropriate language and keyboard layout for the installation (e.g., English (India), English (India, with rupee)), and click **"Continue"**.
 - **Date & Time**: Set the correct time zone for your region (e.g., Asia/Kolkata).
 - **Language Support**: Ensure your preferred language is selected.
 
 **Software:**
-
 - **Installation Source**: This is typically set to **Local Media** if the ISO file is attached. No changes are needed here.
 - **Software Selection**: The screenshot shows **Server with GUI** selected. Choose this if you need a graphical interface; otherwise, select **Minimal Install** for a lightweight server setup.
 
 **System:**
-
 - **Installation Destination**: Select the virtual hard disk created in the previous chapter. If needed, modify the partitioning options or leave the default **Automatic Partitioning**. Click **Done** to save.
 - **KDUMP**: Leave this enabled unless you have specific requirements to disable it.
 - **Network & Hostname**: Ensure the network adapter is enabled for internet access. Optionally, assign a hostname for the system (e.g., centos-vm.local).
 
 **User Settings:**
-
 - **Root Password**: Set a strong root password to secure the system.
 - **User Creation**: Create a new user account with administrator privileges. This is recommended for better security than using the root account for daily tasks.
 
