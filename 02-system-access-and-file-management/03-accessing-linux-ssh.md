@@ -1,5 +1,5 @@
-*Module 2: System Access and File Management*
-# Accessing Linux Machine via SSH
+# Module 2: System Access and File Management
+## Chapter 3: Accessing Linux Machine via SSH
 
 ### Introduction
 In this chapter, we will explore how to access a Linux machine remotely through different platforms: Windows SSH client, Mac Terminal, and Linux Terminal. SSH (Secure Shell) is a protocol used to securely access and manage remote systems.
@@ -45,11 +45,11 @@ If you are using Windows 10 or later, you can use the built-in SSH client from t
 1. **Open the Windows Command Prompt**: Type `cmd` in the search bar and hit Enter.
 2. **Verify SSH Installation**: Type `ssh` and press Enter. If you see a list of options, SSH is installed.
 3. **Connect to the Linux Machine**:
-   - **Option 1** (using `-l`):
+   - **Option 1 (using `-l`)**:
      ```bash
      ssh -l <username> <IP_address>
      ```
-   - **Option 2** (using `@`):
+   - **Option 2 (using `@`)**:
      ```bash
      ssh <username>@<IP_address>
      ```
@@ -78,11 +78,11 @@ For Mac users, follow these steps to connect using Terminal:
 
 1. **Open Terminal**: Use the Spotlight search (Cmd + Space) and type `Terminal`, then hit Enter.
 2. **Connect to the Linux Machine**:
-   - **Option 1** (using `-l`):
+   - **Option 1 (using `-l`)**:
      ```bash
      ssh -l <username> <IP_address>
      ```
-   - **Option 2** (using `@`):
+   - **Option 2 (using `@`)**:
      ```bash
      ssh <username>@<IP_address>
      ```
@@ -111,11 +111,11 @@ If you are using Linux, the process is similar to macOS:
 
 1. **Open Terminal**: Press Ctrl + Alt + T or search for Terminal in your applications.
 2. **Connect to the Linux Machine**:
-   - **Option 1** (using `-l`):
+   - **Option 1 (using `-l`)**:
      ```bash
      ssh -l <username> <IP_address>
      ```
-   - **Option 2** (using `@`):
+   - **Option 2 (using `@`)**:
      ```bash
      ssh <username>@<IP_address>
      ```
