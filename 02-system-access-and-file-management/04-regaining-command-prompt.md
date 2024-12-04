@@ -15,9 +15,12 @@ In this chapter, we will cover how to regain control of an unresponsive command 
 
 When a command takes too long or becomes stuck, it can prevent you from executing new commands. The **Control + C** shortcut helps you interrupt the command and return to the command prompt.
 
-**Example Situations**:
-- Commands that produce continuous output, like `tail -f /var/log/syslog`.
-- Commands waiting for user input without an exit condition.
+**Example Situations:**
+- Running a command like `ping` without specifying a destination, which keeps waiting for user input or confirmation.
+- Executing commands that require significant processing time, such as `find /` to search the entire file system.
+- Using commands like `tail -f` on large log files that might produce continuous output, making it difficult to control the terminal.
+
+*Note: The specific commands used in the examples above will be covered in later chapters.*
 
 ---
 
