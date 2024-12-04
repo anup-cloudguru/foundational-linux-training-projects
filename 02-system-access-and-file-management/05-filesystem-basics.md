@@ -34,7 +34,6 @@ Windows organizes its filesystem with drive letters (e.g., `C:\`) representing s
 | `C:\Users`                  | User profiles and personal data storage. Each user has a separate directory (e.g., `C:\Users\John`). |
 | `C:\Program Files`          | Installed applications for 64-bit programs. |
 | `C:\Program Files (x86)`    | Installed applications designed for 32-bit programs on 64-bit systems. |
-| `C:\ProgramData`            | Application data shared across all users. |
 
 **Example Screenshot**:
 ![Windows Filesystem](screenshots/01-windows-filesystem-structure.png)  
