@@ -67,7 +67,7 @@ If you are using Windows 10 or later, you can use the built-in SSH client from t
 
 **Screenshot Example**:  
 *Windows Command Prompt for SSH connection*  
-![Windows SSH Command](screenshots/04-windows-ssh-connection.png)  
+![Windows SSH Command](screenshots/02-windows-ssh-command-successful-login.png)  
 *The terminal prompt showing successful login.*
 
 ---
