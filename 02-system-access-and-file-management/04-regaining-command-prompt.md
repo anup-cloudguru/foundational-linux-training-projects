@@ -55,6 +55,4 @@ Follow these steps to regain control of your terminal:
 
 Being able to regain control of your terminal when it becomes unresponsive is essential for smooth and efficient command-line work. By using **Control + C**, you can quickly stop a command and return to the command prompt. This is an important skill for any Linux user and will enhance your productivity and problem-solving capabilities.
 
-**Note**: Familiarize yourself with advanced process management techniques for handling stubborn or complex processes.
-
 --- 
