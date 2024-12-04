@@ -41,7 +41,7 @@ Follow these steps to regain control of your terminal:
 ### Screenshot Example
 Below is an example showing how pressing **Control + C** interrupts an unresponsive command and regains control of the terminal.
 
-![Interrupting an unresponsive command using Control + C](screenshots/control-c-example.png)  
+![Interrupting an unresponsive command using Control + C](screenshots/05-control-c-example.png)  
 *Figure 1: Example of using Control + C to interrupt a command in the terminal.*
 
 ---
