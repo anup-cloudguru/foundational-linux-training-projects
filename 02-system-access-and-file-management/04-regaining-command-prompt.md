@@ -38,9 +38,11 @@ Follow these steps to regain control of your terminal:
 3. **Try Running a New Command**:
    - If you can type a new command after pressing **Control + C**, the terminal has successfully returned to its active state.
 
-   **Video Example**:  
-   Watch this video for a demonstration of pressing **Control + C** to interrupt an unresponsive command and regain control of the terminal.  
-   *[Include your video here]*
+### Screenshot Example
+Below is an example showing how pressing **Control + C** interrupts an unresponsive command and regains control of the terminal.
+
+![Interrupting an unresponsive command using Control + C](screenshots/control-c-example.png)  
+*Figure 1: Example of using Control + C to interrupt a command in the terminal.*
 
 ---
 
