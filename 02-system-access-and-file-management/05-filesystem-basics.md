@@ -49,11 +49,21 @@ Linux employs a unified structure with a single root directory (`/`) from which 
 
 | **Directory** | **Description** |
 |---------------|-----------------|
-| `/boot`       | Holds the files needed to start your computer, including important files like `grub.cfg` used by the boot loader. |
-| `/root`       | The home directory for the "root user," who has the highest level of control over the system. It’s where the system administrator stores personal files. |
-| `/dev`        | Contains files that represent all hardware devices, such as disk drives, keyboards, and USB drives. These are interfaces for the system to communicate with the hardware. |
-| `/etc`        | Stores configuration files for the system and applications, such as network settings, user details, and system preferences. |
-| `/home`       | Stores each user’s personal files. For example, `/home/john` is where user `john` keeps their documents and data. |
+| /boot       | Holds the files needed to start your computer, including important files like grub.cfg used by the boot loader. |
+| /root       | The home directory for the "root user," who has the highest level of control over the system. It’s where the system administrator stores personal files. |
+| /dev        | Contains files that represent all hardware devices, such as disk drives, keyboards, and USB drives. These are interfaces for the system to communicate with the hardware. |
+| /etc        | Stores configuration files for the system and applications, such as network settings, user details, and system preferences. |
+| /bin and /usr/bin | Contains essential commands used daily (e.g., ls, cp). These are basic tools for running and managing the system. |
+| /sbin and /usr/sbin | Includes system commands mainly used by administrators for system maintenance, such as starting and stopping services. |
+| /opt        | Used for optional software installed separately from the main system. |
+| /proc       | A virtual directory showing real-time information about running processes and system performance, such as memory usage. |
+| /lib and /usr/lib | Contains libraries that programs use to run, including tools for tasks like displaying graphics or connecting to the internet. |
+| /tmp        | Stores temporary files, which are usually deleted when the system restarts. Acts as a scratchpad for the computer. |
+| /home       | Stores each user’s personal files. For example, /home/john is where user john keeps their documents and data. |
+| /var        | Holds files that change frequently, such as logs, cache, and history files. |
+| /run        | Stores temporary files that exist only while the system is running, including files for running processes and services. |
+| /mnt        | Used for manually mounting external storage devices or network filesystems, such as an external hard drive. |
+| /media      | Typically used for automatically mounting removable media like USB drives or CD-ROMs. |
 
 **Example Screenshot**:
 
@@ -67,9 +77,6 @@ Linux employs a unified structure with a single root directory (`/`) from which 
 #### Windows Navigation
 - **Graphical Interface**: Use File Explorer to browse directories and manage files. For example, navigate to `C:\Users\YourUsername\Documents`.
 
-**Example Screenshot**:
-![Windows File Explorer](screenshots/windows-file-explorer.png)  
-*Figure 3: Navigating Windows Filesystem Using File Explorer.*
 
 - **Command-Line Interface**: Use Command Prompt or PowerShell for navigation and file operations.
 
@@ -83,9 +90,6 @@ cd C:\Users\YourUsername\Documents
 #### Linux Navigation
 - **Graphical Interface**: File managers like Nautilus (Ubuntu) or Dolphin (KDE) provide GUI access.
 
-**Example Screenshot**:
-![Linux File Manager](screenshots/linux-file-manager.png)  
-*Figure 4: Navigating Linux Filesystem Using a File Manager.*
 
 - **Terminal**: Use commands like `cd` (change directory) and `ls` (list directory contents) for navigation.
 
