@@ -100,7 +100,7 @@ For Mac users, follow these steps to connect using Terminal:
 
 **Screenshot Example**:  
 *Mac Terminal showing the SSH command*  
-![Mac Terminal SSH Command](screenshots/04-linux-terminal-ssh-command-successful-login.png)  
+![Mac Terminal SSH Command](screenshots/03-mac-terminal-ssh-command-successful-login.png)  
 *Connected session in Terminal.*
 
 ---
@@ -133,7 +133,7 @@ If you are using Linux, the process is similar to macOS:
 
 **Screenshot Example**:  
 *Linux Terminal displaying SSH connection*  
-![Linux Terminal SSH Command](screenshots/04-linux-terminal-ssh.png)  
+![Linux Terminal SSH Command](screenshots/04-linux-terminal-ssh-command-successful-login.png)  
 *Successful login to the Linux machine.*
 
 ---
