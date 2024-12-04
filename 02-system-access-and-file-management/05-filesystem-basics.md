@@ -107,7 +107,7 @@ ls -l
 |-----------------------|------------------------------------|---------------------------------------|
 | **Root Directory**    | Separate volumes (e.g., `C:\`)    | Single root directory (`/`)          |
 | **Directory Paths**   | Use backslashes (e.g., `C:\`)     | Use forward slashes (e.g., `/home`)  |
-| **User Directories**  | `C:\Users`                       | `/home`                              |
+| **User Directories**  | `C:\Users`                       | `/home/username` for regular users, `/root` for the root user|
 | **Configuration Files** | Scattered across `C:\`         | Centralized in `/etc`                |
 
 ---
