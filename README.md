@@ -104,3 +104,9 @@ This repository serves as a practical resource for learning and practicing Linux
 - Gain a comprehensive understanding of Linux as an operating system.  
 - Practice essential commands and configurations in a controlled environment.  
 - Build a solid hands-on foundation for advancing in cloud engineering and other IT-related fields.  
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
