@@ -89,10 +89,10 @@ ls -l
 
 | **Aspect**            | **Windows**                        | **Linux**                              |
 |-----------------------|------------------------------------|---------------------------------------|
-| **Root Directory**    | Separate volumes (e.g., `C:\`).    | Single root directory (`/`).          |
-| **Directory Paths**   | Use backslashes (e.g., `C:\`).     | Use forward slashes (e.g., `/home`).  |
-| **User Directories**  | `C:\Users`.                       | `/home`.                              |
-| **Configuration Files** | Scattered across `C:\`.         | Centralized in `/etc`.                |
+| **Root Directory**    | Separate volumes (e.g., `C:\`)    | Single root directory (`/`)          |
+| **Directory Paths**   | Use backslashes (e.g., `C:\`)     | Use forward slashes (e.g., `/home`)  |
+| **User Directories**  | `C:\Users`                       | `/home`.                              |
+| **Configuration Files** | Scattered across `C:\`         | Centralized in `/etc`                |
 
 ---
 
