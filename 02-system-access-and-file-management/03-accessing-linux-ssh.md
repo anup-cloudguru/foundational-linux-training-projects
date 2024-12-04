@@ -25,7 +25,7 @@ Before connecting, you need to find the IP address of your Linux machine:
      ifconfig
      ```
 3. **Identify the IP Address**:
-   - Look for the `enp0S3` or equivalent interface and note the IP address (e.g., `10.253.1.22`).
+   - Look for the `enp0S3` or equivalent interface and note the IP address (e.g., `192.168.42.212`).
    - If `ifconfig` is not available, install it using:
      ```bash
      sudo yum install net-tools
@@ -56,11 +56,11 @@ If you are using Windows 10 or later, you can use the built-in SSH client from t
    - **Example**:
      - Using `-l`:
        ```bash
-       ssh -l anupmoitra 10.253.1.22
+       ssh -l anupmoitra 192.168.42.212
        ```
      - Using `@`:
        ```bash
-       ssh anupmoitra@10.253.1.22
+       ssh anupmoitra@192.168.42.212
        ```
 
    - Enter your password when prompted, and you will be logged into the Linux machine.
@@ -89,11 +89,11 @@ For Mac users, follow these steps to connect using Terminal:
    - **Example**:
      - Using `-l`:
        ```bash
-       ssh -l anupmoitra 10.253.1.22
+       ssh -l anupmoitra 192.168.42.212
        ```
      - Using `@`:
        ```bash
-       ssh anupmoitra@10.253.1.22
+       ssh anupmoitra@192.168.42.212
        ```
 
    - Enter your password when prompted, and you will be connected to the Linux machine.
@@ -122,11 +122,11 @@ If you are using Linux, the process is similar to macOS:
    - **Example**:
      - Using `-l`:
        ```bash
-       ssh -l anupmoitra 10.253.1.22
+       ssh -l anupmoitra 192.168.42.212
        ```
      - Using `@`:
        ```bash
-       ssh anupmoitra@10.253.1.22
+       ssh anupmoitra@192.168.42.212
        ```
 
    - Enter your password when prompted to complete the connection.
