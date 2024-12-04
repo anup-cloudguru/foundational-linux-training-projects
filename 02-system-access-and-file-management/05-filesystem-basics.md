@@ -56,7 +56,7 @@ Linux employs a unified structure with a single root directory (`/`) from which 
 | `/home`       | Stores each user’s personal files. For example, `/home/john` is where user `john` keeps their documents and data. |
 
 **Example Screenshot**:
-![Linux Filesystem](screenshots/linux-filesystem-structure.png)  
+![Linux Filesystem](screenshots/02-linux-filesystem-structure-example.png)  
 *Figure 2: Example of Linux Filesystem Structure.*
 
 ---
