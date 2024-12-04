@@ -100,7 +100,7 @@ For Mac users, follow these steps to connect using Terminal:
 
 **Screenshot Example**:  
 *Mac Terminal showing the SSH command*  
-![Mac Terminal SSH Command](screenshots/04-mac-terminal-ssh.png)  
+![Mac Terminal SSH Command](screenshots/03-mac-terminal-ssh-command-successful-login.png)  
 *Connected session in Terminal.*
 
 ---
