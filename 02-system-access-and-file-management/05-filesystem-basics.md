@@ -35,10 +35,9 @@ Windows organizes its filesystem with drive letters (e.g., `C:\`) representing s
 | `C:\Program Files`          | Installed applications for 64-bit programs. |
 | `C:\Program Files (x86)`    | Installed applications designed for 32-bit programs on 64-bit systems. |
 | `C:\ProgramData`            | Application data shared across all users. |
-| `C:\Users\Public`           | Public folders accessible to all users, such as `Public Documents` and `Public Videos`. |
 
 **Example Screenshot**:
-![Windows Filesystem](screenshots/windows-filesystem-structure.png)  
+![Windows Filesystem](screenshots/01-windows-filesystem-structure.png)  
 *Figure 1: Example of Windows Filesystem Structure.*
 
 ---
