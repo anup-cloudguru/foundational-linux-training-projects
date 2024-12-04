@@ -5,7 +5,7 @@
 In this chapter, we will cover how to regain control of an unresponsive command prompt using the **Control + C** shortcut. This is a crucial skill for troubleshooting and managing long-running or stuck commands in the terminal.
 
 **What We Will Learn:**
-- How to interrupt an unresponsive command using Control + C.
+- How to interrupt an unresponsive command using **Control + C**.
 - Verifying that the command prompt has returned to an active state.
 - Running new commands after regaining control.
 
@@ -50,7 +50,7 @@ Follow these steps to regain control of your terminal:
 
 **Key Points to Remember**:
 - **Control + C** only interrupts the current command and does not close the terminal.
-- For processes that do not respond to **Control + C**, more advanced techniques (e.g., using `kill` or `killall`) may be required, which will be covered in future chapters.
+- If **Control + C** does not stop the process, other advanced techniques, such as using the `kill` command, may be required, which will be covered in future chapters.
 
 ---
 
