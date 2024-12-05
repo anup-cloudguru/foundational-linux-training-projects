@@ -1,4 +1,4 @@
-# Module 11: File System Navigation
+# Module 2: File System Navigation
 ## Chapter 11: Absolute and Relative Paths
 
 ### Introduction
