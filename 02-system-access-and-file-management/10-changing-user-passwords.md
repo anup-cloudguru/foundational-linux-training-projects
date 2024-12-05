@@ -1,6 +1,6 @@
 # Module 2: System Access and File Management
 
-## Chapter 5: Changing User Passwords in Linux
+## Chapter 10: Changing User Passwords in Linux
 
 ### Introduction
 In this chapter, we will learn how to change a user password in Linux. This process is essential for maintaining the security of user accounts. Whether you're changing your own password or modifying the password of another user (as the root user), understanding this command is key to managing user credentials.
