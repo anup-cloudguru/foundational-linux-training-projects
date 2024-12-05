@@ -1,5 +1,5 @@
 # Module 11: File System Navigation
-## Chapter 1: Absolute and Relative Paths
+## Chapter 11: Absolute and Relative Paths
 
 ### Introduction
 In this chapter, we will explore how to navigate the file system using both **absolute** and **relative paths**. Understanding these paths is crucial for efficiently accessing directories and managing files within a Linux environment.
