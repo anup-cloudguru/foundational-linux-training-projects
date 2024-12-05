@@ -1,6 +1,6 @@
 # Module 2: System Access and File Management
 
-## Chapter 4: Filesystem Basics
+## Chapter 5: Filesystem Basics
 
 ### Introduction
 In this chapter, we will explore the concept of a filesystem and its role in managing files and directories. Understanding the structure of a filesystem is fundamental for efficient data organization and navigation in both Windows and Linux environments.
