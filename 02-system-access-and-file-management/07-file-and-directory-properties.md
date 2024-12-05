@@ -1,4 +1,4 @@
-### **Module 2: System Access and File Management**  
+# **Module 2: System Access and File Management**  
 
 ## **Chapter 7: Understanding File and Directory Properties in Linux**  
 
