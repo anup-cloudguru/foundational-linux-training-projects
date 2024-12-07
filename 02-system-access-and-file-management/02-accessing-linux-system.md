@@ -54,10 +54,6 @@ Remote access refers to connecting to a Linux system over a network from another
 3. Click **Open** to initiate the SSH session.  
 4. Log in with the username and password for the Linux system.  
 
-**Advanced Tips**:  
-- Configure PuTTY for secure connections using SSH keys.  
-- Adjust encryption settings to match security requirements.
-
 #### **Using Built-in SSH (Windows 10+/macOS/Linux)**  
 1. Open the **Command Prompt (Windows)** or **Terminal (macOS/Linux)**.  
 2. Use the following command to connect:
