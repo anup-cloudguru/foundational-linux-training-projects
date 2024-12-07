@@ -2,10 +2,12 @@
 ## Chapter 3: Accessing Linux Machine via PuTTY or SSH
 
 ### Introduction
-In this chapter, we will explore how to access a Linux machine remotely through different platforms: Windows SSH client, Mac Terminal, and Linux Terminal. SSH (Secure Shell) is a protocol used to securely access and manage remote systems.
+In this chapter, we will explore how to access a Linux machine remotely through different platforms: Windows SSH client, Mac Terminal, Linux Terminal, and PuTTY on Windows. SSH (Secure Shell) is a protocol used to securely access and manage remote systems.
+
+---
 
 **What We Will Learn:**
-- How to access a Linux machine from Windows, macOS, and Linux.
+- How to access a Linux machine from Windows (using SSH client or PuTTY), macOS, and Linux.
 - Finding your Linux machine's IP address.
 
 ---
@@ -31,16 +33,40 @@ Before connecting, you need to find the IP address of your Linux machine:
      sudo yum install net-tools
      ```
 
+---
+
+### 2. Accessing Linux Machine via PuTTY (Windows)
+
+If you're using Windows and prefer a graphical SSH client, **PuTTY** is a popular option. Follow these steps to connect:
+
+1. **Download and Install PuTTY**:
+   - Visit the official PuTTY website: [https://www.putty.org](https://www.putty.org).
+   - Download the installer and follow the setup instructions.
+
+2. **Launch PuTTY**:
+   - Open PuTTY from your Start menu or search bar.
+
+3. **Configure the SSH Connection**:
+   - In the **Session** tab:
+     - Enter the **IP address** of the Linux machine in the "Host Name (or IP address)" field.
+     - Ensure the **Port** is set to `22` (default SSH port).
+   - Select the **Connection Type** as `SSH`.
+
+4. **Start the Session**:
+   - Click **Open** to initiate the SSH session.
+   - If it's your first time connecting, PuTTY will display a security alert about the server's key. Click **Accept**.
+
+5. **Login**:
+   - Enter your Linux **username** and press Enter.
+   - Type your **password** (note: it won't be visible as you type) and press Enter.
+
 **Screenshot Example**:  
-*Command output displaying the IP address*  
-![Find IP Address](screenshots/01-find-ip-address-output.png)  
-*Identify the correct network interface and IP address.*
+*PuTTY configuration and successful login*  
+![PuTTY SSH Connection](screenshots/05-putty-ssh-successful-login.png)
 
 ---
 
-### 2. Accessing Linux Machine via Windows SSH Client
-
-If you are using Windows 10 or later, you can use the built-in SSH client from the command prompt:
+### 3. Accessing Linux Machine via Windows SSH Client
 
 1. **Open the Windows Command Prompt**: Type `cmd` in the search bar and hit Enter.
 2. **Verify SSH Installation**: Type `ssh` and press Enter. If you see a list of options, SSH is installed.
@@ -62,7 +88,6 @@ If you are using Windows 10 or later, you can use the built-in SSH client from t
        ```bash
        ssh anupmoitra@192.168.42.212
        ```
-
    - Enter your password when prompted, and you will be logged into the Linux machine.
 
 **Screenshot Example**:  
@@ -72,9 +97,7 @@ If you are using Windows 10 or later, you can use the built-in SSH client from t
 
 ---
 
-### 3. Accessing Linux Machine via Mac Terminal
-
-For Mac users, follow these steps to connect using Terminal:
+### 4. Accessing Linux Machine via Mac Terminal
 
 1. **Open Terminal**: Use the Spotlight search (Cmd + Space) and type `Terminal`, then hit Enter.
 2. **Connect to the Linux Machine**:
@@ -95,7 +118,6 @@ For Mac users, follow these steps to connect using Terminal:
        ```bash
        ssh anupmoitra@192.168.42.212
        ```
-
    - Enter your password when prompted, and you will be connected to the Linux machine.
 
 **Screenshot Example**:  
@@ -105,9 +127,7 @@ For Mac users, follow these steps to connect using Terminal:
 
 ---
 
-### 4. Accessing Linux Machine via Linux Terminal
-
-If you are using Linux, the process is similar to macOS:
+### 5. Accessing Linux Machine via Linux Terminal
 
 1. **Open Terminal**: Press Ctrl + Alt + T or search for Terminal in your applications.
 2. **Connect to the Linux Machine**:
@@ -128,7 +148,6 @@ If you are using Linux, the process is similar to macOS:
        ```bash
        ssh anupmoitra@192.168.42.212
        ```
-
    - Enter your password when prompted to complete the connection.
 
 **Screenshot Example**:  
@@ -140,8 +159,6 @@ If you are using Linux, the process is similar to macOS:
 
 ## Conclusion
 
-Accessing a Linux machine is seamless, whether you’re on Windows, macOS, or Linux. You can use either `ssh -l <username> <IP_address>` or `ssh <username>@<IP_address>` formats, and both will work for your remote connection needs. Ensure that you have the correct IP address and credentials for a successful connection.
-
-**Note**: Always use a strong password or consider setting up SSH keys for better security.
+You can access a Linux machine from various platforms using either command-line utilities like `ssh` or graphical tools like **PuTTY**. While modern Windows systems include an SSH client, PuTTY remains a robust and widely-used option, especially for users preferring a GUI-based approach. Always use strong passwords or SSH keys to ensure the security of your remote connections.
 
 ---
