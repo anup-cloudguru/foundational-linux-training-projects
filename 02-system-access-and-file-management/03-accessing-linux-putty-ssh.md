@@ -65,7 +65,7 @@ If you're using Windows and prefer a graphical SSH client, **PuTTY** is a popula
 
 **Screenshot Example**:  
 *PuTTY configuration and successful login*  
-![PuTTY SSH Connection](screenshots/05-putty-ssh-successful-login.png)
+![PuTTY SSH Connection](screenshots/06-putty-ssh-successful-login.png)
 
 ---
 
