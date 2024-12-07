@@ -79,6 +79,6 @@ ssh root@192.168.1.100
 ---
 
 ### Conclusion  
-In this chapter, we examined the fundamentals of accessing a Linux system through both console and remote methods. Remote access via SSH, in particular, is essential for efficient server management and is widely used in professional environments. In the next chapter, we will explore practical security practices for using remote access.
+In this chapter, we examined the fundamentals of accessing a Linux system through both console and remote methods. Remote access via SSH, in particular, is essential for efficient server management and is widely used in professional environments.
 
 ---
