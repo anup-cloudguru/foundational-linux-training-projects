@@ -33,6 +33,10 @@ Before connecting, you need to find the IP address of your Linux machine:
      sudo yum install net-tools
      ```
 
+**Screenshot Example**:  
+The following screenshot demonstrates using both `ip addr` and `ifconfig` commands to find the IP address:  
+![Find IP Address](screenshots/01-find-ip-address-output.png)
+
 ---
 
 ### 2. Accessing Linux Machine via PuTTY (Windows)
