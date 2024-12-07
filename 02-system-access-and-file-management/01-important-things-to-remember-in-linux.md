@@ -40,9 +40,14 @@ In this chapter, we will cover some critical concepts and best practices that yo
    - It manages system resources and provides services for all other parts of the OS.  
 
 5. **CLI and GUI**:  
-   - **CLI (Command-Line Interface)**: A text-based interface used for executing commands. Preferred in server environments and automation scripts.  
-   - **GUI (Graphical User Interface)**: A visual interface that provides icons and windows, making it easier for those who prefer point-and-click interactions. Common in desktop environments.
-
+   - **CLI (Command-Line Interface)**:  
+      - Linux is primarily a CLI-based operating system, especially in server environments and professional use cases.  
+      - The CLI allows for executing commands via a text-based terminal, making it ideal for automation, scripting, and managing servers without graphical overhead.  
+      - It offers more control, speed, and flexibility for advanced tasks compared to GUI.  
+   - **GUI (Graphical User Interface)**:  
+      - While some Linux distributions, like Ubuntu or Fedora Workstation, offer GUI environments for ease of use, GUIs are less commonly used in professional or server setups due to the additional system resources they consume.  
+      - A GUI provides a visual, point-and-click interface that is user-friendly, especially for those transitioning from other operating systems like Windows or macOS.
+        
 6. **Flexibility of Linux**:  
    - While Linux may seem intimidating initially due to its command-based nature, mastering it provides unparalleled flexibility.  
    - Professionals can customize Linux for specific tasks, automate workflows, and leverage its open-source ecosystem for development and troubleshooting.
