@@ -44,8 +44,7 @@ The following screenshot demonstrates using both `ip addr` and `ifconfig` comman
 If you're using Windows and prefer a graphical SSH client, **PuTTY** is a popular option. Follow these steps to connect:
 
 1. **Download and Install PuTTY**:
-   - Visit the official PuTTY website: [https://www.putty.org](https://www.putty.org).
-   - Download the installer and follow the setup instructions.
+   - If you haven’t installed PuTTY yet, refer to the steps outlined in **[Chapter 2: Accessing Linux Systems](https://github.com/anup-cloudguru/foundational-linux-training-projects/blob/main/02-system-access-and-file-management/02-accessing-linux-system.md)**.
 
 2. **Launch PuTTY**:
    - Open PuTTY from your Start menu or search bar.
