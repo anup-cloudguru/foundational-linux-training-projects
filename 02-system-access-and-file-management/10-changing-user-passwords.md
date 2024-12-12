@@ -51,7 +51,8 @@ Retype new password: [Re-enter the new password]
 **Security Tip**: Choose a strong password that does not match common dictionary words and avoid easily guessable patterns.
 
 **Screenshot Examples**:
-- **Figure 1: Changing Password for Current User**  
+- **Figure 1: Changing Password for Current User**
+  
   ![Screenshot Example 1](screenshots/01-current-user-pass-change.png)
   *Figure 1: Changing Password for Current User*
 
