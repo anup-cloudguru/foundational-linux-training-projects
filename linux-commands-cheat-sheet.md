@@ -47,6 +47,31 @@
   mkdir new_directory               # Create a new directory
   ```
 
+## **Finding IP Address**
+
+- **`ip a`** – Show IP address information.
+  ```bash
+  ip a                             # Display all network interfaces and their IP addresses
+  ```
+
+- **`ifconfig`** – (Deprecated but still works) Display network interfaces and their IP addresses.
+  ```bash
+  ifconfig                         # Show network interfaces and IP details
+  ```
+
+## **Accessing Linux via SSH**
+
+- **`ssh`** – Secure Shell to access remote systems.
+  ```bash
+  ssh user@hostname_or_ip         # Access a remote system via SSH (replace 'user' and 'hostname_or_ip')
+  ssh username@192.168.1.100      # Example with IP address
+  ```
+
+- **`whoami`** – Display the current logged-in username.
+  ```bash
+  whoami
+  ```
+
 ## **Directory Navigation and Exploration**
 
 - **`ls`** – List the contents of a directory.
@@ -66,13 +91,6 @@
   ```bash
   cp -R source_directory destination_directory
   cp -R dir1 /home/anupmoitra/dir2  # Copy dir1 to /home/anupmoitra/dir2
-  ```
-
-## **Other Useful Commands**
-
-- **`whoami`** – Display the current logged-in username.
-  ```bash
-  whoami
   ```
 
 ---
