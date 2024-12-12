@@ -51,7 +51,7 @@ cp: omitting directory 'dir1'
 This is because `cp` cannot copy a directory unless you specify `-R` to handle the recursive copy. The `-R` option tells `cp` to copy all files and subdirectories within the source directory.
 
 **Screenshot Example**:  
-![Error without the -R option](screenshots/cp-error-without-R.png)  
+![Error without the -R option](screenshots/02-cp-error-without-R.png)  
 *Figure 2: Error message when trying to copy a directory without using the `-R` option.*
 
 ---
