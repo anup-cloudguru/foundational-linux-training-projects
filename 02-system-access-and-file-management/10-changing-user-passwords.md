@@ -52,7 +52,7 @@ Retype new password: [Re-enter the new password]
 
 **Screenshot Examples**:
 - **Figure 1: Changing Password for Current User**  
-  ![Screenshot Example 1](path/to/your/screenshot1.png)
+  ![Screenshot Example 1](path/to/your/01-current-user-pass-change.png)
   *Figure 1: Changing Password for Current User*
 
 - **Figure 2: Password Change Confirmation**  
