@@ -1,114 +1,124 @@
 # **Module 2: System Access and File Management**  
 ## **Chapter 13: Copying Directories**
 
-### **Overview**
-In this chapter, we will learn how to copy directories in Linux, an important skill when working with configuration files or backing up directories. Copying directories is similar to copying files, but it requires the use of the `cp` command with a special option for recursion.
-
-### **Learning Objectives**
-By the end of this chapter, you should be able to:
-1. Use the `cp` command to copy directories.
-2. Understand the significance of the `-R` (recursive) option when copying directories.
-3. Create and verify copied directories and their contents.
-
-### **Concepts Covered**
-1. **Copying Directories with the `cp` Command**:
-    - To copy a directory, we use the same `cp` command that we use to copy files, but with the `-R` option to handle directories recursively.
-    - Without the `-R` option, the `cp` command will fail, stating that the source is a directory and not a file.
-  
-2. **Recursive Copying**:
-    - The `-R` flag tells the system to copy not only the directory but also its contents, including all subdirectories and files.
-
-### **Commands Used**
-- `cp -R [source_directory] [destination_directory]`  
-  This command will copy the source directory to the destination directory.
-  
-- `cd`  
-  Changes the current working directory.
-
-- `ls -ltr`  
-  Lists the contents of the directory in long format, sorted by modification time.
-
-- `touch`  
-  Creates an empty file.
-
-### **Steps to Copy Directories**
-
-1. **Creating a Directory and Files**:
-    - Start by creating a new directory, e.g., `config`, where we will store configuration files.
-    - Use `touch` to create some configuration files within the directory:
-      ```bash
-      mkdir config
-      cd config
-      touch a.com b.com c.com
-      ```
-
-2. **Copying the Directory**:
-    - Navigate back to the home directory:
-      ```bash
-      cd ~
-      ```
-    - Attempt to copy the `config` directory to the `/temp` directory:
-      ```bash
-      cp config /temp
-      ```
-      This will fail because `cp` without `-R` can't copy directories.
-
-3. **Copying the Directory with the `-R` Option**:
-    - To copy the directory recursively, use the `-R` option:
-      ```bash
-      cp -R config /temp/config-backup
-      ```
-    - This command will copy the entire `config` directory and its contents to `/temp/config-backup`.
-
-4. **Verifying the Copy**:
-    - Use `ls -ltr` to verify the directory has been copied:
-      ```bash
-      cd /temp
-      ls -ltr
-      ```
-      You should see `config-backup` in the list of directories.
-
-    - To verify the contents, go into the `config-backup` directory:
-      ```bash
-      cd config-backup
-      ls -ltr
-      ```
-      You will see that the files (`a.com`, `b.com`, `c.com`) have been copied as well.
-
-### **Example Session**
-```bash
-# Create a new directory called "config"
-mkdir config
-cd config
-
-# Create some configuration files
-touch a.com b.com c.com
-
-# Verify files are created
-ls -l
-
-# Go back to the home directory
-cd ~
-
-# Copy the "config" directory to /temp with recursive option
-cp -R config /temp/config-backup
-
-# Verify the copied directory in /temp
-cd /temp
-ls -ltr
-
-# Verify the files inside the copied directory
-cd config-backup
-ls -ltr
-```
-
-### **Important Notes**
-- The `-R` option is essential when copying directories. It ensures that not only the directory is copied, but also all files and subdirectories contained within it.
-- You can rename the destination directory while copying by specifying a new name (e.g., `/temp/config-backup`).
+### **Introduction**  
+In this chapter, we’ll explore how to copy directories in Linux. While we’ve previously covered how to create and copy files, copying directories is an essential skill, particularly when managing configuration files or backups. Using the right command ensures that all contents, including subdirectories and files, are copied over correctly.
 
 ---
 
-### **Conclusion**
-In this chapter, you learned how to copy directories in Linux using the `cp` command with the `-R` option. This is a vital skill when managing configuration files or performing backups. You can apply this knowledge to safely copy directories before making any modifications, ensuring that you can restore them if necessary.
+## **The `cp` Command for Copying Directories**
+
+The `cp` command is used to copy files, but when dealing with directories, we must add the `-R` (recursive) option. This tells the system to copy not only the directory but also all of its contents, including files and subdirectories.
+
+### 1. **Using the `cp` Command with the `-R` Option**  
+To copy a directory, you use the `cp` command with the `-R` option. The basic syntax is:
+
+```
+cp -R source_directory destination_directory
+```
+
+- **`-R`**: This option copies the directory and all its contents (subdirectories and files).
+- **`source_directory`**: The directory you want to copy.
+- **`destination_directory`**: The location where you want the directory to be copied to.
+
+### **Example**:  
+```bash
+cp -R config_files /tmp
+```
+
+This command will copy the `config_files` directory, along with all its contents, to the `/tmp` directory.
+
+**Screenshot Example**:  
+![Copying a directory using the cp command](screenshots/cp-copy-directory.png)  
+*Figure 1: Copying the `config_files` directory to `/tmp` using the `cp -R` command.*
+
+---
+
+### 2. **Renaming the Destination Directory**  
+You can also specify a new name for the copied directory by adding the desired name after the destination path. If you want to copy the `config_files` directory to `/tmp` and rename it to `config_backup`, the command would be:
+
+```bash
+cp -R config_files /tmp/config_backup
+```
+
+This command will copy the directory and its contents into `/tmp` under the new name `config_backup`.
+
+---
+
+### 3. **What Happens Without the `-R` Option?**  
+If you try to copy a directory without using the `-R` option, you will encounter an error because `cp` will assume that you are trying to copy a file, not a directory.
+
+For example, running this command:
+
+```bash
+cp config_files /tmp
+```
+
+will produce an error like:
+
+```
+cp: omitting directory 'config_files'
+```
+
+This is because `cp` cannot copy a directory unless you specify `-R` to handle the recursive copy.
+
+**Screenshot Example**:  
+![Error without the -R option](screenshots/cp-error-without-R.png)  
+*Figure 2: Error message when trying to copy a directory without using the `-R` option.*
+
+---
+
+## **Verifying the Copied Directory**
+
+After you run the `cp -R` command, it’s important to verify that the directory and its contents were copied successfully.
+
+### 1. **Listing the Contents of the Destination Directory**  
+To verify the copied directory, navigate to the destination directory and list its contents using the `ls -l` command:
+
+```bash
+cd /tmp
+ls -l
+```
+
+This will display the `config_files` (or `config_backup`, if renamed) directory in the `/tmp` location.
+
+**Screenshot Example**:  
+![Verifying the copied directory](screenshots/verifying-copied-directory.png)  
+*Figure 3: Verifying the copied directory in `/tmp`.*
+
+### 2. **Navigating into the Copied Directory**  
+To check the contents inside the copied directory, use the `cd` command to navigate into it and list the files:
+
+```bash
+cd /tmp/config_files
+ls -l
+```
+
+You should see the same files that were in the original `config_files` directory.
+
+---
+
+## **Important Notes**
+
+- **Recursive Copy**: The `-R` option is essential when copying directories. It ensures that subdirectories and files within the directory are included.
+- **Permissions**: You need the necessary permissions to copy directories into certain locations. For system directories, you may need to use `sudo`.
+  
+**Example with Elevated Privileges**:  
+```bash
+sudo cp -R config_files /etc/backup
+```
+
+This command copies the `config_files` directory to `/etc/backup` with elevated privileges.
+
+---
+
+## **Summary**
+
+In this chapter, we covered:  
+- How to copy directories using the `cp` command with the `-R` option.  
+- How to specify a different name for the copied directory.  
+- Verifying that the directory and its contents were copied successfully.
+
+Mastering the `cp` command with the `-R` option is crucial for managing directories and creating backups or duplicating files within a Linux system.
 
 ---
