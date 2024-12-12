@@ -79,20 +79,44 @@ cd ~        # Also takes you to your home directory
 The `ls` command lists the contents of a directory. It supports various options to display additional details.  
 
 **Common Options**:  
-- **`ls`**: Lists files and directories.  
-- **`ls -l`**: Displays detailed information such as file permissions, ownership, and size.  
-- **`ls -a`**: Includes hidden files in the output.  
+- **`ls`**: Lists files and directories in the current directory.  
+- **`ls -l`**: Displays detailed information such as file permissions, ownership, and size in a long listing format.  
+- **`ls -lt`**: Displays detailed information in a long listing format, sorted by modification time, with the most recently modified files at the top.  
+- **`ls -ltr`**: Displays detailed information in a long listing format, sorted by modification time, with the most recently modified files at the bottom.  
 
-**Example Command**:  
-```bash
-ls -l /var/log
-```
+**Example Commands and Screenshots**:  
 
-**Example Output**:  
-```
--rw-r--r--  1 root root  1234 Dec 04  2024 syslog
-drwxr-xr-x  2 root root  4096 Dec 03  2024 apache2
-```
+1. **Basic `ls` Command**:  
+   ```bash
+   ls
+   ```  
+   **Example Screenshot**:  
+   ![Listing directory contents using `ls`](screenshots/ls-basic.png)  
+   *Figure 1: Listing directory contents using `ls`.*
+
+2. **Detailed Listing with `ls -l`**:  
+   ```bash
+   ls -l
+   ```  
+   **Example Screenshot**:  
+   ![Detailed listing using `ls -l`](screenshots/ls-l.png)  
+   *Figure 2: Detailed listing of directory contents using `ls -l`.*
+
+3. **Sorted by Modification Time with `ls -lt`**:  
+   ```bash
+   ls -lt
+   ```  
+   **Example Screenshot**:  
+   ![Sorted listing using `ls -lt`](screenshots/ls-lt.png)  
+   *Figure 3: Directory contents sorted by modification time (newest first) using `ls -lt`.*
+
+4. **Sorted by Modification Time (Reverse Order) with `ls -ltr`**:  
+   ```bash
+   ls -ltr
+   ```  
+   **Example Screenshot**:  
+   ![Sorted listing using `ls -ltr`](screenshots/ls-ltr.png)  
+   *Figure 4: Directory contents sorted by modification time (oldest first) using `ls -ltr`.*
 
 ---
 
