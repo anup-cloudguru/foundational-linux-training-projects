@@ -33,7 +33,7 @@ cp file1 file2
 This command copies the contents of `file1` into a new file named `file2`.
 
 **Screenshot:**  
-![cp command example](path/to/cp-command-screenshot.png)
+![cp command example](screenshots/02-cp-command.png)
 
 ---
 
