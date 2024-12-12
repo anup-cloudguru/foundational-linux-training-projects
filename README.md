@@ -107,10 +107,10 @@ This repository represents the beginning of my cloud engineering journey. My goa
 ## Table of Contents
 
 ### Module 1: Virtual Lab Setup
-- [01-setup-virtualbox.md](./Module%201%20Virtual%20Lab%20Setup/01-setup-virtualbox.md)
-- [02-virtualbox-vm-setup.md](./Module%201%20Virtual%20Lab%20Setup/02-virtualbox-vm-setup.md)
-- [03-linux-centos-stream-install.md](./Module%201%20Virtual%20Lab%20Setup/03-linux-centos-stream-install.md)
-- [04-taking-snapshots-virtualbox.md](./Module%201%20Virtual%20Lab%20Setup/04-taking-snapshots-virtualbox.md)
+- [01-setup-virtualbox.md](https://github.com/anup-cloudguru/foundational-linux-training-projects/blob/main/01-virtual-lab-setup/01-setup-virtualbox.md)
+- [02-virtualbox-vm-setup.md](https://github.com/anup-cloudguru/foundational-linux-training-projects/blob/main/01-virtual-lab-setup/02-virtualbox-vm-setup.md)
+- [03-linux-centos-stream-install.md](https://github.com/anup-cloudguru/foundational-linux-training-projects/blob/main/01-virtual-lab-setup/03-linux-centos-stream-install.md)
+- [04-taking-snapshots-virtualbox.md](https://github.com/anup-cloudguru/foundational-linux-training-projects/blob/main/01-virtual-lab-setup/04-taking-snapshots-virtualbox.md)
 
 ### Module 2: System Access and File Management
 - [01-important-things-to-remember-in-linux.md](./Module%202%20System%20Access%20and%20File%20Management/01-important-things-to-remember-in-linux.md)
