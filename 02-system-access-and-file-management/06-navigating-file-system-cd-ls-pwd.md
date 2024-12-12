@@ -57,8 +57,8 @@ The `cd` command is used to navigate between directories.
    cd ..
    ```  
    **Example Screenshot**:  
-   ![Going up one level](screenshots/03-go-up-one-level.png)  
-   *Figure 3: Moving back one directory level with `cd ..`.*
+   ![Going up one level](screenshots/04-go-up-one-level.png)  
+   *Figure 4: Moving back one directory level with `cd ..`.*
 
 4. **Return to the home directory**:  
    ```bash
