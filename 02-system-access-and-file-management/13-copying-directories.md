@@ -14,7 +14,7 @@ The `cp` command is used to copy files, but when dealing with directories, we mu
 To copy a directory, you use the `cp` command with the `-R` option. The basic syntax is:
 
 ```
-cp -R dir1 /home/anupmoitra/dir2
+cp -R source_directory destination_directory
 ```
 
 - **`-R`**: This option copies the directory and all its contents (subdirectories and files), ensuring that the entire directory structure is preserved. Without this option, only files would be copied, and directories would be omitted.
