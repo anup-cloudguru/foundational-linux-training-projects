@@ -58,27 +58,14 @@ This is because `cp` cannot copy a directory unless you specify `-R` to handle t
 
 ## **Verifying the Copied Directory**
 
-After you run the `cp -R` command, it’s important to verify that the directory and its contents were copied successfully.
-
-### 1. **Listing the Contents of the Destination Directory**  
-To verify the copied directory, navigate to the destination directory and list its contents using the `ls -l` command:
+After running the `cp -R` command, it’s important to verify that the directory and its contents were copied successfully. To do this, navigate to the destination directory and list its contents using the `ls -l` command:
 
 ```bash
 cd /home/anupmoitra/dir2
 ls -l
 ```
 
-This will display the `dir1` directory in the `/home/anupmoitra/dir2` location (or `dir2`, if renamed).
-
-### 2. **Navigating into the Copied Directory**  
-To check the contents inside the copied directory, use the `cd` command to navigate into it and list the files:
-
-```bash
-cd /home/anupmoitra/dir2/dir1
-ls -l
-```
-
-You should see the same files that were in the original `dir1` directory.
+This will display the contents of the `dir1` directory within `/home/anupmoitra/dir2`. You should see the same files that were in the original `dir1` directory.
 
 ---
 
