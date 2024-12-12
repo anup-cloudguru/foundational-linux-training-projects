@@ -40,7 +40,7 @@ The root directory is the topmost directory in the Linux filesystem. All other d
 
 **Example Screenshot**  
 ![Root Directory (`/`)](screenshots/01-root-directory.png)  
-*Figure 1: Listing the contents of the root directory*  
+*Figure 2: Listing the contents of the root directory*  
 
 ---
 
@@ -62,7 +62,7 @@ The root account has its home directory located in `/root`, which is different f
 
 **Example Screenshot**  
 ![Root Home Directory (`/root`)](screenshots/03-root-home-directory.png)  
-*Figure 2: Navigating to the root home directory (`/root`).* 
+*Figure 3: Navigating to the root home directory (`/root`).* 
 
 ---
 
