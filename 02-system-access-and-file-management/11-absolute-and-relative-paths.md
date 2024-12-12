@@ -36,7 +36,7 @@ In this chapter, we will explore how to navigate the file system using both **ab
 ### Screenshot Example
 Below is an example of navigating to directories using both absolute and relative paths:
 
-![Navigating with Absolute and Relative Paths](screenshots/11-absolute-relative-paths.png)  
+![Navigating with Absolute and Relative Paths](screenshots/01-absolute-relative-paths.png)  
 *Figure 1: Example of navigating directories using absolute and relative paths.*
 
 ---
