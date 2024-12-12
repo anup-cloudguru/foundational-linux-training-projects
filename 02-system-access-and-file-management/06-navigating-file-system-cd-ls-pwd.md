@@ -91,7 +91,7 @@ The `ls` command lists the contents of a directory. It supports various options 
    ls
    ```  
    **Example Screenshot**:  
-   ![Listing directory contents using `ls`](screenshots/ls-basic.png)  
+   ![Listing directory contents using `ls`](screenshots/06-ls-basic.png)  
    *Figure 1: Listing directory contents using `ls`.*
 
 2. **Detailed Listing with `ls -l`**:  
