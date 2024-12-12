@@ -112,37 +112,6 @@ Named pipes, also called FIFOs, allow inter-process communication where data is 
 
 ---
 
-### **2. Practical Examples**  
-
-#### **Viewing File Types with `ls -l`**  
-To list the file types in a directory:  
-
-```bash
-ls -l
-```  
-
-**Example Output**:  
-```
--rw-r--r--  1 user user  1024 Dec 04 10:00 myfile.txt  
-drwxr-xr-x  2 user user  4096 Dec 04 10:00 mydirectory  
-lrwxrwxrwx  1 user user     7 Dec 04 10:00 mylink -> myfile.txt  
-crw-rw----  1 root root   5, 1 Dec 04 10:00 char_device  
-brw-rw----  1 root root  8, 16 Dec 04 10:00 block_device  
-srwxr-xr-x  1 user user     0 Dec 04 10:00 my_socket  
-prw-r--r--  1 user user     0 Dec 04 10:00 my_pipe  
-```  
-
-#### **Key Identifications**:  
-- **Regular File**: `-rw-r--r--`  
-- **Directory**: `drwxr-xr-x`  
-- **Link**: `lrwxrwxrwx`  
-- **Character Device**: `crw-rw----`  
-- **Block Device**: `brw-rw----`  
-- **Socket**: `srwxr-xr-x`  
-- **Named Pipe**: `prw-r--r--`  
-
----
-
 ### **3. Importance of File Types in Linux**  
 - **Understanding File Roles**: Knowing the type of a file helps determine its role in the system.  
 - **Effective Troubleshooting**: Identifying device files or sockets aids in debugging hardware or network issues.  
