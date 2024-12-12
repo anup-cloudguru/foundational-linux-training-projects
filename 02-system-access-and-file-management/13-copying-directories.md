@@ -29,7 +29,7 @@ cp -R dir1 /home/anupmoitra/dir2
 This command will copy the `dir1` directory, along with all its contents, to the `/home/anupmoitra/dir2` directory. If `dir2` does not exist, it will be created.
 
 **Screenshot Example**:  
-![Copying a directory using the cp command](screenshots/cp-copy-directory.png)  
+![Copying a directory using the cp command](screenshots/01-cp-copy-directory.png)  
 *Figure 1: Copying the `dir1` directory to `/home/anupmoitra/dir2` using the `cp -R` command.*
 
 ---
