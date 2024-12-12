@@ -39,13 +39,13 @@ If you try to copy a directory without using the `-R` option, you will encounter
 For example, running this command:
 
 ```bash
-cp config_files /tmp
+cp dir1 dir2
 ```
 
 will produce an error like:
 
 ```
-cp: omitting directory 'config_files'
+cp: omitting directory 'dir1'
 ```
 
 This is because `cp` cannot copy a directory unless you specify `-R` to handle the recursive copy. The `-R` option tells `cp` to copy all files and subdirectories within the source directory.
