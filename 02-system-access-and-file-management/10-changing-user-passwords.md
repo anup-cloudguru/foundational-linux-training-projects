@@ -42,7 +42,7 @@ passwd [username]
 **Example**:
 ```bash
 $ passwd
-Changing password for user john
+Changing password for user anupmoitra
 Current password: [Enter your current password]
 New password: [Enter a new, secure password]
 Retype new password: [Re-enter the new password]
@@ -67,8 +67,8 @@ Retype new password: [Re-enter the new password]
 
 **Example**:
 ```bash
-$ sudo passwd john
-Changing password for user john
+$ sudo passwd anupmoitra
+Changing password for user anupmoitra
 New password: [Enter a new, secure password]
 Retype new password: [Re-enter the new password]
 ```
