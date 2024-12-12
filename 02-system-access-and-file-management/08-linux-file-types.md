@@ -81,6 +81,15 @@ Device files represent hardware components and are classified into two types:
    - Represent devices that handle data in blocks (e.g., hard drives, USB drives).  
    - Identified by the letter `b` in the `ls -l` output.  
 
+**Example Command**:  
+```bash
+ls -l /dev
+```  
+
+**Example Screenshot**:  
+![Device Files Example](screenshots/04-device-files-example.png)  
+*Figure 4: Example of character (`c`) and block (`b`) device files in the `/dev` directory.*
+
 ---
 
 #### **1.5 Sockets**  
