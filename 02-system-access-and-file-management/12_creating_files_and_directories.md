@@ -94,12 +94,6 @@ mkdir dir2 dir3 dir4
 
 ---
 
-### 3. **Verifying Directories**  
-Use the `ls -l` command to confirm the directories were created.  
-(Screenshot omitted as `ls -l` was covered in Chapter 3.)
-
----
-
 ## Permissions and Root Privileges
 
 Files and directories can typically be created in locations you have permission to access, like your home directory. If you attempt to create a file or directory in a restricted area, such as `/etc`, you will receive a "Permission denied" error unless you are logged in as the `root` user or have elevated privileges.
