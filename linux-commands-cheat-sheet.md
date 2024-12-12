@@ -1,6 +1,3 @@
-### **cheat-sheet.md**
-
-```markdown
 # Linux Command Cheat Sheet
 
 ## **Basic Commands**
