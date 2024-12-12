@@ -64,21 +64,17 @@ After you run the `cp -R` command, it’s important to verify that the directory
 To verify the copied directory, navigate to the destination directory and list its contents using the `ls -l` command:
 
 ```bash
-cd /tmp
+cd /home/anupmoitra/dir2
 ls -l
 ```
 
-This will display the `dir1` (or `dir2`, if renamed) directory in the `/tmp` location.
-
-**Screenshot Example**:  
-![Verifying the copied directory](screenshots/verifying-copied-directory.png)  
-*Figure 3: Verifying the copied directory in `/tmp`.*
+This will display the `dir1` directory in the `/home/anupmoitra/dir2` location (or `dir2`, if renamed).
 
 ### 2. **Navigating into the Copied Directory**  
 To check the contents inside the copied directory, use the `cd` command to navigate into it and list the files:
 
 ```bash
-cd /tmp/dir1
+cd /home/anupmoitra/dir2/dir1
 ls -l
 ```
 
