@@ -119,14 +119,6 @@ Named pipes, also called FIFOs, allow inter-process communication where data is 
 
 ---
 
-### **Screenshots**  
-
-#### **1. Viewing File Types in a Directory**  
-![File Types Example](screenshots/08-file-types.png)  
-*Figure 1: Output of `ls -l` showing various file types.*  
-
----
-
 ### **Conclusion**  
 Understanding Linux file types is a foundational skill for effective system management. By using the `ls -l` command, you can quickly identify file types and their roles in the operating system. Mastering this knowledge will aid you in troubleshooting, organizing, and managing your Linux environment.  
 
