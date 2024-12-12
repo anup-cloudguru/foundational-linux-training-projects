@@ -60,13 +60,18 @@ The `cd` command is used to navigate between directories.
    ![Going up one level](screenshots/04-go-up-one-level.png)  
    *Figure 4: Moving back one directory level with `cd ..`.*
 
-4. **Return to the home directory**:  
-   ```bash
-   cd ~
-   ```  
-   **Example Screenshot**:  
-   ![Returning to the home directory](screenshots/04-return-home.png)  
-   *Figure 4: Returning to the home directory using `cd ~`.*
+#### **4. Return to the Home Directory**  
+In Linux, both **`cd`** (with no arguments) and **`cd ~`** take you to your home directory. While **`cd`** is the default command for this purpose, **`cd ~`** explicitly specifies the home directory.  
+
+**Example Commands**:  
+```bash
+cd          # Takes you to your home directory
+cd ~        # Also takes you to your home directory
+```  
+
+**Example Screenshot**:  
+![Returning to the home directory](screenshots/05-return-home.png)  
+*Figure 5: Returning to the home directory using `cd` or `cd ~`.*
 
 ---
 
