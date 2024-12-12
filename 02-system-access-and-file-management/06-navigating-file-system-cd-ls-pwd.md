@@ -12,20 +12,22 @@ Mastering these commands will help you efficiently move between directories, loc
 
 ---
 
-### **1. Command Overview**
-
 #### **1.1 `pwd`: Print Working Directory**  
 The `pwd` command displays the full path of your current location in the file system. It helps confirm which directory you are currently working in.  
 
 **Example Command**:  
 ```bash
 pwd
-```
+```  
 
-**Example Output**:  
+**Example Output** (Text Output):  
 ```
 /home/anupmoitra
 ```
+
+**Example Screenshot** (Terminal Output):  
+![Output of pwd](screenshots/01-output-of-pwd.png)  
+*Figure 1: Displaying the current directory using `pwd`.*
 
 ---
 
