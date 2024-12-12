@@ -19,7 +19,13 @@ cp -R dir1 /home/anupmoitra/dir2
 
 - **`-R`**: This option copies the directory and all its contents (subdirectories and files), ensuring that the entire directory structure is preserved. Without this option, only files would be copied, and directories would be omitted.
 - **`source_directory`**: The directory you want to copy.
-- **`destination_directory`**: The location where you want the directory to be copied to. If the destination directory does not exist, it will be created.
+- **`destination_directory`**: The location where you want the directory to be copied to. If the destination directory does not exist, it will be created. Additionally, you can specify a new name for the copied directory by adding the desired name after the destination path. For example:
+
+```bash
+cp -R config_files /tmp/config_backup
+```
+
+This will copy the `config_files` directory, along with all its contents, to `/tmp` and rename it to `config_backup`.
 
 ### **Example**:  
 ```bash
@@ -34,18 +40,7 @@ This command will copy the `dir1` directory, along with all its contents, to the
 
 ---
 
-### 2. **Renaming the Destination Directory**  
-You can also specify a new name for the copied directory by adding the desired name after the destination path. If you want to copy the `config_files` directory to `/tmp` and rename it to `config_backup`, the command would be:
-
-```bash
-cp -R config_files /tmp/config_backup
-```
-
-This command will copy the directory and its contents into `/tmp` under the new name `config_backup`.
-
----
-
-### 3. **What Happens Without the `-R` Option?**  
+### 2. **What Happens Without the `-R` Option?**  
 If you try to copy a directory without using the `-R` option, you will encounter an error because `cp` will assume that you are trying to copy a file, not a directory.
 
 For example, running this command:
