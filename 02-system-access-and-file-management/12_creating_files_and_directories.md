@@ -90,7 +90,7 @@ Example:
 mkdir dir2 dir3 dir4
 ```
 **Screenshot:**  
-![Creating multiple directories example](path/to/multiple-directories-screenshot.png)
+![Creating multiple directories example](screenshots/06-multiple-directories-screenshot.png)
 
 ---
 
