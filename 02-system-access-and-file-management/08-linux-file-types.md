@@ -87,7 +87,7 @@ ls -l /dev
 ```  
 
 **Example Screenshot**:  
-![Device Files Example](screenshots/04-device-files-example.png)  
+![Device Files Example](screenshots/04-device-files-example-ls.png)  
 *Figure 4: Example of character (`c`) and block (`b`) device files in the `/dev` directory.*
 
 ---
