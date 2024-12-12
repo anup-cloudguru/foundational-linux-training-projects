@@ -35,7 +35,7 @@ The root directory is the topmost directory in the Linux filesystem. All other d
   ```  
 
 **Example Screenshot**  
-![Root Directory (`/`)](screenshots/root-directory.png)  
+![Root Directory (`/`)](screenshots/01-root-directory.png)  
 *Figure 1: Listing the contents of the root directory*  
 
 ---
