@@ -41,7 +41,7 @@ The `cd` command is used to navigate between directories.
    cd /
    ```  
    **Example Screenshot**:  
-   ![Changing to root directory](screenshots/05-navigate-to-root.png)  
+   ![Changing to root directory](screenshots/02-navigate-to-root.png)  
    *Figure 5: Changing to the root directory using `cd /`.*
 
 2. **Navigate to a specific directory**:  
