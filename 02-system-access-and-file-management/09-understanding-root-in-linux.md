@@ -45,16 +45,24 @@ The root directory is the topmost directory in the Linux filesystem. All other d
 ---
 
 #### **3. Root Home Directory (`/root`)**  
-The root account has its home directory located in `/root`. This is different from the home directories of regular users (which are usually in `/home/<username>`).  
-- The root home directory is accessible only to the root user.  
-- To list its contents, use:  
+The root account has its home directory located in `/root`, which is different from regular users' home directories (typically found in `/home/<username>`).  
+- The `/root` directory is **only** accessible to the root user. Regular users must switch to the root account to access it.  
+- To switch to the root account, use either:  
   ```bash
-  ls /root
+  sudo -i
   ```  
+  or  
+  ```bash
+  su
+  ```
+- Once logged in as root, navigate to the root home directory with:  
+  ```bash
+  cd /root
+  ```
 
 **Example Screenshot**  
-![Root Home Directory (`/root`)](screenshots/root-home-directory.png)  
-*Figure 2: Listing the contents of the root home directory*  
+![Root Home Directory (`/root`)](screenshots/03-root-home-directory.png)  
+*Figure 2: Navigating to the root home directory (`/root`).* 
 
 ---
 
