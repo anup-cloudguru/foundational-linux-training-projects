@@ -54,14 +54,19 @@ ls -l
 ---
 
 #### **1.3 Links**  
-Links are special files that reference other files or directories.  
-
-**Types of Links**:  
-- **Soft Link (Symbolic)**: Points to the path of another file or directory.  
-- **Hard Link**: Directly references the inode of the original file.  
+Links in Linux are special files that reference other files or directories.  
 
 **Identification**:  
 - Starts with the letter `l` in the `ls -l` output (e.g., `lrwxrwxrwx`).  
+
+**Example Command**:  
+```bash
+ls -l
+```  
+
+**Example Screenshot**:  
+![Links Example](screenshots/03-links-example.png)  
+*Figure 3: Example of a link displayed with `ls -l`.*  
 
 ---
 
