@@ -104,35 +104,27 @@ This repository represents the beginning of my cloud engineering journey. My goa
 
 ---
 
-## Project Structure
+## Table of Contents
 
-The repository is organized by modules, each corresponding to a chapter from the course. Below is an outline of the structure:
+### Module 1: Virtual Lab Setup
+- [01-setup-virtualbox.md](./Module%201%20Virtual%20Lab%20Setup/01-setup-virtualbox.md)
+- [02-virtualbox-vm-setup.md](./Module%201%20Virtual%20Lab%20Setup/02-virtualbox-vm-setup.md)
+- [03-linux-centos-stream-install.md](./Module%201%20Virtual%20Lab%20Setup/03-linux-centos-stream-install.md)
+- [04-taking-snapshots-virtualbox.md](./Module%201%20Virtual%20Lab%20Setup/04-taking-snapshots-virtualbox.md)
 
-- `Module 1: Virtual Lab Setup/`
-  - `01-setup-virtualbox.md`
-  - `02-virtualbox-vm-setup.md`
-  - `03-linux-centos-stream-install.md`
-  - `04-taking-snapshots-virtualbox.md`
-  
-- `Module 2: System Access and File Management/`
-  - `01-important-things-to-remember-in-linux.md`
-  - `02-accessing-linux-system.md`
-  - `03-accessing-linux-putty-ssh.md`
-  - `04-regaining-command-prompt.md`
-  - `05-filesystem-basics.md`
-  - `06-navigating-file-system-cd-ls-pwd.md`
-  - `07-file-and-directory-properties.md`
-  - `08-linux-file-types.md`
-  - `09-understanding-root-in-linux.md`
-  - `10-changing-user-passwords.md`
-  - `11-absolute-and-relative-paths.md`
-  - `12-creating_files_and_directories.md`
-
-- `Screenshots/`
-  - `01-touch-command.png`
-  - `02-cp-command.png`
-  - `03-vi-editor-save-exit.png`
-  - `...`
+### Module 2: System Access and File Management
+- [01-important-things-to-remember-in-linux.md](./Module%202%20System%20Access%20and%20File%20Management/01-important-things-to-remember-in-linux.md)
+- [02-accessing-linux-system.md](./Module%202%20System%20Access%20and%20File%20Management/02-accessing-linux-system.md)
+- [03-accessing-linux-putty-ssh.md](./Module%202%20System%20Access%20and%20File%20Management/03-accessing-linux-putty-ssh.md)
+- [04-regaining-command-prompt.md](./Module%202%20System%20Access%20and%20File%20Management/04-regaining-command-prompt.md)
+- [05-filesystem-basics.md](./Module%202%20System%20Access%20and%20File%20Management/05-filesystem-basics.md)
+- [06-navigating-file-system-cd-ls-pwd.md](./Module%202%20System%20Access%20and%20File%20Management/06-navigating-file-system-cd-ls-pwd.md)
+- [07-file-and-directory-properties.md](./Module%202%20System%20Access%20and%20File%20Management/07-file-and-directory-properties.md)
+- [08-linux-file-types.md](./Module%202%20System%20Access%20and%20File%20Management/08-linux-file-types.md)
+- [09-understanding-root-in-linux.md](./Module%202%20System%20Access%20and%20File%20Management/09-understanding-root-in-linux.md)
+- [10-changing-user-passwords.md](./Module%202%20System%20Access%20and%20File%20Management/10-changing-user-passwords.md)
+- [11-absolute-and-relative-paths.md](./Module%202%20System%20Access%20and%20File%20Management/11-absolute-and-relative-paths.md)
+- [12-creating_files_and_directories.md](./Module%202%20System%20Access%20and%20File%20Management/12-creating_files_and_directories.md)
 
 ---
 
