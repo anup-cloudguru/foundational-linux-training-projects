@@ -48,7 +48,7 @@ ls -l
 ```  
 
 **Example Screenshot**:  
-![Directory Example](screenshots/02-directory-example.png)  
+![Directory Example](screenshots/02-directory-example-ls.png)  
 *Figure 2: Example of directories displayed with `ls -l`.*  
 
 ---
