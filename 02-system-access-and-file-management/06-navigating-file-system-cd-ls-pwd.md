@@ -42,15 +42,15 @@ The `cd` command is used to navigate between directories.
    ```  
    **Example Screenshot**:  
    ![Changing to root directory](screenshots/02-navigate-to-root.png)  
-   *Figure 5: Changing to the root directory using `cd /`.*
+   *Figure 2: Changing to the root directory using `cd /`.*
 
 2. **Navigate to a specific directory**:  
    ```bash
    cd /etc
    ```  
    **Example Screenshot**:  
-   ![Changing to /etc directory](screenshots/02-navigate-to-etc.png)  
-   *Figure 2: Changing to the `/etc` directory using `cd`.*
+   ![Changing to /etc directory](screenshots/03-navigate-to-etc.png)  
+   *Figure 3: Changing to the `/etc` directory using `cd`.*
 
 3. **Go back one directory level**:  
    ```bash
