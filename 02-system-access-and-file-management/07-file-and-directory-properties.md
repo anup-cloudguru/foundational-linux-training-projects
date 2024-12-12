@@ -11,7 +11,8 @@ Every file and directory in Linux has associated properties that provide crucial
 In operating systems like Windows, right-clicking on a file or folder displays its properties, such as type, size, location, and owner. In Linux, we rely on commands like `ls -l` to obtain this information in a structured format.  
 
 #### **Properties Breakdown**  
-When you run the `ls -l` command, the output provides multiple columns of information:  
+When you run the `ls -l` command (or its variations like `ls -lt`), the output provides multiple columns of information:  
+
 1. **File Type and Permissions**: The first column indicates the type and permissions of a file or directory.  
    - **`d`**: Directory  
    - **`-`**: Regular file  
@@ -26,6 +27,15 @@ When you run the `ls -l` command, the output provides multiple columns of inform
 5. **Date and Time**: The sixth column indicates the last modification time.  
 
 6. **File or Directory Name**: The final column lists the name of the file or directory.  
+
+**Example Command with `ls -lt`**:  
+```bash
+ls -lt
+```  
+
+**Example Screenshot**:  
+![Detailed listing with `ls -lt`](screenshots/ls-lt-properties.png)  
+*Figure 1: Example of `ls -lt` output showing files and directories with detailed properties.*
 
 ---
 
