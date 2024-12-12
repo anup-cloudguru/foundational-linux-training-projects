@@ -99,7 +99,7 @@ The `ls` command lists the contents of a directory. It supports various options 
    ls -l
    ```  
    **Example Screenshot**:  
-   ![Detailed listing using `ls -l`](screenshots/ls-l.png)  
+   ![Detailed listing using `ls -l`](screenshots/07-ls-l.png)  
    *Figure 2: Detailed listing of directory contents using `ls -l`.*
 
 3. **Sorted by Modification Time with `ls -lt`**:  
