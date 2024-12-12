@@ -98,6 +98,10 @@ Sockets enable network communication between processes, facilitating data exchan
 **Identification**:  
 - Starts with the letter `s` in the `ls -l` output (e.g., `srwxr-xr-x`).  
 
+**Example Screenshot**:  
+![Socket File Example](screenshots/05-socket-file.png)  
+*Figure 1.5: Example of a socket file (`srwxr-xr-x`) in the `ls -l` output.*
+
 ---
 
 #### **1.6 Named Pipes (FIFOs)**  
