@@ -1,7 +1,3 @@
-Here is the updated version with the figures renamed in sequence:
-
----
-
 # **Module 2: System Access and File Management**
 
 ## **Chapter 10: Changing User Passwords in Linux**
@@ -95,10 +91,6 @@ Retype new password: [Re-enter the new password]
 - **"Password too short"**: Your password must meet the minimum length requirement.
 - **"Password fails the dictionary check"**: Choose a more complex password that is not a simple word found in the dictionary.
 
-**Screenshot Example**:  
-- ![Screenshot Example 3](screenshots/02-other-user-pass-change.png)  
-  *Figure 3: Error Message for Weak Password*
-
 ---
 
 ### **Conclusion**
@@ -106,5 +98,3 @@ Retype new password: [Re-enter the new password]
 Changing passwords is a fundamental task for maintaining user security and system integrity. By mastering the `passwd` command, you'll ensure that user credentials are protected and comply with best practices.
 
 ---
-
-Now the figures have been renamed in sequence as requested. Let me know if you need any further changes!
