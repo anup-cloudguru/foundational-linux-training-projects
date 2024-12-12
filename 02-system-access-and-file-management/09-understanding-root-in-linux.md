@@ -24,6 +24,10 @@ or
 su
 ```  
 
+**Example Screenshot**:  
+![Switching to root account](screenshots/02-root-account.png)  
+*Figure 1: Example of switching to the root account using `sudo -i` or `su`.*
+
 ---
 
 #### **2. Root Directory (`/`)**  
