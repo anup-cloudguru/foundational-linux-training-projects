@@ -56,8 +56,9 @@ Retype new password: [Re-enter the new password]
   ![Screenshot Example 1](screenshots/01-current-user-pass-change.png)
   *Figure 1: Changing Password for Current User*
 
-- **Figure 2: Password Change Confirmation**  
-  ![Screenshot Example 2](path/to/your/screenshot2.png)
+- **Figure 2: Password Change Confirmation**
+- 
+  ![Screenshot Example 2](screenshots/02-other-user-pass-change.png)
   *Figure 2: Password Change Confirmation*
 
 ---
