@@ -34,7 +34,7 @@ ls -lt
 ```  
 
 **Example Screenshot**:  
-![Detailed listing with `ls -lt`](screenshots/ls-lt-properties.png)  
+![Detailed listing with `ls -lt`](screenshots/01-ls-lt-properties.png)  
 *Figure 1: Example of `ls -lt` output showing files and directories with detailed properties.*
 
 ---
