@@ -112,7 +112,7 @@ Named pipes, also called FIFOs, allow inter-process communication where data is 
 
 ---
 
-### **3. Importance of File Types in Linux**  
+### **2. Importance of File Types in Linux**  
 - **Understanding File Roles**: Knowing the type of a file helps determine its role in the system.  
 - **Effective Troubleshooting**: Identifying device files or sockets aids in debugging hardware or network issues.  
 - **Efficient System Administration**: Recognizing links and special files ensures proper file system management.  
