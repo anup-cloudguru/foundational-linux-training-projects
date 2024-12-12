@@ -96,23 +96,7 @@ drwxr-xr-x  2 root root  4096 Dec 03  2024 apache2
 
 ---
 
-### **2. Practical Demonstration**
-
-#### **Step 1: Identify Your Current Location**  
-1. Open the terminal.  
-2. Run the `pwd` command to verify your current working directory.  
-
-#### **Step 2: Navigate Between Directories**  
-1. Use the `cd` command to switch to a specific directory, such as `/var/log`.  
-2. Use `cd ..` to move up one level in the directory tree.  
-
-#### **Step 3: Explore Directory Contents**  
-1. Run `ls` to list files in your current directory.  
-2. Experiment with options like `ls -l` and `ls -a` for additional details.
-
----
-
-### **3. Importance of Navigation Commands**  
+### **2. Importance of Navigation Commands**  
 - **Efficiency**: Quickly move between directories and locate files.  
 - **Clarity**: Always know your current location within the file system.  
 - **Flexibility**: Combine navigation and listing commands for seamless exploration of the Linux environment.  
