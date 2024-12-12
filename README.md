@@ -98,12 +98,60 @@ You can access the course [here](https://www.udemy.com/course/complete-linux-tra
 
 ---
 
+## My Learning Journey
+
+This repository represents the beginning of my cloud engineering journey. My goal is to gain hands-on Linux skills, which will be essential for managing cloud-based environments, automating infrastructure, and securing systems. By working through the course and documenting the projects here, I aim to build a solid foundation for tackling more advanced cloud technologies in the future.
+
+---
+
+## Project Structure
+
+The repository is organized by modules, each corresponding to a chapter from the course. Below is an outline of the structure:
+
+- `Module 1: Virtual Lab Setup/`
+  - `01-setup-virtualbox.md`
+  - `02-virtualbox-vm-setup.md`
+  - `03-linux-centos-stream-install.md`
+  - `04-taking-snapshots-virtualbox.md`
+  
+- `Module 2: System Access and File Management/`
+  - `01-important-things-to-remember-in-linux.md`
+  - `02-accessing-linux-system.md`
+  - `03-accessing-linux-putty-ssh.md`
+  - `04-regaining-command-prompt.md`
+  - `05-filesystem-basics.md`
+  - `06-navigating-file-system-cd-ls-pwd.md`
+  - `07-file-and-directory-properties.md`
+  - `08-linux-file-types.md`
+  - `09-understanding-root-in-linux.md`
+  - `10-changing-user-passwords.md`
+  - `11-absolute-and-relative-paths.md`
+  - `12-creating_files_and_directories.md`
+
+- `Screenshots/`
+  - `01-touch-command.png`
+  - `02-cp-command.png`
+  - `03-vi-editor-save-exit.png`
+  - `...`
+
+---
+
 ## Why This Repository?
 
 This repository serves as a practical resource for learning and practicing Linux in a structured manner. By following the projects and exercises, you will be able to:
 - Gain a comprehensive understanding of Linux as an operating system.  
 - Practice essential commands and configurations in a controlled environment.  
 - Build a solid hands-on foundation for advancing in cloud engineering and other IT-related fields.  
+
+---
+
+## Future Enhancements
+
+As I progress in my learning, I plan to expand the repository with more advanced topics such as:
+- Advanced shell scripting techniques
+- Networking and security for cloud environments
+- Introduction to Docker and containerization in Linux
+- Linux in cloud platforms like AWS and Azure
 
 ---
 
