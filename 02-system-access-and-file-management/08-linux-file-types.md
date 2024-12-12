@@ -25,6 +25,15 @@ Regular files are the most common type in Linux, containing any form of data, su
 **Identification**:  
 When running `ls -l`, a regular file does not have any special character at the beginning of its attribute string (e.g., `-rw-r--r--`).  
 
+**Example Command**:  
+```bash
+ls -l
+```  
+
+**Example Screenshot**:  
+![Regular File Example](screenshots/01-regular-file-example.png)  
+*Figure 1: Example of regular files displayed with `ls -l`.* 
+
 ---
 
 #### **1.2 Directories**  
