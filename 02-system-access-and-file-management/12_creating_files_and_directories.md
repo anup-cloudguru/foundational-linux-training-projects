@@ -66,7 +66,7 @@ Example:
 touch file4 file5 file6
 ```
 **Screenshot:**  
-![Creating multiple files example](path/to/multiple-files-screenshot.png)
+![Creating multiple files example](screenshots/04-multiple-files-screenshot.png)
 
 ---
 
