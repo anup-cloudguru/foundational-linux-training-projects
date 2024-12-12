@@ -42,6 +42,15 @@ Directories in Linux serve as containers for files and other directories, much l
 **Identification**:  
 - Starts with the letter `d` in the `ls -l` output (e.g., `drwxr-xr-x`).  
 
+**Example Command**:  
+```bash
+ls -l
+```  
+
+**Example Screenshot**:  
+![Directory Example](screenshots/02-directory-example.png)  
+*Figure 2: Example of directories displayed with `ls -l`.*  
+
 ---
 
 #### **1.3 Links**  
