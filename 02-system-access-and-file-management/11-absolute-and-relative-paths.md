@@ -1,4 +1,4 @@
-# **Module 2: File System Navigation**
+# **Module 2: System Access and File Management**
 
 ## **Chapter 11: Absolute and Relative Paths**
 
