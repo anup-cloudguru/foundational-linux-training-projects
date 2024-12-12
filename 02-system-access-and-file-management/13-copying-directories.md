@@ -14,23 +14,23 @@ The `cp` command is used to copy files, but when dealing with directories, we mu
 To copy a directory, you use the `cp` command with the `-R` option. The basic syntax is:
 
 ```
-cp -R source_directory destination_directory
+cp -R dir1 /home/anupmoitra/dir2
 ```
 
 - **`-R`**: This option copies the directory and all its contents (subdirectories and files), ensuring that the entire directory structure is preserved. Without this option, only files would be copied, and directories would be omitted.
 - **`source_directory`**: The directory you want to copy.
-- **`destination_directory`**: The location where you want the directory to be copied to.
+- **`destination_directory`**: The location where you want the directory to be copied to. If the destination directory does not exist, it will be created.
 
 ### **Example**:  
 ```bash
-cp -R config_files /tmp
+cp -R dir1 /home/anupmoitra/dir2
 ```
 
-This command will copy the `config_files` directory, along with all its contents, to the `/tmp` directory.
+This command will copy the `dir1` directory, along with all its contents, to the `/home/anupmoitra/dir2` directory. If `dir2` does not exist, it will be created.
 
 **Screenshot Example**:  
 ![Copying a directory using the cp command](screenshots/cp-copy-directory.png)  
-*Figure 1: Copying the `config_files` directory to `/tmp` using the `cp -R` command.*
+*Figure 1: Copying the `dir1` directory to `/home/anupmoitra/dir2` using the `cp -R` command.*
 
 ---
 
