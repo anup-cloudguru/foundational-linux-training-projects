@@ -10,12 +10,17 @@ In this chapter, we’ll explore various ways to create files and directories in
 
 ### 1. **Using the `touch` Command**  
 The `touch` command creates an empty file.  
-Example:  
+
+**Example**:  
 ```bash
 touch file1
 ```
+
 To verify the file creation, use the `ls -l` command.  
-(Screenshot omitted as `ls -l` was covered in Chapter 3.)
+
+**Screenshot Example**:  
+![Creating a File Using touch Command](screenshots/01-touch-command.png)  
+*Figure 1: Creating a file using the `touch` command and verifying with `ls -l`.*
 
 ---
 
