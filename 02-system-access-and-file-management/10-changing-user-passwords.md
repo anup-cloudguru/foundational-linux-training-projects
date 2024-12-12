@@ -50,9 +50,9 @@ Retype new password: [Re-enter the new password]
 
 **Security Tip**: Choose a strong password that does not match common dictionary words and avoid easily guessable patterns.
 
-**Screenshot Example**:
-- ![Screenshot Example 1](screenshots/01-current-user-pass-change.png)  
-  *Figure 1: Changing Password for Current User*
+**Screenshot Example**:  
+![Screenshot Example 1](screenshots/01-current-user-pass-change.png)  
+*Figure 1: Changing Password for Current User*
 
 ---
 
@@ -73,9 +73,9 @@ New password: [Enter a new, secure password]
 Retype new password: [Re-enter the new password]
 ```
 
-**Screenshot Example**:
-- ![Screenshot Example 2](screenshots/02-other-user-pass-change.png)  
-  *Figure 2: Changing Another User’s Password as Root*
+**Screenshot Example**:  
+![Screenshot Example 2](screenshots/02-other-user-pass-change.png)  
+*Figure 2: Changing Another User’s Password as Root*
 
 **Reminder**: Only the root user can change passwords for other users, so be cautious when performing this operation.
 
