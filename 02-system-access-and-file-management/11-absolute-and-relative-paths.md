@@ -40,42 +40,7 @@ Below is an example of navigating to directories using both absolute and relativ
 
 ---
 
-### 2. Practical Demonstration
-
-**Step-by-Step Commands**:
-
-1. **Become the Root User**:
-   ```bash
-   su -
-   ```
-   Enter your password to switch to the root user.
-
-2. **Navigate Using Absolute Path**:
-   ```bash
-   cd /var/log/samba
-   ```
-   - The current working directory is now `/var/log/samba`.
-   - Verify with:
-     ```bash
-     pwd
-     ```
-     Output: `/var/log/samba`
-
-3. **Navigate Using Relative Path**:
-   - Starting from `/var`, move to `log`:
-     ```bash
-     cd log
-     ```
-   - Navigate to `samba` from `log`:
-     ```bash
-     cd samba
-     ```
-
-**Important Notes**:
-- Use `pwd` to print the current directory path.
-- Use `cd ..` to move up one directory level.
-
-### 3. Tab Completion and Navigating Up
+### 2. Tab Completion and Navigating Up
 
 **Tab Completion**:
 - Press `Tab` to auto-complete directory and file names. This helps reduce typing and avoids errors.
