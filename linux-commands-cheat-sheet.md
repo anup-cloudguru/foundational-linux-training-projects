@@ -1,4 +1,4 @@
-# Linux Command Cheat Sheet
+# **Linux Command Cheat Sheet**
 
 ## **Basic Commands**
 
@@ -65,7 +65,7 @@
 - **`cp -R`** – Copy directories and their contents recursively.
   ```bash
   cp -R source_directory destination_directory
-  cp -R dir1 /home/anupmoitra/dir2  # Copy the dir1 to /home/anupmoitra/dir2
+  cp -R dir1 /home/anupmoitra/dir2  # Copy dir1 to /home/anupmoitra/dir2
   ```
 
 ## **Other Useful Commands**
