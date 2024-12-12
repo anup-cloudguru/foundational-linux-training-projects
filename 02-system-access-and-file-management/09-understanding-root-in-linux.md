@@ -78,23 +78,6 @@ The root account has its home directory located in `/root`, which is different f
 
 ---
 
-### **Commands in Action**  
-
-#### Switching to Root Account  
-To switch to the root account, use:  
-```bash
-sudo -i
-```  
-or  
-```bash
-su
-```  
-**Example Screenshot**  
-![Switching to Root Account](screenshots/switching-to-root.png)  
-*Figure 3: Switching to the root account using `sudo -i`*  
-
----
-
 ### **Conclusion**  
 Understanding the distinctions between the root account, the root directory, and the root home directory is essential for working efficiently and securely in a Linux environment. Always ensure to use root privileges responsibly to avoid accidental system damage.  
 
