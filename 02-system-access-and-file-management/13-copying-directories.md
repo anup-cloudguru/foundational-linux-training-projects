@@ -22,17 +22,10 @@ cp -R dir1 /home/anupmoitra/dir2
 - **`destination_directory`**: The location where you want the directory to be copied to. If the destination directory does not exist, it will be created. Additionally, you can specify a new name for the copied directory by adding the desired name after the destination path. For example:
 
 ```bash
-cp -R config_files /tmp/config_backup
-```
-
-This will copy the `config_files` directory, along with all its contents, to `/tmp` and rename it to `config_backup`.
-
-### **Example**:  
-```bash
 cp -R dir1 /home/anupmoitra/dir2
 ```
 
-This command will copy the `dir1` directory, along with all its contents, to the `/home/anupmoitra/dir2` directory. If `dir2` does not exist, it will be created.
+This will copy the `dir1` directory, along with all its contents, to the `/home/anupmoitra/dir2` directory. If `dir2` does not exist, it will be created.
 
 **Screenshot Example**:  
 ![Copying a directory using the cp command](screenshots/01-cp-copy-directory.png)  
@@ -75,7 +68,7 @@ cd /tmp
 ls -l
 ```
 
-This will display the `config_files` (or `config_backup`, if renamed) directory in the `/tmp` location.
+This will display the `dir1` (or `dir2`, if renamed) directory in the `/tmp` location.
 
 **Screenshot Example**:  
 ![Verifying the copied directory](screenshots/verifying-copied-directory.png)  
@@ -85,11 +78,11 @@ This will display the `config_files` (or `config_backup`, if renamed) directory 
 To check the contents inside the copied directory, use the `cd` command to navigate into it and list the files:
 
 ```bash
-cd /tmp/config_files
+cd /tmp/dir1
 ls -l
 ```
 
-You should see the same files that were in the original `config_files` directory.
+You should see the same files that were in the original `dir1` directory.
 
 ---
 
@@ -100,10 +93,10 @@ You should see the same files that were in the original `config_files` directory
 
 **Example with Elevated Privileges**:  
 ```bash
-sudo cp -R config_files /etc/backup
+sudo cp -R dir1 /etc/backup
 ```
 
-This command copies the `config_files` directory to `/etc/backup` with elevated privileges, which may be necessary when copying to system directories or restricted locations.
+This command copies the `dir1` directory to `/etc/backup` with elevated privileges, which may be necessary when copying to system directories or restricted locations.
 
 ---
 
