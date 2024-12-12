@@ -37,17 +37,25 @@ This command copies the contents of `file1` into a new file named `file2`.
 
 ---
 
-### 3. **Using the `vi` or `vim` Editor**  
+### **3. Using the `vi` or `vim` Editor**  
 You can create and edit a file using the `vi` or `vim` editor.  
-Example:  
+
+**Example**:  
 ```bash
 vi file3
-```
-To save and exit:
-- Press `Esc`
-- Type `:wq` and press `Enter`.
+```  
 
-(Screenshot omitted as `vi/vim` was covered in Chapter 5.)
+To save and exit:  
+1. Make your edits in the file.  
+2. Press `Esc` to enter command mode.  
+3. Use one of the following commands:  
+   - **`:wq`**: Save the file and quit.  
+   - **`:wq!`**: Save the file and quit, overriding warnings (e.g., for read-only files).  
+
+**Screenshot Example**:  
+Below is a screenshot showing the process of saving and exiting the `vi` editor:  
+![Saving and Exiting the vi Editor](screenshots/03-vi-editor-save-exit.png)  
+*Figure 3: Saving and exiting the `vi` editor using `:wq`.*
 
 ---
 
