@@ -79,7 +79,7 @@ Example:
 mkdir directory1
 ```
 **Screenshot:**  
-![mkdir command example](path/to/mkdir-command-screenshot.png)
+![mkdir command example](screenshots/05-mkdir-command-screenshot.png)
 
 ---
 
