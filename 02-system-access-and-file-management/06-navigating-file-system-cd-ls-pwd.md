@@ -107,7 +107,7 @@ The `ls` command lists the contents of a directory. It supports various options 
    ls -lt
    ```  
    **Example Screenshot**:  
-   ![Sorted listing using `ls -lt`](screenshots/ls-lt.png)  
+   ![Sorted listing using `ls -lt`](screenshots/08-ls-lt.png)  
    *Figure 3: Directory contents sorted by modification time (newest first) using `ls -lt`.*
 
 4. **Sorted by Modification Time (Reverse Order) with `ls -ltr`**:  
