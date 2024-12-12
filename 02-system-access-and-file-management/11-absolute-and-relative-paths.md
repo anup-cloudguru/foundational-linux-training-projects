@@ -1,7 +1,8 @@
-# Module 2: File System Navigation
-## Chapter 11: Absolute and Relative Paths
+# **Module 2: File System Navigation**
 
-### Introduction
+## **Chapter 11: Absolute and Relative Paths**
+
+### **Introduction**  
 In this chapter, we will explore how to navigate the file system using both **absolute** and **relative paths**. Understanding these paths is crucial for efficiently accessing directories and managing files within a Linux environment.
 
 **What We Will Learn:**
@@ -11,7 +12,7 @@ In this chapter, we will explore how to navigate the file system using both **ab
 
 ---
 
-### 1. Understanding Absolute and Relative Paths
+### **1. Understanding Absolute and Relative Paths**
 
 **Absolute Path**:
 - An absolute path always starts with a slash `/`, indicating that the path begins at the root directory.
@@ -40,25 +41,14 @@ Below is an example of navigating to directories using both absolute and relativ
 
 ---
 
-### 2. Tab Completion and Navigating Up
+### **2. Tab Completion**
 
 **Tab Completion**:
 - Press `Tab` to auto-complete directory and file names. This helps reduce typing and avoids errors.
 
-**Moving Up in the Directory Tree**:
-- Use `cd ..` to move up one directory:
-  ```bash
-  cd ..
-  ```
-  This command takes you to the parent directory. For example, from `/var/log/samba` to `/var/log`.
-
-**Key Points to Remember**:
-- **Absolute paths** start with `/` and are used when you need to navigate from the root.
-- **Relative paths** do not start with `/` and depend on your current directory.
-
 ---
 
-## Conclusion
+## **Conclusion**
 
 Understanding how to navigate the Linux file system with **absolute** and **relative paths** is essential for efficient directory management. This knowledge will help you move between directories quickly, use the command line effectively, and build a strong foundation for more advanced Linux operations.
 
