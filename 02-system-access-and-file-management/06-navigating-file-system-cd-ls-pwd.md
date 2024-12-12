@@ -103,22 +103,6 @@ drwxr-xr-x  2 root root  4096 Dec 03  2024 apache2
 
 ---
 
-### **Screenshots**  
-
-#### **1. Output of `pwd`**  
-![Output of pwd](screenshots/06-output-of-pwd.png)  
-*Figure 1: Displaying the current directory using `pwd`.*
-
-#### **2. Navigating to `/var/log` with `cd`**  
-![Navigating to /var/log](screenshots/06-navigating-to-var-log.png)  
-*Figure 2: Changing to the `/var/log` directory using `cd`.*
-
-#### **3. Listing Contents of `/var/log` with `ls -l`**  
-![Listing /var/log](screenshots/06-listing-var-log.png)  
-*Figure 3: Viewing detailed contents of the `/var/log` directory using `ls -l`.*
-
----
-
 ## **Conclusion**  
 By mastering `cd`, `pwd`, and `ls`, you can efficiently navigate and explore the Linux file system. These commands form the foundation of system administration and file management tasks in Linux environments.  
 
