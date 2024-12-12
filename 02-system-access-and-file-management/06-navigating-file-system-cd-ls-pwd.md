@@ -34,19 +34,39 @@ pwd
 #### **1.2 `cd`: Change Directory**  
 The `cd` command is used to navigate between directories.  
 
-**Common Usage Examples**:  
-- **Navigate to a specific directory**:  
-  ```bash
-  cd /etc
-  ```  
-- **Go back one directory level**:  
-  ```bash
-  cd ..
-  ```  
-- **Return to the home directory**:  
-  ```bash
-  cd ~
-  ```
+**Common Usage Examples with Screenshots**:  
+
+1. **Navigate to the root directory**:  
+   ```bash
+   cd /
+   ```  
+   **Example Screenshot**:  
+   ![Changing to root directory](screenshots/05-navigate-to-root.png)  
+   *Figure 5: Changing to the root directory using `cd /`.*
+
+2. **Navigate to a specific directory**:  
+   ```bash
+   cd /etc
+   ```  
+   **Example Screenshot**:  
+   ![Changing to /etc directory](screenshots/02-navigate-to-etc.png)  
+   *Figure 2: Changing to the `/etc` directory using `cd`.*
+
+3. **Go back one directory level**:  
+   ```bash
+   cd ..
+   ```  
+   **Example Screenshot**:  
+   ![Going up one level](screenshots/03-go-up-one-level.png)  
+   *Figure 3: Moving back one directory level with `cd ..`.*
+
+4. **Return to the home directory**:  
+   ```bash
+   cd ~
+   ```  
+   **Example Screenshot**:  
+   ![Returning to the home directory](screenshots/04-return-home.png)  
+   *Figure 4: Returning to the home directory using `cd ~`.*
 
 ---
 
