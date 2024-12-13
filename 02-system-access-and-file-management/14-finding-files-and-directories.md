@@ -2,19 +2,31 @@
 ## **Chapter 14: Finding Files and Directories (find, locate)**  
 
 ### **Preparation Before Starting**  
-Before diving into this chapter, set up your practice environment by running the following command from your home directory:  
+Before diving into this chapter, set up your practice environment by following these steps from your home directory:  
 
-```bash
-# Move practice files to the MyFiles directory
-mv report.txt notes.docx tasks.csv /home/yourname/MyFiles
-```  
+1. **Create practice files**:  
+   Run the following commands to create sample `.txt` files:  
 
-This step ensures you have the necessary files and directories ready for the examples and exercises in this lesson.  
+   ```bash
+   touch report.txt notes.txt tasks.txt
+   ```  
+
+   This will create three text files: `report.txt`, `notes.txt`, and `tasks.txt`.  
+
+2. **Create the target directory and move files**:  
+   Now, create a directory named `MyFiles` and move the created files into it:  
+
+   ```bash
+   mkdir MyFiles
+   mv report.txt notes.txt tasks.txt MyFiles
+   ```  
+
+   This ensures you have a directory (`MyFiles`) with the necessary files to practice the examples in this lesson.  
 
 ---
 
 ### **Introduction**  
-In this chapter, we’ll explore how to locate files and directories in Linux using the powerful `find` and `locate` commands. These tools allow users to quickly search for files and directories based on specific criteria such as name, type, and modification date. Mastering these commands can greatly enhance productivity when managing large systems.  
+In this chapter, we’ll explore how to locate files and directories in Linux using the powerful `find` and `locate` commands. These tools allow users to search for files and directories quickly based on criteria such as name, type, and modification date. Mastering these commands is essential for efficiently navigating and managing a Linux file system.  
 
 ---
 
@@ -35,10 +47,10 @@ find [path] [expression]
 Example:  
 
 ```bash
-find . -name "tasks.csv"
+find . -name "tasks.txt"
 ```  
 
-This command searches for a file or directory named `tasks.csv` in the current directory and all its subdirectories.  
+This command searches for a file named `tasks.txt` in the current directory and all its subdirectories.  
 
 ### 2. **Commonly Used `find` Options**  
 - **`-name`**: Searches for files or directories by name (case-sensitive).  
@@ -48,12 +60,12 @@ This command searches for a file or directory named `tasks.csv` in the current d
 
 - **`-iname`**: Searches for files or directories by name (case-insensitive).  
   ```bash
-  find /home -iname "NOTES.DOCX"
+  find /home -iname "NOTES.TXT"
   ```  
 
 - **`-type`**: Filters results by type (`f` for files, `d` for directories).  
   ```bash
-  find . -type f -name "*.csv"
+  find . -type f -name "*.txt"
   ```  
 
 - **`-mtime`**: Finds files modified within a certain number of days.  
@@ -77,10 +89,10 @@ locate [filename]
 Example:  
 
 ```bash
-locate notes.docx
+locate notes.txt
 ```  
 
-This command quickly searches for all files and directories containing the name `notes.docx`.  
+This command quickly searches for all files and directories containing the name `notes.txt`.  
 
 ### 2. **Updating the Locate Database**  
 The `locate` command relies on a database that needs periodic updates. Use the following command to update the database:  
@@ -93,23 +105,23 @@ This ensures that the `locate` command returns up-to-date results.
 
 ---
 
-## **Key Differences Between `find` and `locate**  
+## **Key Differences Between `find` and `locate`**  
 
 | Feature              | `find`                          | `locate`                    |  
 |----------------------|----------------------------------|-----------------------------|  
 | Speed                | Slower (real-time search)       | Faster (prebuilt database)  |  
 | Flexibility          | Highly customizable criteria    | Limited to filename search  |  
-| Up-to-date results   | Always                         | Requires database updates   |  
+| Up-to-date results   | Always (real-time search)       | Depends on database update frequency |  
 
 ---
 
 ## **Examples**  
 
 ### Example 1: Finding Files with `find`  
-To locate a file named `tasks.csv` in the `/home` directory:  
+To locate a file named `tasks.txt` in the `/home` directory:  
 
 ```bash
-find /home -name "tasks.csv"
+find /home -name "tasks.txt"
 ```  
 
 ### Example 2: Using `locate` for Faster Search  
