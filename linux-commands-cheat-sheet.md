@@ -1,96 +1,150 @@
-# **Linux Command Cheat Sheet**
+# **Linux Command Cheat Sheet**  
 
-## **Basic Commands**
+## **Basic Commands**  
 
-- **`pwd`** – Print the current working directory.
-  ```bash
-  pwd
-  ```
+- **`pwd`** – Print the current working directory.  
+  ```bash  
+  pwd  
+  ```  
 
-- **`cd`** – Change the current directory.
-  ```bash
-  cd /path/to/directory   # Navigate to a specific directory
-  cd ..                    # Go back one directory level
-  cd ~                     # Go to the home directory
-  ```
+- **`cd`** – Change the current directory.  
+  ```bash  
+  cd /path/to/directory    # Navigate to a specific directory  
+  cd ..                    # Go back one directory level  
+  cd ~                     # Go to the home directory  
+  ```  
 
-- **`ls`** – List the contents of a directory.
-  ```bash
-  ls                     # List files in the current directory
-  ls -l                  # List with detailed information
-  ls -lt                 # List sorted by modification time
-  ls -ltr                # List in reverse order of modification time
-  ```
+- **`ls`** – List the contents of a directory.  
+  ```bash  
+  ls                       # List files in the current directory  
+  ls -l                    # List with detailed information  
+  ls -lt                   # List sorted by modification time  
+  ls -ltr                  # List in reverse order of modification time  
+  ```  
 
-## **File and Directory Management**
+---
 
-- **`cp`** – Copy files and directories.
-  ```bash
-  cp file1.txt file2.txt  # Copy file1.txt to file2.txt
-  cp -R dir1 /home/anupmoitra/dir2  # Copy dir1 to dir2, including all subdirectories and files
-  ```
+## **File and Directory Management**  
 
-- **`mv`** – Move or rename files and directories.
-  ```bash
-  mv file1.txt /path/to/destination  # Move file1.txt to a new location
-  mv old_dir new_dir                 # Rename directory
-  ```
+- **`touch`** – Create an empty file.  
+  ```bash  
+  touch file1.txt                     # Create a file named file1.txt  
+  touch file1.txt file2.txt           # Create multiple files at once  
+  ```  
 
-- **`rm`** – Remove files or directories.
-  ```bash
-  rm file1.txt                      # Remove a file
-  rm -r dir1                         # Remove a directory and its contents
-  ```
+- **`cp`** – Copy files and directories.  
+  ```bash  
+  cp file1.txt file2.txt              # Copy file1.txt to file2.txt  
+  cp -R dir1 /home/anupmoitra/dir2    # Copy dir1 to dir2, including all subdirectories and files  
+  ```  
 
-- **`mkdir`** – Create a new directory.
-  ```bash
-  mkdir new_directory               # Create a new directory
-  ```
+- **`mv`** – Move or rename files and directories.  
+  ```bash  
+  mv file1.txt /path/to/destination   # Move file1.txt to a new location  
+  mv old_dir new_dir                  # Rename directory  
+  ```  
 
-## **Finding IP Address**
+- **`rm`** – Remove files or directories.  
+  ```bash  
+  rm file1.txt                        # Remove a file  
+  rm -r dir1                          # Remove a directory and its contents  
+  ```  
 
-- **`ip a`** – Show IP address information.
-  ```bash
-  ip a                             # Display all network interfaces and their IP addresses
-  ```
+- **`mkdir`** – Create a new directory.  
+  ```bash  
+  mkdir new_directory                 # Create a new directory  
+  mkdir -p parent_dir/sub_dir         # Create nested directories  
+  ```  
 
-- **`ifconfig`** – (Deprecated but still works) Display network interfaces and their IP addresses.
-  ```bash
-  ifconfig                         # Show network interfaces and IP details
-  ```
+- **`find`** – Search for files and directories.  
+  ```bash  
+  find . -name "file1.txt"            # Search for file1.txt in the current directory  
+  find /home -type f -name "*.txt"    # Find all .txt files in /home  
+  find /var -mtime -7                 # Find files modified in the last 7 days  
+  ```  
 
-## **Accessing Linux via SSH**
+- **`locate`** – Quickly search for files and directories using a prebuilt database.  
+  ```bash  
+  locate file1.txt                    # Search for file1.txt  
+  sudo updatedb                       # Update the locate database  
+  ```  
 
-- **`ssh`** – Secure Shell to access remote systems.
-  ```bash
-  ssh user@hostname_or_ip         # Access a remote system via SSH (replace 'user' and 'hostname_or_ip')
-  ssh username@192.168.1.100      # Example with IP address
-  ```
+---
 
-- **`whoami`** – Display the current logged-in username.
-  ```bash
-  whoami
-  ```
+## **File and Directory Properties**  
 
-## **Directory Navigation and Exploration**
+- **`ls`** – Display file types and properties.  
+  ```bash  
+  ls -l                               # Show file permissions, owner, group, and size  
+  ls -lh                              # Show sizes in human-readable format  
+  ```  
 
-- **`ls`** – List the contents of a directory.
-  ```bash
-  ls /home/anupmoitra              # List the contents of /home/anupmoitra
-  ls -l                            # Detailed list of files and directories
-  ```
+- **`stat`** – Display detailed file information.  
+  ```bash  
+  stat file1.txt                      # Display detailed information about file1.txt  
+  ```  
 
-- **`cd`** – Change directory.
-  ```bash
-  cd /path/to/directory            # Navigate to a specific directory
-  ```
+---
 
-## **Copying Directories**
+## **User and Access Management**  
 
-- **`cp -R`** – Copy directories and their contents recursively.
-  ```bash
-  cp -R source_directory destination_directory
-  cp -R dir1 /home/anupmoitra/dir2  # Copy dir1 to /home/anupmoitra/dir2
-  ```
+- **`whoami`** – Display the current logged-in username.  
+  ```bash  
+  whoami  
+  ```  
+
+- **`passwd`** – Change user passwords.  
+  ```bash  
+  passwd                              # Change your own password  
+  sudo passwd username                # Change the password of another user (requires sudo)  
+  ```  
+
+---
+
+## **File Paths**  
+
+- **Absolute Paths**: Start from the root directory (`/`).  
+  ```bash  
+  cd /home/anupmoitra/Documents        # Navigate using an absolute path  
+  ```  
+
+- **Relative Paths**: Start from the current directory.  
+  ```bash  
+  cd ../Projects                       # Navigate to the Projects directory in the parent directory  
+  ```  
+
+---
+
+## **Copying Directories**  
+
+- **`cp -R`** – Copy directories and their contents recursively.  
+  ```bash  
+  cp -R source_directory destination_directory  
+  cp -R dir1 /home/anupmoitra/dir2     # Copy dir1 to /home/anupmoitra/dir2  
+  ```  
+
+---
+
+## **Finding IP Address**  
+
+- **`ip a`** – Show IP address information.  
+  ```bash  
+  ip a                                # Display all network interfaces and their IP addresses  
+  ```  
+
+- **`ifconfig`** – (Deprecated but still works) Display network interfaces and their IP addresses.  
+  ```bash  
+  ifconfig                            # Show network interfaces and IP details  
+  ```  
+
+---
+
+## **Accessing Linux via SSH**  
+
+- **`ssh`** – Secure Shell to access remote systems.  
+  ```bash  
+  ssh user@hostname_or_ip             # Access a remote system via SSH (replace 'user' and 'hostname_or_ip')  
+  ssh username@192.168.1.100          # Example with IP address  
+  ```  
 
 ---
