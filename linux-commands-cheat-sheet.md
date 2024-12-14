@@ -1,5 +1,48 @@
 # **Linux Command Cheat Sheet**  
 
+## **Network Commands**
+
+- **`ip a`** – Show IP address information.  
+  ```bash  
+  ip a                                # Display all network interfaces and their IP addresses  
+  ```
+
+- **`ip addr`** – Show IP address information (alternative to `ip a`).  
+  ```bash  
+  ip addr                             # Display detailed IP address and network interface information  
+  ```
+
+- **`ifconfig`** – (Deprecated but still works) Display network interfaces and their IP addresses.  
+  ```bash  
+  ifconfig                            # Show network interfaces and IP details  
+  ```
+
+- **`hostname -I`** – Show the IP address of the system.  
+  ```bash  
+  hostname -I                        # Display the system's IP address  
+  ```
+
+---
+
+## **Accessing Linux via SSH**
+
+- **`ssh`** – Secure Shell to access remote systems.  
+  ```bash  
+  ssh user@hostname_or_ip             # Access a remote system via SSH (replace 'user' and 'hostname_or_ip')  
+  ssh username@192.168.1.100          # Example with IP address  
+  ```
+
+---
+
+## **Interrupt a Running Command or Process**
+
+- **`Control + C`** – Interrupts or terminates a running command or process in the terminal.  
+  ```bash  
+  # Example: If a command is stuck or taking too long, use Control + C to stop it.
+  ```
+
+---
+
 ## **Basic Commands**  
 
 - **`pwd`** – Print the current working directory.  
@@ -125,29 +168,17 @@
 
 ---
 
-## **Network Commands**  
+## **Finding IP Address**  
 
-- **`ip a` or `ip addr`** – Display IP address and network interface details.  
+- **`ip a`** – Show IP address information.  
   ```bash  
-  ip a                                # Show all interfaces and their IP addresses  
-  ip addr                             # Same as ip a, with detailed network interface information  
-  ```  
-  - Displays IP addresses, subnet masks, and interface status.  
-  - Modern replacement for `ifconfig`.  
+  ip a                                # Display all network interfaces and their IP addresses  
+  ```
 
-- **`ifconfig`** – (Deprecated) Display network interfaces and their IP addresses.  
+- **`ifconfig`** – (Deprecated but still works) Display network interfaces and their IP addresses.  
   ```bash  
   ifconfig                            # Show network interfaces and IP details  
-  ```  
-  - Includes additional network information such as MAC addresses and packet stats.  
-  - Still works but is considered outdated.  
-
-- **`hostname -I`** – Display all IP addresses assigned to the host.  
-  ```bash  
-  hostname -I                         # Show space-separated IP addresses for the host  
-  ```  
-  - Does not show the loopback address (`127.0.0.1`).  
-  - Provides a concise list of IPs without interface details.  
+  ```
 
 ---
 
@@ -157,6 +188,6 @@
   ```bash  
   ssh user@hostname_or_ip             # Access a remote system via SSH (replace 'user' and 'hostname_or_ip')  
   ssh username@192.168.1.100          # Example with IP address  
-  ```  
+  ```
 
 ---
