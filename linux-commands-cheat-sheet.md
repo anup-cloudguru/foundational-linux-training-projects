@@ -132,18 +132,19 @@
   mkdir -p parent_dir/sub_dir         # Create nested directories  
   ```
 
-- **`find`** – Search for files and directories.  
-  ```bash  
-  find . -name "file1.txt"            # Search for file1.txt in the current directory  
-  find /home -type f -name "*.txt"    # Find all .txt files in /home  
-  find /var -mtime -7                 # Find files modified in the last 7 days  
-  ```
+- **`find`** – Search for files and directories.
 
-- **`locate`** – Quickly search for files and directories using a prebuilt database.  
-  ```bash  
-  locate file1.txt                    # Search for file1.txt  
-  sudo updatedb                       # Update the locate database  
-  ```
+```bash
+find . -name "file1.txt"            # Search for file1.txt in the current directory (.)
+find . -type d -name "DirectoryName"      # Search for a directory name in the current directory (.)
+```
+
+### **`locate`** – Quickly search for files and directories using a prebuilt database.
+
+```bash
+locate file1.txt                    # Search for file1.txt in the system's database
+sudo updatedb                       # Update the locate database
+```
 
 ---
 
