@@ -52,17 +52,6 @@ find . -name "tasks.txt"
 
 This command searches for a file named `tasks.txt` in the current directory and all its subdirectories.  
 
-### 2. **Commonly Used `find` Options**  
-- **`-name`**: Searches for files or directories by name (case-sensitive).  
-  ```bash
-  find /home -name "report.txt"
-  ```  
-
-- **`-mtime`**: Finds files modified within a certain number of days.  
-  ```bash
-  find /var/log -mtime -7
-  ```  
-
 ---
 
 ## **The `locate` Command**  
