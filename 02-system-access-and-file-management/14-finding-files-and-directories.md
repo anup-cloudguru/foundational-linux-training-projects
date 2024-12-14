@@ -76,7 +76,7 @@ This command searches for a file named `tasks.txt` starting from the root direct
 
 The `locate` command is a faster alternative to `find` as it uses a prebuilt database of files on the system.  
 
-### 1. **Using the `locate` Command**  
+### **1. Using the `locate` Command**  
 The basic syntax for the `locate` command is:  
 
 ```bash
@@ -91,9 +91,7 @@ locate notes.txt
 
 This command quickly searches for all files and directories containing the name `notes.txt`.  
 
-*Insert Screenshot of `locate notes.txt` command here.*
-
-### 2. **Updating the Locate Database**  
+### **2. Updating the Locate Database**  
 The `locate` command relies on a database that needs periodic updates. Use the following command to update the database:  
 
 ```bash
@@ -102,7 +100,7 @@ sudo updatedb
 
 This ensures that the `locate` command returns up-to-date results.  
 
-*Insert Screenshot of `sudo updatedb` command here.*
+![locate-and-updatedb-example](screenshots/02-locate-and-updatedb-example.png)
 
 ---
 
