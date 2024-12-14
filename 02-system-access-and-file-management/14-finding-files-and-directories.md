@@ -49,7 +49,18 @@ find [path] [expression]
 ```bash
 find . -name "tasks.txt"
 ```
-This command searches for a file named `tasks.txt` in the current directory (`.`) and all its subdirectories.  
+This command searches for a file named `tasks.txt` in the current directory (`.`) and all its subdirectories.
+
+#### Example 2: Search from the Root Directory
+```bash
+find / -name "tasks.txt"
+```
+This command searches for a file named `tasks.txt` starting from the root directory (`/`) and includes all subdirectories on the system. Be cautious when running this command on the entire filesystem, as it may return permission-denied errors for certain system directories, unless you're running it with root privileges.
+
+#### **Note:**
+- Both `find . -name "tasks.txt"` and `find . -name tasks.txt` will function the same way when searching for `tasks.txt`.
+- The **quotes** around `"tasks.txt"` are typically used when a filename contains spaces or special characters, or to prevent the shell from expanding globbing characters (like `*`, `?`, etc.).
+- In this case, since `tasks.txt` has no spaces or special characters, the quotes are optional, and the command will work the same without them.  
 
 *Insert Screenshot of `find . -name "tasks.txt"` command here.*
 
