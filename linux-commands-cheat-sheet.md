@@ -34,6 +34,21 @@
 
 ---
 
+## **User and Access Management**
+
+- **`whoami`** – Display the current logged-in username.  
+  ```bash  
+  whoami  
+  ```  
+
+- **`passwd`** – Change user passwords.  
+  ```bash  
+  passwd                              # Change your own password  
+  sudo passwd username                # Change the password of another user (requires sudo)  
+  ```
+
+---
+
 ## **Interrupt a Running Command or Process**
 
 - **`Control + C`** – Interrupts or terminates a running command or process in the terminal.  
@@ -125,21 +140,6 @@
 - **`stat`** – Display detailed file information.  
   ```bash  
   stat file1.txt                      # Display detailed information about file1.txt  
-  ```  
-
----
-
-## **User and Access Management**  
-
-- **`whoami`** – Display the current logged-in username.  
-  ```bash  
-  whoami  
-  ```  
-
-- **`passwd`** – Change user passwords.  
-  ```bash  
-  passwd                              # Change your own password  
-  sudo passwd username                # Change the password of another user (requires sudo)  
   ```  
 
 ---
