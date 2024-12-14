@@ -122,7 +122,8 @@
 - **`rm`** – Remove files or directories.  
   ```bash  
   rm file1.txt                        # Remove a file  
-  rm -r dir1                          # Remove a directory and its contents  
+  rm -r dir1                          # Remove a directory and its contents
+  rm -rf dir1                         # Remove a directory and its contents without confirmation, even for write-protected files  
   ```
 
 - **`mkdir`** – Create a new directory.  
