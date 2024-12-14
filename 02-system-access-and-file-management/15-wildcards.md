@@ -6,7 +6,7 @@ In Linux, wildcards are special characters used to match one or more characters 
 
 ### **Key Wildcards**
 
-### **1. Asterisk (`*`)**
+#### **1. Asterisk (`*`)**
 - **What it does**:  
   The `*` wildcard matches **any number of characters** (including zero characters). Think of it as saying, "I don't care what's after this."
 
@@ -23,11 +23,22 @@ In Linux, wildcards are special characters used to match one or more characters 
      - This will delete all files starting with "ABC".  
      - After running this, only `XYZ.txt` will remain.
 
-#### 2. **Question Mark (`?`)**
-   - **Description**: The question mark represents a single character. It can match exactly one character in the filename.
-   - **Usage Example**:  
-     - `ls A?C*` – This command lists all files that start with "A", followed by exactly one character, and then "C".
-     - `ls file?.txt` – This command matches files like `file1.txt`, `file2.txt`, but not `file10.txt`.
+#### **2. Question Mark (`?`)**
+- **What it does**:  
+  The `?` wildcard matches **exactly one character**. It doesn't care what that one character is, but there must be one.
+
+- **Examples**:  
+  Imagine these files:
+  ```
+  A1.txt, A2.txt, AB.txt, ABC.txt, A123.txt
+  ```
+  1. `ls A?.txt`  
+     - This matches files with **A + one character + .txt**.  
+     - **Output**: `A1.txt, A2.txt, AB.txt`
+
+  2. `ls A??.txt`  
+     - This matches files with **A + two characters + .txt**.  
+     - **Output**: `ABC.txt`
 
 #### 3. **Caret (`^`)**
    - **Description**: The caret is often used in regular expressions to denote the start of a string. In the context of filename matching, it's less commonly used directly.
