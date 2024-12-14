@@ -49,13 +49,17 @@ find [path] [expression]
 ```bash
 find . -name "tasks.txt"
 ```
-This command searches for a file named `tasks.txt` in the current directory (`.`) and all its subdirectories.
+This command searches for a file named `tasks.txt` in the current directory (`.`) and all its subdirectories.  
+
+*Insert Screenshot of `find . -name "tasks.txt"` command here.*
 
 #### Example 2: Search from the Root Directory
 ```bash
 find / -name "tasks.txt"
 ```
 This command searches for a file named `tasks.txt` starting from the root directory (`/`) and includes all subdirectories on the system. Be cautious when running this command on the entire filesystem, as it may return permission-denied errors for certain system directories, unless you're running it with root privileges.  
+
+*Insert Screenshot of `find / -name "tasks.txt"` command here.*
 
 ---
 
@@ -78,6 +82,8 @@ locate notes.txt
 
 This command quickly searches for all files and directories containing the name `notes.txt`.  
 
+*Insert Screenshot of `locate notes.txt` command here.*
+
 ### 2. **Updating the Locate Database**  
 The `locate` command relies on a database that needs periodic updates. Use the following command to update the database:  
 
@@ -86,6 +92,8 @@ sudo updatedb
 ```  
 
 This ensures that the `locate` command returns up-to-date results.  
+
+*Insert Screenshot of `sudo updatedb` command here.*
 
 ---
 
@@ -96,6 +104,35 @@ This ensures that the `locate` command returns up-to-date results.
 | Speed                | Slower (real-time search)       | Faster (prebuilt database)  |  
 | Flexibility          | Highly customizable criteria    | Limited to filename search  |  
 | Up-to-date results   | Always (real-time search)       | Depends on database update frequency |  
+
+---
+
+## **Examples**  
+
+### Example 1: Finding Files with `find`  
+To locate a file named `tasks.txt` in the `/home` directory:  
+
+```bash
+find /home -name "tasks.txt"
+```  
+
+*Insert Screenshot of `find /home -name "tasks.txt"` command here.*
+
+### Example 2: Using `locate` for Faster Search  
+To quickly find a file containing the name `report`:  
+
+```bash
+locate report
+```  
+
+*Insert Screenshot of `locate report` command here.*
+
+### Example 3: Finding Directories  
+To locate directories named `MyFiles` in the current directory:  
+
+```bash
+find . -type d -name "MyFiles"
+```  
 
 ---
 
