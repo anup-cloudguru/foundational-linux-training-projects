@@ -122,9 +122,11 @@
 - **`rm`** – Remove files or directories.  
   ```bash  
   rm file1.txt                        # Remove a file  
-  rm -r dir1                          # Remove a directory and its contents
+  rm -r dir1                          # Remove a directory and its contents  
   rm -rf dir1                         # Remove a directory and its contents without confirmation, even for write-protected files  
   ```
+
+  **Note:** Use `rm -rf` with caution! This command will permanently delete files and directories without confirmation.
 
 - **`mkdir`** – Create a new directory.  
   ```bash  
@@ -208,6 +210,20 @@ find . -name "file1.txt"   # Searches for file1.txt only within the current dire
   ```bash  
   cp -R source_directory destination_directory  
   cp -R dir1 /home/anupmoitra/dir2     # Copy dir1 to /home/anupmoitra/dir2  
+  ```
+
+---
+
+## **Disk Space Management**  
+
+- **`df`** – Display information about disk space usage.  
+  ```bash  
+  df -h                               # Show disk space usage in human-readable format  
+  ```
+
+- **`du`** – Display disk usage of files and directories.  
+  ```bash  
+  du -sh /path/to/directory           # Show the total size of the directory  
   ```
 
 ---
