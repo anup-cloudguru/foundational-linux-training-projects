@@ -38,35 +38,57 @@ ln -s <source_file> <link_name>
    ```bash
    echo "Anup is a superhero" > ~/Anup
    ```
+
+   ![Screenshot: Created file 'Anup'](screenshot-placeholder)  
+   *Figure 1: File 'Anup' created in the home directory.*
+
 2. Navigate to the `/tmp` directory:
    ```bash
    cd /tmp
    ```
+
 3. Create a soft link to the `Anup` file:
    ```bash
    ln -s ~/Anup Anup_link
    ```
+
+   ![Screenshot: Created soft link 'Anup_link'](screenshot-placeholder)  
+   *Figure 2: Soft link 'Anup_link' created in /tmp directory.*
+
 4. Verify the link:
    ```bash
    ls -l
    ```
+
+   ![Screenshot: Listing the contents of /tmp directory](screenshot-placeholder)  
+   *Figure 3: Listing the contents of the /tmp directory showing the soft link.*
+
    Output will indicate the symbolic link with an `l` at the beginning (e.g., `lrwxrwxrwx`). The link will point to the source file (`Anup -> /home/user/Anup`).
 
 5. Test the soft link:
    ```bash
    cat Anup_link
    ```
+
    Output: `Anup is a superhero`.
+
+   ![Screenshot: Testing the soft link 'Anup_link'](screenshot-placeholder)  
+   *Figure 4: Output of the `cat` command shows the contents of the original file through the soft link.*
 
 6. Remove the source file:
    ```bash
    rm ~/Anup
    ```
+
 7. Check the link:
    ```bash
    cat Anup_link
    ```
+
    Output: `No such file or directory`. This demonstrates that a soft link breaks if the source file is deleted.
+
+   ![Screenshot: Attempting to access deleted source file through soft link](screenshot-placeholder)  
+   *Figure 5: Soft link becomes broken after the source file is deleted.*
 
 ---
 
@@ -93,39 +115,62 @@ ln <source_file> <link_name>
    ```bash
    echo "Anup is a superhero" > ~/Anup
    ```
+
+   ![Screenshot: Created file 'Anup' again](screenshot-placeholder)  
+   *Figure 6: File 'Anup' created in the home directory.*
+
 2. Navigate to the `/tmp` directory:
    ```bash
    cd /tmp
    ```
+
 3. Create a hard link to the `Anup` file:
    ```bash
    ln ~/Anup Anup_hardlink
    ```
+
+   ![Screenshot: Created hard link 'Anup_hardlink'](screenshot-placeholder)  
+   *Figure 7: Hard link 'Anup_hardlink' created in /tmp directory.*
+
 4. Verify the hard link:
    ```bash
    ls -li
    ```
+
+   ![Screenshot: Listing the contents with inode numbers](screenshot-placeholder)  
+   *Figure 8: Listing the files with inode numbers showing the same inode for both the source file and the hard link.*
+
    Notice that both the original file (`Anup`) and the hard link (`Anup_hardlink`) share the same inode number.
 
 5. Modify the source file:
    ```bash
    echo "123" >> ~/Anup
    ```
+
 6. Check the hard link:
    ```bash
    cat Anup_hardlink
    ```
+
    Output: `Anup is a superhero\n123`. This confirms that the hard link reflects changes made to the source file.
+
+   ![Screenshot: Output of `cat` command on hard link](screenshot-placeholder)  
+   *Figure 9: Hard link reflects changes made to the original file.*
 
 7. Remove the source file:
    ```bash
    rm ~/Anup
    ```
+
 8. Verify the hard link:
    ```bash
    cat Anup_hardlink
    ```
+
    Output: `Anup is a superhero\n123`. This demonstrates that a hard link retains the data even if the source file is deleted.
+
+   ![Screenshot: Hard link retains content after source file deletion](screenshot-placeholder)  
+   *Figure 10: Hard link remains intact even after the source file is removed.*
 
 ---
 
