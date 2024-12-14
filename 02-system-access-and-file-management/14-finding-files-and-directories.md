@@ -120,35 +120,6 @@ This ensures that the `locate` command returns up-to-date results.
 
 ---
 
-## **Examples**  
-
-### Example 1: Finding Files with `find`  
-To locate a file named `tasks.txt` in the `/home` directory:  
-
-```bash
-find /home -name "tasks.txt"
-```  
-
-*Insert Screenshot of `find /home -name "tasks.txt"` command here.*
-
-### Example 2: Using `locate` for Faster Search  
-To quickly find a file containing the name `report`:  
-
-```bash
-locate report
-```  
-
-*Insert Screenshot of `locate report` command here.*
-
-### Example 3: Finding Directories  
-To locate directories named `MyFiles` in the current directory:  
-
-```bash
-find . -type d -name "MyFiles"
-```  
-
----
-
 ## **Summary**  
 
 In this chapter, we covered:  
