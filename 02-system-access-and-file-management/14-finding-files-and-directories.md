@@ -117,7 +117,10 @@ This ensures that the `locate` command returns up-to-date results.
 |----------------------|----------------------------------|-----------------------------|  
 | Speed                | Slower (real-time search)       | Faster (prebuilt database)  |  
 | Flexibility          | Highly customizable criteria    | Limited to filename search  |  
-| Up-to-date results   | Always (real-time search)       | Depends on database update frequency |  
+| Up-to-date results   | Always (real-time search)       | Depends on database update frequency; may require manual update with `updatedb` command |  
+| Database             | Searches the actual file system  | Relies on a prebuilt database (`locate.db`)  |  
+| File Detection       | Finds files immediately (current system state) | May not detect newly created files unless `updatedb` is run |  
+| Command for Database Update | N/A                          | `updatedb` (requires root privileges to update database) |
 
 ---
 
