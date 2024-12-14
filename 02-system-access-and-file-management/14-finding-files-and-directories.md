@@ -70,9 +70,11 @@ find . -type d -name "MyFiles"
 
 This command searches for directories (`-type d`) with the name `MyFiles` starting from the current directory (`.`). It will return the path to any matching directories.
 
-![find-command-example](screenshots/01-find-command-example.png)
+![find-command-example](screenshots/01-find-command-example.png)  
+*Figure 1: Output of `find` command example, showing search results for a file named `tasks.txt`.*
 
-![find-command-example](screenshots/03-find-directory-command-example.png)
+![find-command-example](screenshots/03-find-directory-command-example.png)  
+*Figure 2: Output of `find` command searching for the directory `MyFiles`.*
 
 ---
 
@@ -104,7 +106,8 @@ sudo updatedb
 
 This ensures that the `locate` command returns up-to-date results.  
 
-![locate-and-updatedb-example](screenshots/02-locate-and-updatedb-example.png)
+![locate-and-updatedb-example](screenshots/02-locate-and-updatedb-example.png)  
+*Figure 3: Example of using `locate` and updating the database with `updatedb`.*
 
 ---
 
