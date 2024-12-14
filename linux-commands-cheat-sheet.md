@@ -19,7 +19,7 @@
 
 - **`hostname -I`** – Show all IP addresses associated with the system.  
   ```bash  
-  hostname -I                        # Display the IP address of the system  
+  hostname -I                         # Display the IP address of the system  
   ```
 
 ---
@@ -49,13 +49,13 @@
 
 - **`su`** – Switch to another user account.  
   ```bash  
-  su username            # Switch to another user (replace 'username' with the desired user)  
-  su - username          # Switch to another user and start a login shell  
+  su username                         # Switch to another user (replace 'username' with the desired user)  
+  su - username                       # Switch to another user and start a login shell  
   ```
 
 - **`exit`** – Exit the current session or log out.  
   ```bash  
-  exit                   # Exit the current user shell session  
+  exit                                # Exit the current user shell session  
   ```
 
 ---
@@ -78,17 +78,17 @@
 
 - **`cd`** – Change the current directory.  
   ```bash  
-  cd /path/to/directory    # Navigate to a specific directory  
-  cd ..                    # Go back one directory level  
-  cd ~                     # Go to the home directory  
+  cd /path/to/directory               # Navigate to a specific directory  
+  cd ..                               # Go back one directory level  
+  cd ~                                # Go to the home directory  
   ```
 
 - **`ls`** – List the contents of a directory.  
   ```bash  
-  ls                       # List files in the current directory  
-  ls -l                    # List with detailed information  
-  ls -lt                   # List sorted by modification time  
-  ls -ltr                  # List in reverse order of modification time  
+  ls                                  # List files in the current directory  
+  ls -l                               # List with detailed information  
+  ls -lt                              # List sorted by modification time  
+  ls -ltr                             # List in reverse order of modification time  
   ```
 
 ---
@@ -125,8 +125,6 @@
   rm -r dir1                          # Remove a directory and its contents  
   rm -rf dir1                         # Remove a directory and its contents without confirmation, even for write-protected files  
   ```
-
-  **Note:** Use `rm -rf` with caution! This command will permanently delete files and directories without confirmation.
 
 - **`mkdir`** – Create a new directory.  
   ```bash  
@@ -194,12 +192,12 @@ find . -name "file1.txt"   # Searches for file1.txt only within the current dire
 
 - **Absolute Paths**: Start from the root directory (`/`).  
   ```bash  
-  cd /home/anupmoitra/Documents        # Navigate using an absolute path  
+  cd /home/anupmoitra/Documents       # Navigate using an absolute path  
   ```
 
 - **Relative Paths**: Start from the current directory.  
   ```bash  
-  cd ../Projects                       # Navigate to the Projects directory in the parent directory  
+  cd ../Projects                      # Navigate to the Projects directory in the parent directory  
   ```
 
 ---
@@ -214,21 +212,7 @@ find . -name "file1.txt"   # Searches for file1.txt only within the current dire
 
 ---
 
-## **Disk Space Management**  
-
-- **`df`** – Display information about disk space usage.  
-  ```bash  
-  df -h                               # Show disk space usage in human-readable format  
-  ```
-
-- **`du`** – Display disk usage of files and directories.  
-  ```bash  
-  du -sh /path/to/directory           # Show the total size of the directory  
-  ```
-
----
-
 ### **Note:**  
-This cheat sheet is designed to provide quick reference for essential Linux commands that are commonly used in various tasks such as network management, file and directory manipulation, user management, and searching for files. 
+This cheat sheet is designed to provide a quick reference for essential Linux commands that are commonly used in various tasks such as network management, file and directory manipulation, user management, and searching for files.
 
 ---
