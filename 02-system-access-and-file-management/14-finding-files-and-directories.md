@@ -42,7 +42,7 @@ find [path] [expression]
 ```  
 
 - **`path`**: The directory to start the search (e.g., `.` for the current directory or `/home` for a specific directory).  
-- **`expression`**: Criteria for the search, such as `-name`, `-type`, or `-mtime`.  
+- **`expression`**: Criteria for the search, such as `-name` or `-mtime`.  
 
 Example:  
 
@@ -56,16 +56,6 @@ This command searches for a file named `tasks.txt` in the current directory and 
 - **`-name`**: Searches for files or directories by name (case-sensitive).  
   ```bash
   find /home -name "report.txt"
-  ```  
-
-- **`-iname`**: Searches for files or directories by name (case-insensitive).  
-  ```bash
-  find /home -iname "NOTES.TXT"
-  ```  
-
-- **`-type`**: Filters results by type (`f` for files, `d` for directories).  
-  ```bash
-  find . -type f -name "*.txt"
   ```  
 
 - **`-mtime`**: Finds files modified within a certain number of days.  
