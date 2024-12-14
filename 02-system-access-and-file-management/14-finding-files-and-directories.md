@@ -42,7 +42,7 @@ find [path] [expression]
 ```  
 
 - **`path`**: The directory to start the search (e.g., `.` for the current directory or `/home` for a specific directory).  
-- **`expression`**: Criteria for the search, such as `-name` or `-mtime`.  
+- **`expression`**: Criteria for the search, such as `-name`.  
 
 Example:  
 
