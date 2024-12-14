@@ -34,39 +34,42 @@ In this chapter, we’ll explore how to locate files and directories in Linux us
 
 The `find` command searches for files and directories within a specified directory and its subdirectories based on a set of criteria.  
 
-### **1. Basic Syntax of the find Command**
+### **1. Basic Syntax of the `find` Command**
 
-The basic syntax for the find command is:
+The basic syntax for the `find` command is:
 
-bash
+```bash
 find [path] [expression]
+```
 
-
-- **path**: The directory to start the search (e.g., . for the current directory or /home for a specific directory).
-- **expression**: Criteria for the search, such as -name.
+- **`path`**: The directory to start the search (e.g., `.` for the current directory or `/home` for a specific directory).
+- **`expression`**: Criteria for the search, such as `-name`.
 
 #### Example 1: Search in the Current Directory
-bash
+```bash
 find . -name "tasks.txt"
+```
 
-This command searches for a file named tasks.txt in the current directory (.) and all its subdirectories.
-
-#### Example 2: Search from the Root Directory
-bash
-find / -name "tasks.txt"
-
-This command searches for a file named tasks.txt starting from the root directory (/) and includes all subdirectories on the system. Be cautious when running this command on the entire filesystem, as it may return permission-denied errors for certain system directories, unless you're running it with root privileges.
-
-#### **Note:**
-- Both find . -name "tasks.txt" and find . -name tasks.txt will function the same way when searching for tasks.txt.
-- The **quotes** around "tasks.txt" are typically used when a filename contains spaces or special characters, or to prevent the shell from expanding globbing characters (like *, ?, etc.).
-- In this case, since tasks.txt has no spaces or special characters, the quotes are optional, and the command will work the same without them.
+This command searches for a file named `tasks.txt` in the current directory (`.`) and all its subdirectories.
 
 #### Example 2: Search from the Root Directory
 ```bash
 find / -name "tasks.txt"
 ```
-This command searches for a file named `tasks.txt` starting from the root directory (`/`) and includes all subdirectories on the system. Be cautious when running this command on the entire filesystem, as it may return permission-denied errors for certain system directories, unless you're running it with root privileges.  
+
+This command searches for a file named `tasks.txt` starting from the root directory (`/`) and includes all subdirectories on the system. Be cautious when running this command on the entire filesystem, as it may return permission-denied errors for certain system directories, unless you're running it with root privileges.
+
+#### **Note:**
+- Both `find . -name "tasks.txt"` and `find . -name tasks.txt` will function the same way when searching for `tasks.txt`.
+- The **quotes** around `"tasks.txt"` are typically used when a filename contains spaces or special characters, or to prevent the shell from expanding globbing characters (like `*`, `?`, etc.).
+- In this case, since `tasks.txt` has no spaces or special characters, the quotes are optional, and the command will work the same without them.
+
+#### Example 3: Search for a Directory
+```bash
+find . -type d -name "MyFiles"
+```
+
+This command searches for directories (`-type d`) with the name `MyFiles` starting from the current directory (`.`). It will return the path to any matching directories.
 
 ![find-command-example](screenshots/01-find-command-example.png)
 
