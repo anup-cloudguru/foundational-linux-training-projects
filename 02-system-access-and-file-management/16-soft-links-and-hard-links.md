@@ -2,12 +2,15 @@
 
 ## **Chapter 16: Understanding Soft Links and Hard Links**
 
+### **Introduction**  
 In this chapter, we will cover **soft links** and **hard links**, two essential topics in Linux file management. Before diving into these concepts, let’s first understand **inodes**, a fundamental component of Linux filesystems.
 
 ---
 
-#### **What is an Inode?**
+## **Understanding Inodes**
+
 An **inode** is a unique identifier (number) assigned to a file or directory on a hard disk.
+
 - **For Humans:** We recognize files by their names (e.g., `Anup.txt`).
 - **For Computers:** Names are meaningless; they recognize files using their associated inode numbers.
 
@@ -16,9 +19,11 @@ Each time a file is created, the filesystem generates an inode number pointing t
 ---
 
 ### **Soft Links**
+
 A **soft link** (or symbolic link) is like a shortcut to a file or directory.
 
 #### **Key Features of Soft Links**:
+
 1. **Dependency on the Source File**:
    - If the source file is deleted or renamed, the soft link becomes invalid.
    - The link points to the file path, not directly to the inode.
@@ -28,12 +33,14 @@ A **soft link** (or symbolic link) is like a shortcut to a file or directory.
    - Soft links are ideal for creating shortcuts to frequently accessed files.
 
 #### **Creating a Soft Link**
+
 Use the following command:
 ```bash
 ln -s <source_file> <link_name>
 ```
 
 **Example**:
+
 1. Create a file called `Anup` in your home directory:
    ```bash
    echo "Anup is a superhero" > ~/Anup
@@ -93,9 +100,11 @@ ln -s <source_file> <link_name>
 ---
 
 ### **Hard Links**
+
 A **hard link** is an additional reference to the same file.
 
 #### **Key Features of Hard Links**:
+
 1. **Independent of the Source File**:
    - Deleting or renaming the source file does not affect the hard link.
    - The data remains accessible because the link points directly to the inode.
@@ -105,12 +114,14 @@ A **hard link** is an additional reference to the same file.
    - Hard links are useful for creating backups or accessing files from multiple locations.
 
 #### **Creating a Hard Link**
+
 Use the following command:
 ```bash
 ln <source_file> <link_name>
 ```
 
 **Example**:
+
 1. Recreate the file `Anup` in your home directory:
    ```bash
    echo "Anup is a superhero" > ~/Anup
@@ -174,7 +185,7 @@ ln <source_file> <link_name>
 
 ---
 
-### **Comparison: Soft Links vs. Hard Links**
+## **Comparison: Soft Links vs. Hard Links**
 
 | **Feature**             | **Soft Link**                                | **Hard Link**                                |
 |-------------------------|----------------------------------------------|----------------------------------------------|
@@ -185,7 +196,8 @@ ln <source_file> <link_name>
 
 ---
 
-### **Summary**
+## **Summary**
+
 1. **Soft Links**: Work like shortcuts; they break if the source file is removed or renamed.
 2. **Hard Links**: Serve as a direct reference to the file’s data, making them more resilient.
 
