@@ -73,6 +73,9 @@ This command searches for directories (`-type d`) with the name `MyFiles` starti
 
 ![find-command-example](screenshots/01-find-command-example.png)
 
+![find-command-example](screenshots/03-find-directory-command-example.png)
+
+
 ---
 
 ## **The `locate` Command**  
