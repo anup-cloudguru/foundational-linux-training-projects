@@ -40,13 +40,30 @@ In Linux, wildcards are special characters used to match one or more characters 
      - This matches files with **A + two characters + .txt**.  
      - **Output**: `ABC.txt`
 
-#### 3. **Caret (`^`)**
+#### **3. Curly Braces (`{}`)**
+- **What it does**:  
+  Curly braces `{}` are used for creating patterns in a **sequence** or for **specific choices**.
+
+- **Examples**:
+  1. `touch file{1..10}.txt`  
+     - Creates files: `file1.txt, file2.txt, file3.txt, ..., file10.txt`.
+
+  2. `ls file{1..3}.txt`  
+     - Lists files: `file1.txt, file2.txt, file3.txt`.
+
+  3. `echo {A,B,C}123`  
+     - Outputs: `A123, B123, C123`.
+
+  4. `touch report_{jan,feb,mar}.txt`  
+     - Creates files: `report_jan.txt, report_feb.txt, report_mar.txt`.
+
+#### 4. **Caret (`^`)**
    - **Description**: The caret is often used in regular expressions to denote the start of a string. In the context of filename matching, it's less commonly used directly.
    - **Usage Example**:  
      - In the command `grep '^abc'`, the caret ensures that the line starts with "abc".
    - This wildcard is primarily used in regular expressions rather than direct filename matching.
 
-#### 4. **Square Brackets (`[]`)**
+#### 5. **Square Brackets (`[]`)**
    - **Description**: Square brackets are used to match one character from a set or range of characters.
    - **Usage Example**:  
      - `ls file[A-C]*` – This command lists all files starting with "file" followed by any of the letters A, B, or C.
