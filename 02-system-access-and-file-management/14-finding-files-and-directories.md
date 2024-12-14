@@ -61,8 +61,7 @@ This command searches for a file named `tasks.txt` starting from the root direct
 
 #### **Note:**
 - Both `find . -name "tasks.txt"` and `find . -name tasks.txt` will function the same way when searching for `tasks.txt`.
-- The **quotes** around `"tasks.txt"` are typically used when a filename contains spaces or special characters, or to prevent the shell from expanding globbing characters (like `*`, `?`, etc.).
-- In this case, since `tasks.txt` has no spaces or special characters, the quotes are optional, and the command will work the same without them.
+- The **quotes** around `"tasks.txt"` are typically used when a filename contains spaces or special characters, or to prevent the shell from expanding globbing characters (like `*`, `?`, etc.). In this case, since `tasks.txt` has no spaces or special characters, the quotes are optional, and the command will work the same without them.
 
 #### Example 3: Search for a Directory
 ```bash
@@ -74,7 +73,6 @@ This command searches for directories (`-type d`) with the name `MyFiles` starti
 ![find-command-example](screenshots/01-find-command-example.png)
 
 ![find-command-example](screenshots/03-find-directory-command-example.png)
-
 
 ---
 
