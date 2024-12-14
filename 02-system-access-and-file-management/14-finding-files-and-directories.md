@@ -68,7 +68,7 @@ find / -name "tasks.txt"
 ```
 This command searches for a file named `tasks.txt` starting from the root directory (`/`) and includes all subdirectories on the system. Be cautious when running this command on the entire filesystem, as it may return permission-denied errors for certain system directories, unless you're running it with root privileges.  
 
-![find-command-example](path/to/find-command-example.png)
+![find-command-example](path/to/01-find-command-example.png)
 
 ---
 
