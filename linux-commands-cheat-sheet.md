@@ -125,17 +125,29 @@
 
 ---
 
-## **Finding IP Address**  
+## **Network Commands**  
 
-- **`ip a`** – Show IP address information.  
+- **`ip a` or `ip addr`** – Display IP address and network interface details.  
   ```bash  
-  ip a                                # Display all network interfaces and their IP addresses  
+  ip a                                # Show all interfaces and their IP addresses  
+  ip addr                             # Same as ip a, with detailed network interface information  
   ```  
+  - Displays IP addresses, subnet masks, and interface status.  
+  - Modern replacement for `ifconfig`.  
 
-- **`ifconfig`** – (Deprecated but still works) Display network interfaces and their IP addresses.  
+- **`ifconfig`** – (Deprecated) Display network interfaces and their IP addresses.  
   ```bash  
   ifconfig                            # Show network interfaces and IP details  
   ```  
+  - Includes additional network information such as MAC addresses and packet stats.  
+  - Still works but is considered outdated.  
+
+- **`hostname -I`** – Display all IP addresses assigned to the host.  
+  ```bash  
+  hostname -I                         # Show space-separated IP addresses for the host  
+  ```  
+  - Does not show the loopback address (`127.0.0.1`).  
+  - Provides a concise list of IPs without interface details.  
 
 ---
 
