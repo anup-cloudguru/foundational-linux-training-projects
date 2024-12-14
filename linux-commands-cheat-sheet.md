@@ -101,6 +101,12 @@
   touch file1.txt file2.txt           # Create multiple files at once  
   ```
 
+- **`vim`** – Open or create a file using the `vim` editor.  
+  ```bash  
+  vim file1.txt                       # Open (or create) file1.txt in vim editor  
+  # Press 'Esc', then ':wq' to save and exit.  
+  ```
+
 - **`cp`** – Copy files and directories.  
   ```bash  
   cp file1.txt file2.txt              # Copy file1.txt to file2.txt  
