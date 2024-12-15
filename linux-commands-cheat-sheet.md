@@ -1,16 +1,15 @@
 # **🐧 Linux Command Cheat Sheet**
 
+---
+
 ## **Network Commands**
 
-- **`ip a`** – Show IP address information.
+- **`ip a` (or `ip addr`)** – Display all network interfaces and their IP addresses.  
   ```bash
-  ip a                                # Display all network interfaces and their IP addresses
+  ip a                                # Shorthand for 'ip addr'
+  ip addr                             # Full command, provides the same output
   ```
-
-- **`ip addr`** – Display IP addresses of network interfaces.
-  ```bash
-  ip addr                             # Show IP addresses for all network interfaces
-  ```
+  **Note**: `ip a` is a shorthand for `ip addr`. Both commands are identical in functionality and can be used interchangeably. The choice depends on your typing preference.
 
 - **`ifconfig`** – (Deprecated but still works) Display network interfaces and their IP addresses.
   ```bash
@@ -162,15 +161,6 @@
 - **`.` (dot)** refers to the **current directory**. When you use `find .`, it searches within the directory you are currently in.
 - **`/` (slash)** refers to the **root directory**. When you use `find /`, it searches the entire file system, starting from the top-level directory.
 
-```bash
-# Example for searching from the root directory:
-find / -name "file1.txt"   # Searches the whole system for file1.txt
-```
-```bash
-# Example for searching in the current directory:
-find . -name "file1.txt"   # Searches for file1.txt only within the current directory
-```
-
 ---
 
 ## **File and Directory Properties**
@@ -212,7 +202,7 @@ find . -name "file1.txt"   # Searches for file1.txt only within the current dire
 
 ---
 
-### **Note:**
+### **Note**:
 This cheat sheet is designed to provide a quick reference for essential Linux commands that are commonly used in various tasks such as network management, file and directory manipulation, user management, and searching for files.
 
 ---
