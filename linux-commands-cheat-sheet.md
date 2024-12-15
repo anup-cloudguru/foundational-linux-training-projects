@@ -81,6 +81,7 @@
   cd /path/to/directory               # Navigate to a specific directory
   cd ..                               # Go back one directory level
   cd or cd ~                          # Go to the home directory
+  cd /                                # Go to the root directory
   ```
 
 - **`ls`** – List the contents of a directory.
