@@ -92,11 +92,6 @@
   ls -ltr                             # List in reverse order of modification time
   ```
 
-- **`clear`** – Clear the terminal screen.
-  ```bash
-  clear
-  ```
-
 ---
 
 ## **File and Directory Management**
@@ -137,6 +132,23 @@
   mkdir new_directory                 # Create a new directory
   mkdir -p parent_dir/sub_dir         # Create nested directories
   ```
+
+- **`clear`** – Clear the terminal screen.
+  ```bash
+  clear                               # Clears the current terminal display
+  ```
+
+---
+
+## **Wildcard and Pattern Matching**
+
+| Wildcard | What It Matches                         | Example             | Output                                   |
+|----------|-----------------------------------------|---------------------|-----------------------------------------|
+| `*`      | Any number of characters (including none) | `ls ABC*`          | `ABC123.txt`, `ABC_Notes.txt`, `ABC.txt` |
+| `?`      | Exactly one character                   | `ls A?.txt`        | `A1.txt`, `A2.txt`, `AB.txt`           |
+| `{}`     | A sequence or set of choices            | `echo {A,B,C}123`  | `A123`, `B123`, `C123`                 |
+| `[]`     | One character from a set or range       | `ls file[1-2]*`    | `file1.txt`, `file2.txt`               |
+| `^`      | Start of a string (for `grep` and search) | `grep '^abc' names` | Lines starting with "abc"              |
 
 ---
 
@@ -183,36 +195,7 @@
 
 ---
 
-## **File and Directory Properties**
-
-- **`ls`** – Display file types and properties.
-  ```bash
-  ls -l                               # Show file permissions, owner, group, and size
-  ls -lh                              # Show sizes in human-readable format
-  ```
-
-- **`stat`** – Display detailed file information.
-  ```bash
-  stat file1.txt                      # Display detailed information about file1.txt
-  ```
-
----
-
-## **File Paths**
-
-- **Absolute Paths**: Start from the root directory (`/`).
-  ```bash
-  cd /home/user/Documents             # Navigate using an absolute path
-  ```
-
-- **Relative Paths**: Start from the current directory.
-  ```bash
-  cd ../Projects                      # Navigate to the Projects directory in the parent directory
-  ```
-
----
-
 ### **Note**:
-This cheat sheet is designed to provide a quick reference for essential Linux commands that are commonly used in various tasks such as network management, file and directory manipulation, user management, and searching for files.
+This cheat sheet provides a quick reference for essential Linux commands. Perfect for beginners and experienced users alike! 🐧
 
 ---
