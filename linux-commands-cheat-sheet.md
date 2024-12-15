@@ -81,7 +81,7 @@
   ```bash
   cd /path/to/directory               # Navigate to a specific directory
   cd ..                               # Go back one directory level
-  cd ~                                # Go to the home directory
+  cd or cd ~                          # Go to the home directory
   ```
 
 - **`ls`** – List the contents of a directory.
