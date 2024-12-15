@@ -92,6 +92,11 @@
   ls -ltr                             # List in reverse order of modification time
   ```
 
+- **`clear`** – Clear the terminal screen.
+  ```bash
+  clear
+  ```
+
 ---
 
 ## **File and Directory Management**
@@ -111,7 +116,7 @@
 - **`cp`** – Copy files and directories.
   ```bash
   cp file1.txt file2.txt              # Copy file1.txt to file2.txt
-  cp -R dir1 /home/anupmoitra/dir2    # Copy dir1 to dir2, including all subdirectories and files
+  cp -R dir1 /home/user/dir2          # Copy dir1 to dir2, including all subdirectories and files
   ```
 
 - **`mv`** – Move or rename files and directories.
@@ -176,10 +181,6 @@
 - **`locate`** is faster but relies on an index and might not include recent changes.
 - **`updatedb`** is required to refresh the index used by `locate`.
 
-### **Note on `.` and `/`**:
-- **`.` (dot)** refers to the **current directory**. When you use `find .`, it searches within the directory you are currently in.
-- **`/` (slash)** refers to the **root directory**. When you use `find /`, it searches the entire file system, starting from the top-level directory.
-
 ---
 
 ## **File and Directory Properties**
@@ -201,7 +202,7 @@
 
 - **Absolute Paths**: Start from the root directory (`/`).
   ```bash
-  cd /home/anupmoitra/Documents       # Navigate using an absolute path
+  cd /home/user/Documents             # Navigate using an absolute path
   ```
 
 - **Relative Paths**: Start from the current directory.
