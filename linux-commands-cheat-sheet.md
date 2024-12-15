@@ -28,7 +28,6 @@
 - **`ssh`** – Secure Shell to access remote systems.
   ```bash
   ssh user@hostname_or_ip             # Access a remote system via SSH (replace 'user' and 'hostname_or_ip')
-  ssh username@192.168.1.100          # Example with IP address
   ssh -l username hostname_or_ip      # Specify the username explicitly with the `-l` option
   ```
   **Note**: The `-l` option explicitly specifies the username to log in with, which is especially useful when the username differs from your local machine's username.
