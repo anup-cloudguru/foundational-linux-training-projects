@@ -32,7 +32,6 @@
   ssh -l username hostname_or_ip      # Specify the username explicitly with the `-l` option
   ```
   **Note**: The `-l` option explicitly specifies the username to log in with, which is especially useful when the username differs from your local machine's username.
-```
 
 ---
 
