@@ -217,20 +217,6 @@ Wildcards are special characters in Linux that help you match patterns in filena
 
 ### **Practice Tasks for `{}`**
 
-1. **Prepare the environment:**
-   - **Command**:
-     ```bash
-     touch data_{01..10}.csv report_{jan,feb,mar}.txt
-     ```
-   - **Outcome**: Creates sequence-based and month-based files.
-
-2. **Create sequence-based files:**
-   - **Command**:
-     ```bash
-     touch report_{1..5}.txt
-     ```
-   - **Outcome**: Creates `report_1.txt`, `report_2.txt`, ..., `report_5.txt`.
-
 3. **List specific files:**
    - **Command**:
      ```bash
