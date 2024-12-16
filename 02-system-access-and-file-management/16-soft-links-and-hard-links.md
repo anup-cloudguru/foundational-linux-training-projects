@@ -84,7 +84,7 @@ ln -s <source_file> <link_name>
 
 4. Verify the link:
    ```bash
-   ls -l
+   ls -lI
    ```
 
    Output will indicate the symbolic link with an `l` at the beginning (e.g., `lrwxrwxrwx`). The link will point to the source file (`Anup -> /home/user/Anup`).
@@ -98,7 +98,7 @@ ln -s <source_file> <link_name>
 
    If the source file is removed, the link will break and return an error when accessed.
 
-   ![Screenshot: Created file 'Anup'](screenshots/03-soft-link-creation-verification-testing.png)  
+   ![Screenshot: Created file 'Anup'](screenshots/03-soft-link-creation-verification-testingG.png)  
    *Figure 3: Combined screenshot showing the entire process of creating, verifying, and testing the soft link `Anup_link`. This includes navigating to the `/tmp` directory, creating the soft link, verifying it with `ls -li`, testing it with `cat`, and demonstrating that if the source file is removed, the link becomes broken and returns an error when accessed.*
 
 ---
