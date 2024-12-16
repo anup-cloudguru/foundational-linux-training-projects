@@ -263,4 +263,5 @@ Wildcards are special characters in Linux that help you match patterns in filena
    ```bash
    grep -o '^abc' names.txt
    ```
+
 ---
