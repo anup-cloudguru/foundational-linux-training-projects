@@ -52,6 +52,75 @@ Wildcards are special characters in Linux that help you match patterns in filena
 
 ---
 
+### **Practice Tasks for `?`**
+
+#### **Task 1: List files with exactly one character before `.txt`**
+- **Command:**
+  ```bash
+  ls file?.txt
+  ```
+- **Outcome:**
+  ```
+  file1.txt
+  file2.txt
+  fileA.txt
+  fileB.txt
+  file_.txt
+  ```
+- **Explanation:** The `?` matches exactly one character, so `file12.txt` is excluded because it has two characters before `.txt`.
+
+#### **Task 2: List files with two characters in the name**
+- **Command:**
+  ```bash
+  ls ??.txt
+  ```
+- **Outcome:**
+  No output (empty).
+- **Explanation:** None of the files match the pattern `??.txt` because all filenames are longer than two characters.
+
+#### **Task 3: List `.log` files with one character after "read"**
+- **Command:**
+  ```bash
+  ls read?.log
+  ```
+- **Outcome:**
+  ```
+  read1.log
+  read2.log
+  readA.log
+  ```
+- **Explanation:** The `?` matches exactly one character after "read", so it lists all `.log` files with one extra character.
+
+#### **Task 4: Copy `.txt` files with one character before `.txt` to the home directory**
+- **Command:**
+  ```bash
+  cp file?.txt ~/  # Assumes your home directory is /home/<username>
+  ```
+- **Outcome:**
+  Copies the following files to the home directory:
+  ```
+  file1.txt
+  file2.txt
+  fileA.txt
+  fileB.txt
+  file_.txt
+  ```
+- **Explanation:** The `?` matches exactly one character in filenames, so `file12.txt` is not included.
+
+#### **Task 5: Delete files with one character before `.log`**
+- **Command:**
+  ```bash
+  rm read?.log
+  ```
+- **Outcome:** Deletes:
+  ```
+  read1.log
+  read2.log
+  readA.log
+  ```
+
+---
+
 #### **3. Curly Braces (`{}`)**
 - **What it does**: Used for creating patterns in **sequences** or **specific choices**. Think of it like saying, "Match this OR that."
 
