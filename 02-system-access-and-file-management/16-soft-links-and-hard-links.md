@@ -16,6 +16,23 @@ An **inode** is a unique identifier (number) assigned to a file or directory on 
 
 Each time a file is created, the filesystem generates an inode number pointing to the file's data on disk. When accessing a file, Linux refers to the inode to locate the data.
 
+In addition to the file's data, the inode contains metadata such as:
+- File size
+- Permissions
+- Ownership (user/group)
+- Timestamps (e.g., creation, last access, last modification)
+
+For example, when you run `ls -li` in a directory, the inode number is displayed at the beginning of each line, like this:
+
+```
+18168252 -rw-r--r-- 1 user user 1024 Dec 16 12:00 Anup.txt
+```
+
+In this output, `18168252` is the inode number of `Anup.txt`, and the inode points to the actual data on the disk.
+
+![Inode Screenshot](screenshots/01-inode_example.png)  
+*Figure 1: Example output of `ls -li`, showing the inode number and metadata for the file `Anup.txt`.*
+
 ---
 
 ### **Soft Links**
@@ -27,8 +44,10 @@ A **soft link** (or symbolic link) is like a shortcut to a file or directory.
 1. **Dependency on the Source File**:
    - If the source file is deleted or renamed, the soft link becomes invalid.
    - The link points to the file path, not directly to the inode.
+   
 2. **Different Inodes**:
    - The soft link and the source file have different inode numbers.
+   
 3. **Usage Example**:
    - Soft links are ideal for creating shortcuts to frequently accessed files.
 
@@ -51,7 +70,7 @@ ln -s <source_file> <link_name>
    ```
 
    ![Screenshot: Created file 'Anup'](screenshots/02-created-file-anup-home-directory.png)  
-   *Figure 1: File 'Anup' created in the home directory.*
+   *Figure 2: File 'Anup' created in the home directory.*
 
 2. Navigate to the `/tmp` directory:
    ```bash
@@ -79,6 +98,9 @@ ln -s <source_file> <link_name>
 
    If the source file is removed, the link will break and return an error when accessed.
 
+   ![Screenshot: Created file 'Anup'](screenshots/03-soft-link-creation-verification-testing.png)  
+   *Figure 3: Combined screenshot showing the entire process of creating, verifying, and testing the soft link `Anup_link`. This includes navigating to the `/tmp` directory, creating the soft link, verifying it with `ls -l`, testing it with `cat`, and demonstrating that if the source file is removed, the link becomes broken and returns an error when accessed.*
+
 ---
 
 ### **Hard Links**
@@ -90,8 +112,10 @@ A **hard link** is an additional reference to the same file.
 1. **Independent of the Source File**:
    - Deleting or renaming the source file does not affect the hard link.
    - The data remains accessible because the link points directly to the inode.
+   
 2. **Same Inodes**:
    - Both the source file and the hard link share the same inode number.
+   
 3. **Usage Example**:
    - Hard links are useful for creating backups or accessing files from multiple locations.
 
@@ -169,18 +193,5 @@ ln <source_file> <link_name>
 2. **Hard Links**: Serve as a direct reference to the file’s data, making them more resilient.
 
 Understanding and using soft and hard links efficiently can enhance your file management and improve your workflow in Linux.
-
----
-
-### **Screenshot (All Soft Link Steps Combined)**:
-
-**Name**: `soft-link-creation-verification-testing.png`
-
-This screenshot will show the entire process, including:
-
-- Navigating to the `/tmp` directory
-- Creating the soft link `Anup_link`
-- Verifying the link with `ls -l`
-- Testing the soft link with `cat Anup_link`
 
 ---
