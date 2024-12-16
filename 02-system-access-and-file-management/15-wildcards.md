@@ -1,3 +1,4 @@
+```markdown
 # **Module 2: System Access and File Management**
 
 ## **Chapter 15: Wildcards (`*`, `?`, `{}`, `[]`)**
@@ -23,7 +24,6 @@ Wildcards are special characters in Linux that help you match patterns in filena
   - `ls *`  
     Lists all files in the directory.  
     **Output**: All files in the current directory
-
   - `rm ABC*`  
     Deletes all files starting with "ABC".  
     **Output**: Only `XYZ.txt` remains.
@@ -41,11 +41,9 @@ Wildcards are special characters in Linux that help you match patterns in filena
   - `ls A?.txt`  
     Matches files with **A + one character + .txt**.  
     **Output**: `A1.txt, A2.txt, AB.txt`
-
   - `ls A??.txt`  
     Matches files with **A + two characters + .txt**.  
     **Output**: `ABC.txt`
-
   - `ls "A ?.txt"`  
     Matches files like **A .txt** (one character including space).  
     **Output**: `A1.txt, A .txt`
@@ -58,16 +56,12 @@ Wildcards are special characters in Linux that help you match patterns in filena
 - **Examples**:
   - `touch file{1..10}.txt`  
     Creates 10 files: `file1.txt, file2.txt, file3.txt, ..., file10.txt`
-
   - `ls file{1..3}.txt`  
     Lists files: `file1.txt, file2.txt, file3.txt`
-
   - `touch report_{jan,feb,mar}.txt`  
     Creates: `report_jan.txt, report_feb.txt, report_mar.txt`
-
   - `echo {A,B,C}123`  
     Outputs: `A123, B123, C123`
-
   - `cp file{1,2}.txt destination/`  
     Copies `file1.txt` and `file2.txt` to the `destination` folder.
 
@@ -84,11 +78,9 @@ Wildcards are special characters in Linux that help you match patterns in filena
   - `ls file[A-C]*`  
     Matches files starting with "file" followed by **A, B, or C**.  
     **Output**: `fileA.txt, fileB.txt, fileC.txt`
-
   - `ls file[1-2]*`  
     Matches files starting with "file" followed by **1 or 2**.  
     **Output**: `file1.txt, file2.txt`
-
   - `ls file[1-2A-C]*`  
     Matches files starting with "file" followed by **1, 2, A, B, or C**.  
     **Output**: `fileA.txt, fileB.txt, fileC.txt, file1.txt, file2.txt`
@@ -137,144 +129,139 @@ Wildcards are special characters in Linux that help you match patterns in filena
 
 ---
 
-### **Practice Tasks for `*`**
+### **Practice Tasks**
 
+#### **For `*`**
 1. **Prepare the environment:**
-   - **Command**:
-     ```bash
-     touch report1.txt report2.txt report_final.txt summary.docx log2023.log temp.bak
-     ```
-   - **Outcome**: Creates some sample files to work with.
+   ```bash
+   touch report1.txt report2.txt report_final.txt summary.docx log2023.log temp.bak
+   ```
+   **Outcome**: Creates some sample files to work with.
 
-2. **List all `.txt` files in a directory:**
-   - **Command**:
-     ```bash
-     ls *.txt
-     ```
-   - **Outcome**: Lists all files ending with `.txt`.
+2. **List all `.txt` files:**
+   ```bash
+   ls *.txt
+   ```
 
 3. **List files starting with "log" and ending in `.log`:**
-   - **Command**:
-     ```bash
-     ls log*.log
-     ```
-   - **Outcome**: Lists all files like `log2023.log`.
+   ```bash
+   ls log*.log
+   ```
 
 4. **Copy all files with "report" in the name:**
-   - **Command**:
-     ```bash
-     cp *report* /home/username/
-     ```
-   - **Outcome**: Copies all files with "report" in the name to `/home/username/`.
+   ```bash
+   cp *report* /home/username/
+   ```
 
 5. **Delete all `.bak` files:**
-   - **Command**:
-     ```bash
-     rm *.bak
-     ```
-   - **Outcome**: Deletes all files ending in `.bak`.
+   ```bash
+   rm *.bak
+   ```
 
 ---
 
-### **Practice Tasks for `?`**
-
+#### **For `?`**
 1. **Prepare the environment:**
-   - **Command**:
-     ```bash
-     touch file1.txt file2.txt fileA.txt fileAB.txt fileXYZ.txt
-     ```
-   - **Outcome**: Creates a set of sample files.
+   ```bash
+   touch file1.txt file2.txt fileA.txt fileAB.txt fileXYZ.txt
+   ```
 
 2. **List files with exactly one character before `.txt`:**
-   - **Command**:
-     ```bash
-     ls file?.txt
-     ```
-   - **Outcome**: Matches `file1.txt`, `file2.txt`, `fileA.txt`.
+   ```bash
+   ls file?.txt
+   ```
 
 3. **List files with exactly two characters in the name:**
-   - **Command**:
-     ```bash
-     ls ??.txt
-     ```
-   - **Outcome**: Matches files with two-character names, if any exist.
+   ```bash
+   ls ??.txt
+   ```
 
 4. **Copy `.log` files with one character after "read":**
-   - **Command**:
-     ```bash
-     cp read?.log /home/username/
-     ```
-   - **Outcome**: Copies files like `read1.log`, `read2.log`.
+   ```bash
+   cp read?.log /home/username/
+   ```
 
 5. **Delete `.log` files with one character after "error":**
-   - **Command**:
-     ```bash
-     rm error?.log
-     ```
-   - **Outcome**: Deletes files like `error1.log`, `errorA.log`.
+   ```bash
+   rm error?.log
+   ```
 
 ---
 
-### **Practice Tasks for `{}`**
+#### **For `{}`**
+1. **List specific files:**
+   ```bash
+   ls file{1,3,5}.txt
+   ```
 
-3. **List specific files:**
-   - **Command**:
-     ```bash
-     ls file{1,3,5}.txt
-     ```
-   - **Outcome**: Lists `file1.txt`, `file3.txt`, `file5.txt`.
+2. **Copy month-specific files:**
+   ```bash
+   cp report_{jan,feb,mar}.txt /home/username/
+   ```
 
-4. **Copy month-specific files:**
-   - **Command**:
-     ```bash
-     cp report_{jan,feb,mar}.txt /home/username/
-     ```
-   - **Outcome**: Copies files like `report_jan.txt` to `/home/username/`.
-
-5. **Delete sequence-based files:**
-   - **Command**:
-     ```bash
-     rm data_{01..10}.csv
-     ```
-   - **Outcome**: Deletes files `data_01.csv`, ..., `data_10.csv`.
+3. **Delete sequence-based files:**
+   ```bash
+   rm data_{01..10}.csv
+   ```
 
 ---
 
-### **Practice Tasks for `[]`**
-
+#### **For `[]`**
 1. **Prepare the environment:**
-   - **Command**:
-     ```bash
-     touch fileA.txt fileB.txt fileC.txt file1.txt file2.txt file3.log
-     ```
-   - **Outcome**: Creates a mix of files to practice with.
+   ```bash
+   touch fileA.txt fileB.txt fileC.txt file1.txt file2.txt file3.log
+   ```
 
 2. **List files starting with "file" and followed by a range (1-3):**
-   - **Command**:
-     ```bash
-     ls file[1-3].txt
-     ```
-   - **Outcome**: Matches `file1.txt`, `file2.txt`, `file3.txt`.
+   ```bash
+   ls file[1-3].txt
+   ```
 
 3. **List files starting with "file" and followed by specific letters (A, B):**
-   - **Command**:
-     ```bash
-     ls file[A-B]*.txt
-     ```
-   - **Outcome**: Matches `fileA.txt`, `fileB.txt`.
+   ```bash
+   ls file[A-B]*.txt
+   ```
 
 4. **Copy files matching range or set:**
-   - **Command**:
-     ```bash
-     cp file[1-3A-C].txt /home/username/
-     ```
-   - **Outcome**: Copies files like `file1.txt`, `fileA.txt`.
+   ```bash
+   cp file[1-3A-C].txt /home/username/
+   ```
 
 5. **Delete files ending with numbers in a range (1-5):**
-   - **Command**:
-     ```bash
-     rm file[1-5].log
-     ```
-   - **Outcome**: Deletes files like `file1.log`, `file5.log`.
+   ```bash
+   rm file[1-5].log
+   ```
 
+---
+
+#### **For `^`**
+1. **Prepare the environment:**
+   ```bash
+   echo -e "abc123\n123abc\nabcdef\nxyzabc" > names.txt
+   ```
+
+2. **Find lines starting with "abc":**
+   ```bash
+   grep '^abc' names.txt
+   ```
+
+3. **Find lines starting with a digit:**
+   ```bash
+   grep '^[0-9]' names.txt
+   ```
+
+4. **Find lines starting with a specific letter (e.g., `x`):**
+   ```bash
+   grep '^x' names.txt
+   ```
+
+5. **Find lines starting with a lowercase letter:**
+   ```bash
+   grep '^[a-z]' names.txt
+   ```
+
+6. **Find lines starting with "abc" but exclude the rest:**
+   ```bash
+   grep -o '^abc' names.txt
+   ```
 ---
