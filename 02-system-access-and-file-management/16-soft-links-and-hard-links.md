@@ -16,6 +16,9 @@ An **inode** is a unique identifier (number) assigned to a file or directory on 
 
 Each time a file is created, the filesystem generates an inode number pointing to the file's data on disk. When accessing a file, Linux refers to the inode to locate the data.
 
+![Inode Screenshot](path/to/your/screenshot.png)
+*In the output of `ls -i example.txt`, the number `12345678` represents the inode of the file `example.txt`. The inode contains metadata about the file, such as its size, permissions, and the pointers to the data blocks on disk. The filename `example.txt` is just a human-readable label for the inode.*
+
 ---
 
 ### **Soft Links**
