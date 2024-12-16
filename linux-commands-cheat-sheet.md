@@ -91,7 +91,19 @@
   ls -lt                              # List sorted by modification time
   ls -ltr                             # List in reverse order of modification time
   ```
+- **`echo`** – Display a string or write text to a file.  
+  ```bash
+  echo "Hello, World!"               # Print "Hello, World!" to the terminal
+  echo "Anup is a superhero" > file  # Write "Anup is a superhero" to a file named 'file'
+  echo $USER                         # Display the value of the 'USER' environment variable
+  ```
 
+- **`cat`** – Display the content of a file or combine files.  
+  ```bash
+  cat file.txt                       # Show the content of 'file.txt' on the terminal
+  cat file1.txt file2.txt > combined.txt  # Combine 'file1.txt' and 'file2.txt' into 'combined.txt'
+  cat -n file.txt                    # Display content of 'file.txt' with line numbers
+  ```
 ---
 
 ## **File and Directory Management**
