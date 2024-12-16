@@ -174,7 +174,7 @@ ln <source_file> <link_name>
 
    Output: `Anup is a superhero`. This demonstrates that a hard link retains the data even if the source file is deleted.
    ![Screenshot: Created file 'Anup'](screenshots/04-hard-link-creation-verification-testingG.png)  
-   *Figure 3: Combined screenshot showing the entire process of creating, verifying, and testing the soft link `Anup_link`. This includes navigating to the `/tmp` directory, creating the soft link, verifying it with `ls -li`, testing it with `cat`, and demonstrating that if the source file is removed, the link becomes broken and returns an error when accessed.*
+   *Figure 4: Combined screenshot showing the entire process of creating, verifying, and testing the hard link `Anup_hardlink`. This includes navigating to the `/tmp` directory, creating the soft link, verifying it with `ls -li`, testing it with `cat`, and demonstrating that if the source file is removed, the link is still accissable and readable.*
    
 ---
 
