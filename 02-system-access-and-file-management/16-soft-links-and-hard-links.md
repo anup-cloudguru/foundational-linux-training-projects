@@ -43,6 +43,10 @@ Use the following command:
 ln -s <source_file> <link_name>
 ```
 
+- `<source_file>`: This is the original file or directory you want to link to.
+- `<link_name>`: This is the name of the symbolic link you want to create.  
+  If you don't specify a `<link_name>`, the symbolic link will be created with the same name as the `<source_file>` in the current directory.
+
 **Example**:
 
 1. Create a file called `Anup` in your home directory:
@@ -58,7 +62,7 @@ ln -s <source_file> <link_name>
    cd /tmp
    ```
 
-3. Create a soft link to the `Anup` file:
+3. Create a soft link to the `Anup` file with a custom link name:
    ```bash
    ln -s ~/Anup Anup_link
    ```
@@ -66,17 +70,25 @@ ln -s <source_file> <link_name>
    ![Screenshot: Created soft link 'Anup_link'](screenshot-placeholder)  
    *Figure 2: Soft link 'Anup_link' created in /tmp directory.*
 
-4. Verify the link:
+4. If you don’t specify the link name, a link with the same name as the source file will be created in the current directory:
+   ```bash
+   ln -s ~/Anup
+   ```
+
+   ![Screenshot: Created soft link 'Anup' in the current directory](screenshot-placeholder)  
+   *Figure 3: Soft link 'Anup' created with the same name as the source file in the current directory.*
+
+5. Verify the link:
    ```bash
    ls -l
    ```
 
    ![Screenshot: Listing the contents of /tmp directory](screenshot-placeholder)  
-   *Figure 3: Listing the contents of the /tmp directory showing the soft link.*
+   *Figure 4: Listing the contents of the /tmp directory showing the soft link.*
 
    Output will indicate the symbolic link with an `l` at the beginning (e.g., `lrwxrwxrwx`). The link will point to the source file (`Anup -> /home/user/Anup`).
 
-5. Test the soft link:
+6. Test the soft link:
    ```bash
    cat Anup_link
    ```
@@ -84,14 +96,14 @@ ln -s <source_file> <link_name>
    Output: `Anup is a superhero`.
 
    ![Screenshot: Testing the soft link 'Anup_link'](screenshot-placeholder)  
-   *Figure 4: Output of the `cat` command shows the contents of the original file through the soft link.*
+   *Figure 5: Output of the `cat` command shows the contents of the original file through the soft link.*
 
-6. Remove the source file:
+7. Remove the source file:
    ```bash
    rm ~/Anup
    ```
 
-7. Check the link:
+8. Check the link:
    ```bash
    cat Anup_link
    ```
@@ -99,7 +111,7 @@ ln -s <source_file> <link_name>
    Output: `No such file or directory`. This demonstrates that a soft link breaks if the source file is deleted.
 
    ![Screenshot: Attempting to access deleted source file through soft link](screenshot-placeholder)  
-   *Figure 5: Soft link becomes broken after the source file is deleted.*
+   *Figure 6: Soft link becomes broken after the source file is deleted.*
 
 ---
 
