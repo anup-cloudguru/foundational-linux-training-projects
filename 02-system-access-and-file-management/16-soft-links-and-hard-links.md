@@ -3,7 +3,7 @@
 ## **Chapter 16: Understanding Soft Links and Hard Links**
 
 ### **Introduction**  
-In this chapter, we will cover **soft links** and **hard links**, two essential topics in Linux file management. Before diving into these concepts, let’s first understand **inodes**, a fundamental component of Linux filesystems.
+In this chapter, we will cover **soft links** and **hard links**, two essential concepts in Linux file management. Before diving into these topics, let’s first understand **inodes**, a fundamental component of Linux filesystems.
 
 ---
 
