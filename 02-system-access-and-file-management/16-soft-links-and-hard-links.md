@@ -54,15 +54,16 @@ ln -s <source_file> <link_name>
    echo "Anup is a superhero" > ~/Anup
    ```
 
-   ![Screenshot: Created file 'Anup'](screenshot-placeholder)  
+   ![Screenshot: Created file 'Anup'](screnshots/02-created-file-anup-home-directory.png)
+   
    *Figure 1: File 'Anup' created in the home directory.*
 
-2. Navigate to the `/tmp` directory:
+3. Navigate to the `/tmp` directory:
    ```bash
    cd /tmp
    ```
 
-3. Create a soft link to the `Anup` file with a custom link name:
+4. Create a soft link to the `Anup` file with a custom link name:
    ```bash
    ln -s ~/Anup Anup_link
    ```
@@ -70,7 +71,7 @@ ln -s <source_file> <link_name>
    ![Screenshot: Created soft link 'Anup_link'](screenshot-placeholder)  
    *Figure 2: Soft link 'Anup_link' created in /tmp directory.*
 
-4. Verify the link:
+5. Verify the link:
    ```bash
    ls -l
    ```
@@ -80,7 +81,7 @@ ln -s <source_file> <link_name>
 
    Output will indicate the symbolic link with an `l` at the beginning (e.g., `lrwxrwxrwx`). The link will point to the source file (`Anup -> /home/user/Anup`).
 
-5. Test the soft link:
+6. Test the soft link:
    ```bash
    cat Anup_link
    ```
@@ -90,12 +91,12 @@ ln -s <source_file> <link_name>
    ![Screenshot: Testing the soft link 'Anup_link'](screenshot-placeholder)  
    *Figure 4: Output of the `cat` command shows the contents of the original file through the soft link.*
 
-6. Remove the source file:
+7. Remove the source file:
    ```bash
    rm ~/Anup
    ```
 
-7. Check the link:
+8. Check the link:
    ```bash
    cat Anup_link
    ```
