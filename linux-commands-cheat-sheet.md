@@ -141,6 +141,28 @@
 
 ---
 
+## **Creating Links**
+
+- **`ln -s`** – Create a soft (symbolic) link.
+  ```bash
+  ln -s <source_file> <link_name>    # Create a symbolic link to the source file
+  ```
+  **Example**:
+  ```bash
+  ln -s ~/Anup Anup_link             # Create a soft link to the file 'Anup'
+  ```
+
+- **`ln`** – Create a hard link.
+  ```bash
+  ln <source_file> <link_name>       # Create a hard link to the source file
+  ```
+  **Example**:
+  ```bash
+  ln ~/Anup Anup_hardlink            # Create a hard link to the file 'Anup'
+  ```
+
+---
+
 ## **Wildcard and Pattern Matching**
 
 | Wildcard | What It Matches                         | Example             | Output                                   |
