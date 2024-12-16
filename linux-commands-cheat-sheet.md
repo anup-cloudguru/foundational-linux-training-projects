@@ -125,6 +125,7 @@
   rm file1.txt                        # Remove a file
   rm -r dir1                          # Remove a directory and its contents
   rm -rf dir1                         # Remove a directory and its contents without confirmation, even for write-protected files
+  rm /path/to/folder/*                # Remove all files in the folder (keeps the folder itself)
   ```
 
 - **`mkdir`** – Create a new directory.
