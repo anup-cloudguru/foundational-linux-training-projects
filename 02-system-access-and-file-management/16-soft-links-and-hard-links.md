@@ -54,7 +54,7 @@ ln -s <source_file> <link_name>
    echo "Anup is a superhero" > ~/Anup
    ```
 
-   ![Screenshot: Created file 'Anup'](screnshots/02-created-file-anup-home-directory.png)
+   ![Screenshot: Created file 'Anup'](screenshots/02-created-file-anup-home-directory.png)
    
    *Figure 1: File 'Anup' created in the home directory.*
 
