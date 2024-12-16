@@ -1,7 +1,5 @@
 # **🐧 Linux Command Cheat Sheet**
 
----
-
 ## **Network Commands**
 
 - **`ip a` (or `ip addr`)** – Display all network interfaces and their IP addresses.  
