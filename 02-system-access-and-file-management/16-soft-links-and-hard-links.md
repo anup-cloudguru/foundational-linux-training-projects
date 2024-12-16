@@ -102,7 +102,7 @@ ln -s <source_file> <link_name>
    cat: Anup_link: No such file or directory
    ```
 
-   ![Soft Link Example](screenshots/03-soft-link-creation-verification-testing.png)  
+   ![Soft Link Example](screenshots/03-soft-link-creation-verification-testingG.png)  
    *Figure 3: Soft link creation, verification, and testing.*
 
 ---
@@ -178,7 +178,7 @@ ln <source_file> <link_name>
    123
    ```
 
-   ![Hard Link Example](screenshots/04-hard-link-creation-verification-testing.png)  
+   ![Hard Link Example](screenshots/04-hard-link-creation-verification-testingG.png)  
    *Figure 4: Hard link creation, verification, and testing.*
 
 ---
