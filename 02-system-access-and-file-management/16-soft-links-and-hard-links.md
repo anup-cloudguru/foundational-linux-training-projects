@@ -16,10 +16,6 @@ An **inode** is a unique identifier (number) assigned to a file or directory on 
 
 Each time a file is created, the filesystem generates an inode number pointing to the file's data on disk. When accessing a file, Linux refers to the inode to locate the data.
 
-![Inode Screenshot](screenshots/01-inode_example.png)
-
-*In the output of `ls -li`, the number `18168252` represents the inode of the file `Anup.txt`. The inode contains metadata about the file, such as its size, permissions, and the pointers to the data blocks on disk. The filename `Anup.txt` is just a human-readable label for the inode.*
-
 ---
 
 ### **Soft Links**
@@ -54,57 +50,34 @@ ln -s <source_file> <link_name>
    echo "Anup is a superhero" > ~/Anup
    ```
 
-   ![Screenshot: Created file 'Anup'](screenshots/02-created-file-anup-home-directory.png)
-   
+   ![Screenshot: Created file 'Anup'](screenshots/02-created-file-anup-home-directory.png)  
    *Figure 1: File 'Anup' created in the home directory.*
 
-3. Navigate to the `/tmp` directory:
+2. Navigate to the `/tmp` directory:
    ```bash
    cd /tmp
    ```
 
-4. Create a soft link to the `Anup` file with a custom link name:
+3. Create a soft link to the `Anup` file with a custom link name:
    ```bash
    ln -s ~/Anup Anup_link
    ```
 
-   ![Screenshot: Created soft link 'Anup_link'](screenshot-placeholder)  
-   *Figure 2: Soft link 'Anup_link' created in /tmp directory.*
-
-5. Verify the link:
+4. Verify the link:
    ```bash
    ls -l
    ```
 
-   ![Screenshot: Listing the contents of /tmp directory](screenshot-placeholder)  
-   *Figure 3: Listing the contents of the /tmp directory showing the soft link.*
-
    Output will indicate the symbolic link with an `l` at the beginning (e.g., `lrwxrwxrwx`). The link will point to the source file (`Anup -> /home/user/Anup`).
 
-6. Test the soft link:
+5. Test the soft link:
    ```bash
    cat Anup_link
    ```
 
    Output: `Anup is a superhero`.
 
-   ![Screenshot: Testing the soft link 'Anup_link'](screenshot-placeholder)  
-   *Figure 4: Output of the `cat` command shows the contents of the original file through the soft link.*
-
-7. Remove the source file:
-   ```bash
-   rm ~/Anup
-   ```
-
-8. Check the link:
-   ```bash
-   cat Anup_link
-   ```
-
-   Output: `No such file or directory`. This demonstrates that a soft link breaks if the source file is deleted.
-
-   ![Screenshot: Attempting to access deleted source file through soft link](screenshot-placeholder)  
-   *Figure 5: Soft link becomes broken after the source file is deleted.*
+   If the source file is removed, the link will break and return an error when accessed.
 
 ---
 
@@ -136,9 +109,6 @@ ln <source_file> <link_name>
    echo "Anup is a superhero" > ~/Anup
    ```
 
-   ![Screenshot: Created file 'Anup' again](screenshot-placeholder)  
-   *Figure 6: File 'Anup' created in the home directory.*
-
 2. Navigate to the `/tmp` directory:
    ```bash
    cd /tmp
@@ -149,16 +119,10 @@ ln <source_file> <link_name>
    ln ~/Anup Anup_hardlink
    ```
 
-   ![Screenshot: Created hard link 'Anup_hardlink'](screenshot-placeholder)  
-   *Figure 7: Hard link 'Anup_hardlink' created in /tmp directory.*
-
 4. Verify the hard link:
    ```bash
    ls -li
    ```
-
-   ![Screenshot: Listing the contents with inode numbers](screenshot-placeholder)  
-   *Figure 8: Listing the files with inode numbers showing the same inode for both the source file and the hard link.*
 
    Notice that both the original file (`Anup`) and the hard link (`Anup_hardlink`) share the same inode number.
 
@@ -174,9 +138,6 @@ ln <source_file> <link_name>
 
    Output: `Anup is a superhero\n123`. This confirms that the hard link reflects changes made to the source file.
 
-   ![Screenshot: Output of `cat` command on hard link](screenshot-placeholder)  
-   *Figure 9: Hard link reflects changes made to the original file.*
-
 7. Remove the source file:
    ```bash
    rm ~/Anup
@@ -189,12 +150,9 @@ ln <source_file> <link_name>
 
    Output: `Anup is a superhero\n123`. This demonstrates that a hard link retains the data even if the source file is deleted.
 
-   ![Screenshot: Hard link retains content after source file deletion](screenshot-placeholder)  
-   *Figure 10: Hard link remains intact even after the source file is removed.*
-
 ---
 
-## **Comparison: Soft Links vs. Hard Links**
+### **Comparison: Soft Links vs. Hard Links**
 
 | **Feature**             | **Soft Link**                                | **Hard Link**                                |
 |-------------------------|----------------------------------------------|----------------------------------------------|
@@ -211,5 +169,18 @@ ln <source_file> <link_name>
 2. **Hard Links**: Serve as a direct reference to the file’s data, making them more resilient.
 
 Understanding and using soft and hard links efficiently can enhance your file management and improve your workflow in Linux.
+
+---
+
+### **Screenshot (All Soft Link Steps Combined)**:
+
+**Name**: `soft-link-creation-verification-testing.png`
+
+This screenshot will show the entire process, including:
+
+- Navigating to the `/tmp` directory
+- Creating the soft link `Anup_link`
+- Verifying the link with `ls -l`
+- Testing the soft link with `cat Anup_link`
 
 ---
