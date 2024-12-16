@@ -1,4 +1,3 @@
-```markdown
 # **Module 2: System Access and File Management**
 
 ## **Chapter 15: Wildcards (`*`, `?`, `{}`, `[]`)**
