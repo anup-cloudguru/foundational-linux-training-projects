@@ -120,7 +120,7 @@ man ls
 Using `ls` with multiple options and arguments.
 
 ```bash
-ls -ltr /home
+[anupmoitra@CentOS9 ~]$ ls -ltr Downloads
 ```
 
 **Explanation**:
@@ -129,8 +129,10 @@ ls -ltr /home
    - `-l`: Detailed list format
    - `-t`: Sort by modification time
    - `-r`: Reverse the order
-- `/home` → Argument specifying the directory.
-
+- `Downlaods` → Argument specifying the directory.
+**Screenshot**:  
+   ![Created File](screenshots/01-listing-files-with-options.png)  
+*Figure 2: Example of using `man` to view command manual for `rm`.*
 ---
 
 #### **Example 2: Viewing Manual for `rm` Command**
