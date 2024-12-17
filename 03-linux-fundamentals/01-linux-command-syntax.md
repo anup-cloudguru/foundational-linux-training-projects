@@ -66,16 +66,16 @@ ls -ltr
 Arguments provide additional input to a command. They can specify files, directories, or other required parameters.
 
 **Example**:  
-The following `ls` command uses `bart` as an argument to list details about the specific file `bart`:
+The following `ls` command uses `bart` as an argument to list details about the specific file `anup`:
 
 ```bash
-ls -l bart
+ls -l anup
 ```
 
 Here:
 - `ls` → Command
 - `-l` → Option
-- `bart` → Argument (file name)
+- `anup` → Argument (file name)
 
 ---
 
