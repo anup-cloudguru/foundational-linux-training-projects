@@ -89,13 +89,13 @@ Let’s look at a practical example of combining all components:
 - The `-f` option forces the removal without asking for confirmation.
 
 ```bash
-rm -rf seinfeld
+rm -rf dir1
 ```
 
 Here:
 - `rm` → Command to remove files or directories.
 - `-rf` → Options (`-r` for recursive and `-f` for force).
-- `seinfeld` → Argument specifying the directory to delete.
+- `dir1` → Argument specifying the directory to delete.
 
 ---
 
