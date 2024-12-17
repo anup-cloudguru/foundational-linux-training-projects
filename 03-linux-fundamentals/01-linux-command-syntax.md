@@ -1,4 +1,4 @@
-# **Module 4: Linux Command Basics**
+# **Module 3: Linux Command Basics**
 
 ## **Chapter 1: Linux Command Syntax**
 
