@@ -66,7 +66,7 @@ ls -ltr
 Arguments provide additional input to a command. They can specify files, directories, or other required parameters.
 
 **Example**:  
-The following `ls` command uses `bart` as an argument to list details about the specific file `anup`:
+The following `ls` command uses `anup` as an argument to list details about the specific file `anup`:
 
 ```bash
 ls -l anup
@@ -75,7 +75,7 @@ ls -l anup
 Here:
 - `ls` → Command
 - `-l` → Option
-- `anup` → Argument (file name)
+- `anup` → Argument (file name or directory)
 
 ---
 
@@ -93,7 +93,7 @@ rm -r dir1
 
 Here:
 - `rm` → Command to remove files or directories.
-- `-r` → Options (`-r` for recursive).
+- `-r` → Option (`-r` for recursive).
 - `dir1` → Argument specifying the directory to delete.
 
 ---
@@ -129,10 +129,12 @@ Using `ls` with multiple options and arguments.
    - `-l`: Detailed list format
    - `-t`: Sort by modification time
    - `-r`: Reverse the order
-- `Downlaods` → Argument specifying the directory.
+- `Downloads` → Argument specifying the directory.
+
 **Screenshot**:  
-   ![Created File](screenshots/01-listing-files-with-options.png)  
-*Figure 2: Example of using `man` to view command manual for `rm`.*
+![Created File](screenshots/01-listing-files-with-options.png)  
+*Figure 1: Example of listing files using `ls` with options.*
+
 ---
 
 #### **Example 2: Viewing Manual for `rm` Command**
@@ -143,9 +145,8 @@ man rm
 ```
 
 **Screenshot**:  
-!Viewing the `rm` Manual  
-![Created File](screenshots/02-viewing-manual-for-rm-command.png)
-*Figure 2: Example of using `man` to view command manual for `rm`.*
+![Viewing the `rm` Manual](screenshots/02-viewing-manual-for-rm-command.png)  
+*Figure 2: Example of using `man` to view the manual for the `rm` command.*
 
 ---
 
@@ -160,5 +161,7 @@ man rm
 
 ### **Conclusion**
 Understanding the syntax of Linux commands—**command**, **options**, and **arguments**—is crucial for working efficiently in a Linux environment. Combining these components allows you to perform powerful operations with precision. Always refer to the command manual (`man`) for detailed options and usage.
+
+**Practice Tip**: Try using the `man` command on various Linux commands to get familiar with their options and usage.
 
 ---
