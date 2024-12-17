@@ -144,7 +144,8 @@ man rm
 
 **Screenshot**:  
 !Viewing the `rm` Manual  
-*Figure 1: Example of using `man` to view command manual for `rm`.*
+![Created File](02-viewing-manual-for-rm-command.png)
+*Figure 2: Example of using `man` to view command manual for `rm`.*
 
 ---
 
