@@ -93,7 +93,7 @@ rm -r dir1
 
 Here:
 - `rm` → Command to remove files or directories.
-- `-rf` → Options (`-r` for recursive and `-f` for force).
+- `-r` → Options (`-r` for recursive).
 - `dir1` → Argument specifying the directory to delete.
 
 ---
