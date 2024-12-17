@@ -86,10 +86,9 @@ Let’s look at a practical example of combining all components:
 **Example**: Deleting a directory.
 - The `rm` command removes files or directories.
 - The `-r` option removes directories and their contents recursively.
-- The `-f` option forces the removal without asking for confirmation.
 
 ```bash
-rm -rf dir1
+rm -r dir1
 ```
 
 Here:
