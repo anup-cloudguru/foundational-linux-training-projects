@@ -5,11 +5,26 @@
 ![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) 
 ![chmod](https://img.shields.io/badge/Command-chmod-orange)
 
-### **Introduction**
+---
 
+### **📚 Table of Contents**
+1. [🔑 Introduction](#🔑-introduction)
+2. [🔍 Types of Permissions](#🔍-types-of-permissions)
+3. [⚙️ Levels of Permissions](#⚙️-levels-of-permissions)
+4. [👀 Viewing File Permissions](#👀-viewing-file-permissions)
+5. [🛠️ Changing Permissions with chmod](#🛠️-changing-permissions-with-chmod)
+6. [📂 Directory Permissions](#📂-directory-permissions)
+7. [✅ Verifying Permission Changes](#✅-verifying-permission-changes)
+8. [📖 Summary](#📖-summary)
+
+---
+
+### **🔑 Introduction**
 In this chapter, we will explore **file permissions** and how to change them using the `chmod` command. Understanding file permissions is crucial for protecting your environment, files, and directories from unauthorized access or accidental deletion. In UNIX-based systems like Linux, which are multi-user environments, every file and directory in your account can be protected or made accessible by changing its access permissions.
 
-### **Types of Permissions**
+---
+
+### **🔍 Types of Permissions**
 
 In UNIX, file and directory permissions are categorized into three main types:
 
@@ -17,9 +32,11 @@ In UNIX, file and directory permissions are categorized into three main types:
 2. **Write (w)**: Allows the user to modify or delete the contents of a file.
 3. **Execute (x)**: Allows the user to run a file, if it's a program or script.
 
-Not all files need the `execute` permission. For instance, if the file is a document or image, execute permissions are unnecessary. However, if it’s a script or program, execute permissions allow it to be run as a program.
+> **💡 Note**: Not all files need the `execute` permission. For instance, if the file is a document or image, execute permissions are unnecessary. However, if it’s a script or program, execute permissions allow it to be run as a program.
 
-### **Levels of Permissions**
+---
+
+### **⚙️ Levels of Permissions**
 
 Permissions can be set at three different levels:
 
@@ -27,7 +44,9 @@ Permissions can be set at three different levels:
 - **Group (g)**: Users who belong to the same group as the file owner.
 - **Others (o)**: All other users on the system.
 
-### **Viewing File Permissions**
+---
+
+### **👀 Viewing File Permissions**
 
 To see the permissions of a file or directory, you can use the `ls -l` command. Here’s an example of what you might see when running `ls -l`:
 
@@ -43,46 +62,61 @@ In this output:
   - The second set of three characters (`r--`) shows that the group has read permission only.
   - The final set (`r--`) shows that others also have read permission.
 
-### **Changing Permissions with `chmod`**
+```plaintext
+-rw-r--r--
+|  |  |  |
+|  |  |  +-- Others: Read
+|  |  +----- Group: Read
+|  +-------- User: Read & Write
++----------- File Type
+```
+
+---
+
+### **🛠️ Changing Permissions with `chmod`**
 
 The **`chmod`** command is used to modify the permissions of files and directories. It works by specifying a permission (read, write, or execute) for the user, group, or others.
 
 #### **Example 1: Removing Write Permission from the Group**
 
-Suppose you have a file named `example.txt` and want to remove write permissions for the group. You would use:
-
 ```bash
+# Command
 chmod g-w example.txt
-```
 
-This command removes the write permission (`-w`) for the group (`g`). You can verify this change by running `ls -l` again.
+# Verify the change
+ls -l example.txt
+```
 
 #### **Example 2: Removing Read Permission for Everyone**
 
-If you wanted to remove the read permission for everyone (user, group, and others), you can use:
-
 ```bash
+# Command
 chmod a-r example.txt
-```
 
-This command removes the read permission (`-r`) for all users (`a` for all).
+# Verify the change
+ls -l example.txt
+```
 
 #### **Example 3: Granting Read and Write Permissions to User and Group**
 
-You can also add permissions for the user or group. For instance, to add both read and write permissions to the user and group, you would use:
-
 ```bash
+# Command
 chmod ug+rw example.txt
-```
 
-This command adds both read (`r`) and write (`w`) permissions for both the user (`u`) and the group (`g`).
+# Verify the change
+ls -l example.txt
+```
 
 #### **Example 4: Granting Execute Permission**
 
-To allow a script to be executed, you would add execute (`x`) permission. If you have a script file named `script.sh`, you can give execute permission to the user like this:
+To allow a script to be executed, you would add execute (`x`) permission. 
 
 ```bash
+# Command
 chmod u+x script.sh
+
+# Verify the change
+ls -l script.sh
 ```
 
 If you want everyone to be able to execute the file, use:
@@ -99,27 +133,33 @@ If you want to change the permissions of all files and subdirectories within a d
 chmod -R u+rw directory/
 ```
 
-This command will add read and write permissions for the user to all files and subdirectories within `directory/`.
+> **⚠️ Warning**: Use `chmod -R` carefully, as it applies changes to all subdirectories and files.
 
-### **Directory Permissions**
+---
+
+### **📂 Directory Permissions**
 
 The execute permission for directories is particularly important. It allows you to **enter** (i.e., `cd`) into the directory. For example, if a directory has execute permission for the user, you can use `cd` to navigate into it. If not, you will get a **permission denied** message.
 
 #### **Example: Removing Execute Permission from a Directory**
 
-If you have a directory called `projects` and want to remove the execute permission for everyone, use:
-
 ```bash
+# Command
 chmod a-x projects
+
+# Verify the change
+ls -ld projects
 ```
 
-This will prevent anyone from entering the `projects` directory. To restore the permission, you would use:
+To restore the permission:
 
 ```bash
 chmod a+x projects
 ```
 
-### **Verifying Permission Changes**
+---
+
+### **✅ Verifying Permission Changes**
 
 After making changes to a file or directory’s permissions, always verify by running the `ls -l` command to ensure the changes took effect.
 
@@ -127,7 +167,9 @@ After making changes to a file or directory’s permissions, always verify by ru
 ls -l example.txt
 ```
 
-### **Summary**
+---
+
+### **📖 Summary**
 
 - **Permissions**: Control who can read, write, or execute a file.
 - **Levels**: User, group, and others can have different permissions.
@@ -135,5 +177,11 @@ ls -l example.txt
 - **`ls -l`**: A command to view permissions and other details of files and directories.
 
 By managing permissions carefully, you can protect your files and directories from unauthorized access or modifications. It is important to understand how permissions work to avoid accidental data loss or exposure.
+
+---
+
+### **📖 Further Reading**
+- [Official GNU chmod Documentation](https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html)
+- [Linux File Permissions Cheat Sheet](https://www.linux.org/threads/linux-permissions.4123/)
 
 ---
