@@ -166,6 +166,43 @@
 
 ---
 
+## **File and Directory Permissions**
+
+- **`chmod`** – Change file or directory permissions.
+
+  | Syntax                    | Description                                           |
+  |---------------------------|-------------------------------------------------------|
+  | `chmod g-w file.txt`      | Remove write permission from the group               |
+  | `chmod a-r file.txt`      | Remove read permission for all users                 |
+  | `chmod ug+rw file.txt`    | Add read and write permissions for user and group    |
+  | `chmod u+x script.sh`     | Add execute permission for the user to a script      |
+  | `chmod a+x script.sh`     | Allow everyone to execute the file                   |
+  | `chmod -R u+rw directory` | Recursively add read and write permissions for user   |
+
+- **Permission Levels**:
+  - **User (u)**: The owner of the file.
+  - **Group (g)**: Users belonging to the same group as the file owner.
+  - **Others (o)**: All other users.
+
+- **Permission Types**:
+  - **Read (r)**: View file contents.
+  - **Write (w)**: Modify or delete a file.
+  - **Execute (x)**: Run a file if it’s a script or program.
+
+- **Viewing Permissions**:
+  Use `ls -l` to view file permissions:
+  ```bash
+  $ ls -l
+  -rw-r--r-- 1 user1 user1 1048576 Dec 17 10:00 example.txt
+  ```
+  **Legend**:
+  - `-`: File type (e.g., `-` for file, `d` for directory).
+  - `rw-`: Permissions for the user (read and write).
+  - `r--`: Permissions for the group (read-only).
+  - `r--`: Permissions for others (read-only).
+
+---
+
 ## **Wildcard and Pattern Matching**
 
 | Wildcard | Description                              | Example             | Matches                                  |
@@ -199,6 +236,7 @@
 ---
 
 ### **Note**  
-This cheat sheet provides a quick reference for essential Linux commands. Perfect for both beginners and advanced users! 🐧  
+
+This cheat sheet provides a quick reference for essential Linux commands. Perfect for both beginners and advanced users! 🐧 
 
 ---
