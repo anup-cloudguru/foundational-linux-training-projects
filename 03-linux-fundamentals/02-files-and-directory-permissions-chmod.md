@@ -7,18 +7,6 @@
 
 ---
 
-### **📚 Table of Contents**
-1. [🔑 Introduction](#🔑-introduction)
-2. [🔍 Types of Permissions](#🔍-types-of-permissions)
-3. [⚙️ Levels of Permissions](#⚙️-levels-of-permissions)
-4. [👀 Viewing File Permissions](#👀-viewing-file-permissions)
-5. [🛠️ Changing Permissions with chmod](#🛠️-changing-permissions-with-chmod)
-6. [📂 Directory Permissions](#📂-directory-permissions)
-7. [✅ Verifying Permission Changes](#✅-verifying-permission-changes)
-8. [📖 Summary](#📖-summary)
-
----
-
 ### **🔑 Introduction**
 In this chapter, we will explore **file permissions** and how to change them using the `chmod` command. Understanding file permissions is crucial for protecting your environment, files, and directories from unauthorized access or accidental deletion. In UNIX-based systems like Linux, which are multi-user environments, every file and directory in your account can be protected or made accessible by changing its access permissions.
 
