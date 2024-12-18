@@ -2,12 +2,16 @@
 
 ## **Chapter 16: Understanding Soft Links and Hard Links**
 
-### **Introduction**  
+![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) ![Link_Types](https://img.shields.io/badge/Link-Types-purple)
+
+---
+
+### **🔑 Introduction**  
 In this chapter, we explore **soft links** and **hard links**, essential tools for Linux file management. First, let's delve into **inodes**, a fundamental component of Linux filesystems that underpins both concepts.
 
 ---
 
-## **Understanding Inodes**  
+## **📚 Understanding Inodes**  
 
 An **inode** is a unique identifier assigned to a file or directory in a Linux filesystem.  
 
@@ -37,7 +41,7 @@ Here, `18168252` is the inode number, linking `Anup.txt` to its data on the disk
 
 ---
 
-## **Soft Links**  
+## **🔗 Soft Links**  
 
 A **soft link** (symbolic link) acts as a shortcut to a file or directory.  
 
@@ -79,7 +83,7 @@ ln -s <source_file> <link_name>
    ls -li
    ```
    Output:  
-   ```
+   ```bash
    lrwxrwxrwx 1 user user 17 Dec 16 12:10 Anup_link -> /home/user/Anup
    ```
 
@@ -88,7 +92,7 @@ ln -s <source_file> <link_name>
    cat Anup_link
    ```
    Output:  
-   ```
+   ```bash
    Anup is a superhero
    ```
 
@@ -98,7 +102,7 @@ ln -s <source_file> <link_name>
    ```
 
    Accessing the soft link now results in an error:  
-   ```
+   ```bash
    cat: Anup_link: No such file or directory
    ```
 
@@ -107,7 +111,7 @@ ln -s <source_file> <link_name>
 
 ---
 
-## **Hard Links**  
+## **🖇️ Hard Links**  
 
 A **hard link** is another reference to the same file data on disk.  
 
@@ -158,7 +162,7 @@ ln <source_file> <link_name>
    cat Anup_hardlink
    ```
    Output:  
-   ```
+   ```bash
    Anup is a superhero  
    123
    ```
@@ -173,7 +177,7 @@ ln <source_file> <link_name>
    cat Anup_hardlink
    ```
    Output:  
-   ```
+   ```bash
    Anup is a superhero  
    123
    ```
@@ -183,7 +187,7 @@ ln <source_file> <link_name>
 
 ---
 
-## **Comparison: Soft Links vs. Hard Links**  
+## **⚖️ Comparison: Soft Links vs. Hard Links**  
 
 | **Feature**             | **Soft Link**                                | **Hard Link**                                |
 |-------------------------|----------------------------------------------|----------------------------------------------|
@@ -194,7 +198,7 @@ ln <source_file> <link_name>
 
 ---
 
-## **Summary**  
+## **✅ Summary**  
 
 1. **Soft Links**:  
    - Function like shortcuts.  
