@@ -2,7 +2,11 @@
 
 ## **Chapter 15: Wildcards (`*`, `?`, `{}`, `[]`)**
 
-### **What Are Wildcards?**
+![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) ![Wildcard_Types](https://img.shields.io/badge/Wildcards-Types-blue)
+
+---
+
+### **🔑 Introduction**
 
 Wildcards are special characters in Linux that help you match patterns in filenames or directories. Instead of typing out every file name, you can use wildcards to work with many files at once. This makes tasks like searching, listing, copying, or deleting files much faster and more efficient.
 
@@ -10,7 +14,7 @@ Wildcards are special characters in Linux that help you match patterns in filena
 
 ---
 
-### **Types of Wildcards and How They Work**
+### **🦸‍♂️ Types of Wildcards and How They Work**
 
 #### **1. Asterisk (`*`)**
 - **What it does**: Matches **any number of characters**, including none. It’s like saying, "Match everything."
@@ -25,11 +29,11 @@ Wildcards are special characters in Linux that help you match patterns in filena
   - `ls ABC*`  
     Lists all files starting with "ABC".  
     **Output**: `ABC123.txt, ABC_Notes.txt, ABC.txt`
-  
+
   - `ls *`  
     Lists all files in the directory.  
     **Output**: All files in the current directory
-  
+
   - `rm ABC*`  
     Deletes all files starting with "ABC".  
     **Output**: Only `XYZ.txt` remains.
@@ -66,10 +70,10 @@ Wildcards are special characters in Linux that help you match patterns in filena
 - **Examples**:
   - `touch file{1..10}.txt`  
     Creates 10 files: `file1.txt, file2.txt, ..., file10.txt`
-  
+
   - `ls file{1..3}.txt`  
     Lists files: `file1.txt, file2.txt, file3.txt`
-  
+
   - `touch report_{jan,feb,mar}.txt`  
     Creates: `report_jan.txt, report_feb.txt, report_mar.txt`
 
@@ -130,7 +134,7 @@ Wildcards are special characters in Linux that help you match patterns in filena
 
 ---
 
-### **Why Wildcards Are Useful**
+### **⚙️ Why Wildcards Are Useful**
 
 - **Save time** when working with lots of files.
 - **Simplify** complex tasks like searching, copying, and deleting files.
@@ -142,7 +146,7 @@ Wildcards are special characters in Linux that help you match patterns in filena
 
 ---
 
-### **Quick Summary Table**
+### **📊 Quick Summary Table**
 
 | Wildcard | What It Matches                            | Example               | Output                                      |
 |----------|--------------------------------------------|-----------------------|---------------------------------------------|
@@ -154,7 +158,7 @@ Wildcards are special characters in Linux that help you match patterns in filena
 
 ---
 
-### **Practice Tasks**
+### **📝 Practice Tasks**
 
 #### **For `*`**
 1. **Prepare the environment**:  
@@ -250,7 +254,7 @@ Wildcards are special characters in Linux that help you match patterns in filena
 
 ---
 
-### **Key Takeaways**
+### **✅ Key Takeaways**
 - Wildcards are an essential tool in Linux file management. They allow you to simplify tasks and reduce manual effort.
 - Using wildcards correctly can help you automate repetitive tasks, such as copying, deleting, or finding files.
 - Combining wildcards with other Linux commands (e.g., `ls`, `cp`, `rm`, `grep`) makes file and directory operations more efficient.
