@@ -2,6 +2,9 @@
 
 ## **Chapter 2: Files and Directory Permissions (chmod)**
 
+![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) 
+![chmod](https://img.shields.io/badge/Command-chmod-orange)
+
 ### **Introduction**
 
 In this chapter, we will explore **file permissions** and how to change them using the `chmod` command. Understanding file permissions is crucial for protecting your environment, files, and directories from unauthorized access or accidental deletion. In UNIX-based systems like Linux, which are multi-user environments, every file and directory in your account can be protected or made accessible by changing its access permissions.
