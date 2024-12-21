@@ -240,19 +240,18 @@
 
 - **`sudo shutdown`** – Schedule or perform system shutdown.
   ```bash
-  sudo shutdown                     # Schedule shutdown 1 minute from now
-  sudo shutdown +10                 # Schedule shutdown 10 minute from now
-  sudo shutdown 23:00               # Schedule shutdown at 11:00 PM
-  sudo shutdown now                 # Shut down the system immediately
-  sudo shutdown -c                  # Cancel a scheduled shutdown
+sudo shutdown                    # Schedules shutdown 1 minute from now (default behavior).
+sudo shutdown +10                # Schedules shutdown 10 minutes from now.
+sudo shutdown 23:00              # Schedules shutdown at 11:00 PM.
+sudo shutdown now                # Shuts down the system immediately.
+sudo shutdown -c                 # Cancels a scheduled shutdown.
   ```
 
 - **`sudo reboot`** – Schedule or perform system reboot.
   ```bash
-  sudo reboot                        # Schedules the reboot for 1 minute from now
-  sudo reboot +10                    # Schedules the reboot for 10 minute from now
-  sudo reboot 23:00                  # Schedules the reboot at 11:00 PM
-  sudo reboot now                    # Reboot immediately
+sudo reboot                       # Reboot immediately
+sudo shutdown -r +10              # Schedule a reboot in 10 minutes
+sudo shutdown -r 23:00            # Schedule a reboot at 11:00 PM
   ```
 
 ---
