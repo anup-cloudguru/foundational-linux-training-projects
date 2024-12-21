@@ -58,7 +58,7 @@
 
 ---
 
-## **⏸️ Interrupt a Running Command or Process**
+## **⎸️ Interrupt a Running Command or Process**
 
 - **`Ctrl + C`** – Interrupt a running command or process.
   ```bash
@@ -232,6 +232,24 @@
 - **`updatedb`** – Update the index for `locate`.
   ```bash
   sudo updatedb                      # Refresh the locate database
+  ```
+
+---
+
+## **⏰ Power Management**
+
+- **`sudo shutdown`** – Schedule or perform system shutdown.
+  ```bash
+  sudo shutdown +1                  # Schedule shutdown 1 minute from now
+  sudo shutdown 23:00               # Schedule shutdown at 11:00 PM
+  sudo shutdown now                 # Shut down the system immediately
+  sudo shutdown -c                  # Cancel a scheduled shutdown
+  ```
+
+- **`sudo reboot`** – Schedule or perform system reboot.
+  ```bash
+  sudo reboot                        # Schedules the reboot for 1 minute from now
+  sudo reboot now                    # Reboot immediately
   ```
 
 ---
