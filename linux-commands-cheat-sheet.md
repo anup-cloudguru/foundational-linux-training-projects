@@ -87,7 +87,6 @@
 
 - **`echo`** – Display a string or write text to a file.  
   ```bash
-  echo "Hello, World!"                   # Print "Hello, World!" to the terminal
   echo "Anup is a superhero" > file.txt  # Write text to a file named 'file'
   ```  
 
