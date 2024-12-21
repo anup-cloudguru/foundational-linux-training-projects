@@ -87,16 +87,15 @@
 
 - **`echo`** – Display a string or write text to a file.  
   ```bash
-  echo "Hello, World!"               # Print "Hello, World!" to the terminal
-  echo "Anup is a superhero" > file  # Write text to a file named 'file'
-  echo $USER                         # Display the value of the 'USER' variable
+  echo "Hello, World!"                   # Print "Hello, World!" to the terminal
+  echo "Anup is a superhero" > file.txt  # Write text to a file named 'file'
   ```  
 
 - **`cat`** – Display the content of a file or combine files.  
   ```bash
-  cat file.txt                       # Show file content
+  cat file.txt                            # Show file content
   cat file1.txt file2.txt > combined.txt  # Combine files into one
-  cat -n file.txt                    # Display content with line numbers
+  cat -n file.txt                         # Display content with line numbers
   ```  
 
 ---  
