@@ -2,7 +2,9 @@
 ## Chapter 3: File Permissions Using Numeric Mode
 ![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) 
 ![chmod](https://img.shields.io/badge/Command-chmod-orange)
+
 ---
+
 In this chapter, we will explore how to assign file and directory permissions using numerical values. This method is an alternative to the letter-based approach discussed earlier and provides a concise way to define permissions.
 
 ---
