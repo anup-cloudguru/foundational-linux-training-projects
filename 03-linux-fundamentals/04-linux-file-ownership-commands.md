@@ -5,7 +5,7 @@
 
 ---
 
-📘 In this chapter, we will explore how to change file ownership and group ownership in Linux using the `chown` and `chgrp` commands. This will allow you to manage file access and security more effectively.**
+📘 In this chapter, we will explore how to change file ownership and group ownership in Linux using the `chown` and `chgrp` commands. This will allow you to manage file access and security more effectively.
 
 ---
 
