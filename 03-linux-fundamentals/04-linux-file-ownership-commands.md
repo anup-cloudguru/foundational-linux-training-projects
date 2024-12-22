@@ -1,9 +1,7 @@
 # **Module 3: Linux Command Basics**
 
 ## **Chapter 4: File Ownership Commands (chown, chgrp)**  
-![Linux](https://img.shields.io/badge/Linux-Fundamentals-green)  
-![chown](https://img.shields.io/badge/Command-chown-orange)  
-![chgrp](https://img.shields.io/badge/Command-chgrp-orange)
+![Linux](https://img.shields.io/badge/Linux-Fundamentals-green)  ![chown](https://img.shields.io/badge/Command-chown-orange)  ![chgrp](https://img.shields.io/badge/Command-chgrp-orange)
 
 ---
 
