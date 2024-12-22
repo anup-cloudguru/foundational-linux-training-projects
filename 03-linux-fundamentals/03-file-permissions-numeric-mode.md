@@ -25,11 +25,7 @@ Each permission type is represented by a specific numerical value. These values 
 | **Read + Write**                | 6                   | rw-        |
 | **Read + Write + Execute**      | 7                   | rwx        |
 
-- **Read** (`r`) = 4  
-- **Write** (`w`) = 2  
-- **Execute** (`x`) = 1
-
-You add these values to assign multiple permissions. For example:
+You add these values together to assign multiple permissions. For example:
 - `4` (Read) + `2` (Write) = `6` (Read + Write)
 - `4` (Read) + `1` (Execute) = `5` (Read + Execute)
 
@@ -67,11 +63,6 @@ Run `ls -l filename` to verify the permissions:
 ```
 -rwxrw-r-- filename
 ```
-**Explanation**:  
-- `-rwxrw-r--`: The first character (`-`) indicates a regular file.  
-- `rwx`: The owner has read, write, and execute permissions.  
-- `rw-`: The group has read and write permissions.  
-- `r--`: Others have read permissions only.
 
 ---
 
