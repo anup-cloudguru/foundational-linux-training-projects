@@ -26,14 +26,14 @@ Each permission type is represented by a specific numerical value:
 | 📖➕✍️➕🏃 Read + Write + Execute | 7               | rwx     |
 
 In this table:
-- `---` means no permission.
-- `--x` means only execute permission.
-- `-w-` means only write permission.
-- `-wx` means write and execute permissions.
-- `r--` means read permission.
-- `r-x` means read and execute permissions.
-- `rw-` means read and write permissions.
-- `rwx` means read, write, and execute permissions.
+- `---` means **no permission**.
+- `--x` means **execute** permission only.
+- `-w-` means **write** permission only.
+- `-wx` means **write** and **execute** permissions.
+- `r--` means **read** permission only.
+- `r-x` means **read** and **execute** permissions.
+- `rw-` means **read** and **write** permissions.
+- `rwx` means **read**, **write**, and **execute** permissions.
 
 ---
 
@@ -41,9 +41,17 @@ In this table:
 
 A file or directory’s permissions are divided into three groups:
 
-1. **👤 User (Owner)** - The first digit in the numeric mode.
-2. **👥 Group** - The second digit.
-3. **🌍 Others (Everyone else)** - The third digit.
+1. **👤 User (Owner)**: The first digit in the numeric mode.
+2. **👥 Group**: The second digit.
+3. **🌍 Others (Everyone else)**: The third digit.
+
+Each digit corresponds to the sum of the following permissions:
+
+- **Read** (`r`) = 4
+- **Write** (`w`) = 2
+- **Execute** (`x`) = 1
+
+The values for each group are added together to define the permissions. For example, if you want the owner to have `read` and `write` permissions, the numeric value would be **6** (4 for read + 2 for write).
 
 ---
 
@@ -59,11 +67,11 @@ To assign permissions using numerical values, use the `chmod` command followed b
 chmod 764 filename
 ```
 
-- **7**: `read`, `write`, and `execute` for the owner.
-- **6**: `read` and `write` for the group.
-- **4**: `read` for others.
+- **7**: `read` (4), `write` (2), and `execute` (1) for the owner.
+- **6**: `read` (4) and `write` (2) for the group.
+- **4**: `read` (4) for others.
 
-Run `ls -l filename` to verify the permissions. You should see:
+Run `ls -l filename` to verify the permissions:
 
 ```
 -rwxrw-r-- filename
@@ -77,7 +85,7 @@ Run `ls -l filename` to verify the permissions. You should see:
 chmod 000 filename
 ```
 
-- ❌ No permissions for the owner, group, or others.
+- **0**: No permissions for the owner, group, or others.
 
 Run `ls -l filename` to verify the permissions:
 
@@ -93,9 +101,9 @@ Run `ls -l filename` to verify the permissions:
 chmod 600 filename
 ```
 
-- **6**: `read` and `write` for the owner.
-- **0**: ❌ No permissions for the group.
-- **0**: ❌ No permissions for others.
+- **6**: `read` (4) and `write` (2) for the owner.
+- **0**: No permissions for the group.
+- **0**: No permissions for others.
 
 Run `ls -l filename` to verify the permissions:
 
@@ -111,9 +119,9 @@ Run `ls -l filename` to verify the permissions:
 chmod 604 filename
 ```
 
-- **6**: `read` and `write` for the owner.
-- **0**: ❌ No permissions for the group.
-- **4**: `read` for others.
+- **6**: `read` (4) and `write` (2) for the owner.
+- **0**: No permissions for the group.
+- **4**: `read` (4) for others.
 
 Run `ls -l filename` to verify the permissions:
 
@@ -129,9 +137,9 @@ Run `ls -l filename` to verify the permissions:
 chmod 111 filename
 ```
 
-- **1**: `execute` for the owner.
-- **1**: `execute` for the group.
-- **1**: `execute` for others.
+- **1**: `execute` (1) for the owner.
+- **1**: `execute` (1) for the group.
+- **1**: `execute` (1) for others.
 
 Run `ls -l filename` to verify the permissions:
 
@@ -147,9 +155,9 @@ Run `ls -l filename` to verify the permissions:
 chmod 555 filename
 ```
 
-- **5**: `read` and `execute` for the owner.
-- **5**: `read` and `execute` for the group.
-- **5**: `read` and `execute` for others.
+- **5**: `read` (4) and `execute` (1) for the owner.
+- **5**: `read` (4) and `execute` (1) for the group.
+- **5**: `read` (4) and `execute` (1) for others.
 
 Run `ls -l filename` to verify the permissions:
 
@@ -167,9 +175,9 @@ If you find it challenging to remember the numerical values, you can use online 
 
 ### 🗝️ Key Takeaways
 
-- 🔢 The numeric mode provides a concise way to assign permissions.
+- 🔢 The numeric mode provides a concise way to assign permissions using digits.
 - 📊 The first digit represents the owner, the second digit represents the group, and the third digit represents others.
-- 🎯 Each permission type has a specific numerical value, which can be combined to assign multiple permissions.
+- 🎯 Each permission type has a specific numerical value, and you can combine them to assign multiple permissions to each group.
 - 🧰 Use tools like `ls -l` to verify changes in permissions.
 
 By understanding both the letter-based and numeric-based approaches, you can efficiently manage permissions on files and directories in Linux.
