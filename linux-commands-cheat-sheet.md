@@ -1,6 +1,6 @@
-# **🐧 Linux Command Cheat Sheet** 🛠️  
+# **🐧 Linux Command Cheat Sheet** 🛠️
 
-## **🔧 Network Commands**  
+## **🔧 Network Commands**
 - **`ip a`** (or **`ip addr`**) – Display all network interfaces and their IP addresses.  
   ```bash
   ip a                                # Shorthand for 'ip addr'
@@ -20,7 +20,7 @@
 
 ---
 
-## **🔐 Accessing Linux via SSH** 🌐  
+## **🔐 Accessing Linux via SSH** 🌐
 - **`ssh`** – Secure Shell to access remote systems.  
   ```bash
   ssh user@hostname_or_ip             # Access a remote system via SSH
@@ -30,7 +30,7 @@
 
 ---
 
-## **👤 User and Access Management**  
+## **👤 User and Access Management**
 - **`whoami`** – Display the current logged-in username.  
   ```bash
   whoami
@@ -55,7 +55,7 @@
 
 ---
 
-## **⎸️ Interrupt a Running Command or Process**  
+## **⎸️ Interrupt a Running Command or Process**
 - **`Ctrl + C`** – Interrupt a running command or process.  
   ```bash
   # Press Ctrl + C to stop a running process
@@ -63,7 +63,7 @@
 
 ---
 
-## **📝 Basic Commands**  
+## **📝 Basic Commands**
 - **`pwd`** – Print the current working directory.  
   ```bash
   pwd
@@ -99,7 +99,7 @@
 
 ---
 
-## **📂 File and Directory Management**  
+## **📂 File and Directory Management**
 - **`touch`** – Create an empty file.  
   ```bash
   touch file1.txt                     # Create a file named file1.txt
@@ -144,7 +144,7 @@
 
 ---
 
-## **🔗 Creating Links**  
+## **🔗 Creating Links**
 - **`ln -s`** – Create a soft (symbolic) link.  
   ```bash
   ln -s <source_file> <link_name>    # Create a symbolic link to the source file
@@ -157,7 +157,7 @@
 
 ---
 
-## **🛡️ File and Directory Permissions**  
+## **🛡️ File and Directory Permissions**
 - **`chmod`** – Change file or directory permissions.  
 
   | Syntax                    | Description                                           |
@@ -169,78 +169,63 @@
   | `chmod a+x script.sh`     | Allow everyone to execute the file                   |
   | `chmod -R u+rw directory` | Recursively add read and write permissions for user  |
 
-  **Permission Levels**:  
-  - **User (u)**: The owner of the file.  
-  - **Group (g)**: Users belonging to the same group as the file owner.  
-  - **Others (o)**: All other users.  
+---
 
-  **Permission Types**:  
-  - **Read (r)**: View file contents.  
-  - **Write (w)**: Modify or delete a file.  
-  - **Execute (x)**: Run a file if it’s a script or program.  
-
-  **Viewing Permissions**:  
-  Use `ls -l` to view file permissions:  
+## **🔑 File Ownership Commands**  
+### **`chown`** – Change file or directory owner and group  
+- **Syntax**:  
   ```bash
-  $ ls -l
-  -rw-r--r-- 1 user1 user1 1048576 Dec 17 10:00 example.txt
+  chown [OPTION] OWNER[:GROUP] FILE
+  ```  
+  - **OWNER**: The new owner of the file or directory.  
+  - **GROUP**: (Optional) The new group for the file or directory.  
+  - **FILE**: The file or directory whose ownership you want to change.  
+
+  **Examples**:  
+  - Change the owner of `filename` to `user1`:
+    ```bash
+    chown user1 filename
+    ```  
+  - Change both the owner and group of `filename` to `user1` and `group1`:
+    ```bash
+    chown user1:group1 filename
+    ```  
+  - Recursively change ownership of a directory:
+    ```bash
+    chown -R user1:group1 /path/to/directory
+    ```  
+
+### **`chgrp`** – Change the group ownership of a file or directory  
+- **Syntax**:  
+  ```bash
+  chgrp [OPTION] GROUP FILE
+  ```  
+  - **GROUP**: The new group to assign to the file or directory.  
+  - **FILE**: The file or directory whose group ownership you want to change.  
+
+  **Examples**:  
+  - Change the group of `filename` to `group1`:
+    ```bash
+    chgrp group1 filename
+    ```  
+  - Recursively change the group ownership of all files and directories:
+    ```bash
+    chgrp -R group1 /path/to/directory
+    ```  
+
+### **Verify Ownership Changes**  
+- Use `ls -l` to verify the ownership after changes:  
+  ```bash
+  ls -l filename
+  ```  
+  Example output:  
+  ```
+  -rw-r--r-- 1 user1 group1 1234 Dec 22 12:00 filename
   ```  
 
----
+---  
 
-## **🔢 Numeric Mode for File Permissions**  
-In this mode, permissions are assigned using numbers rather than letters. Each permission type has a numerical value, and you combine them to define permissions for the owner, group, and others.
-
-### **Numerical Representation of Permissions**
-
-| **Permission Type**             | **Numerical Value** | **Symbol** |
-|----------------------------------|---------------------|------------|
-| **No permission**               | 0                   | ---        |
-| **Execute**                     | 1                   | --x        |
-| **Write**                       | 2                   | -w-        |
-| **Write + Execute**             | 3                   | -wx        |
-| **Read**                        | 4                   | r--        |
-| **Read + Execute**              | 5                   | r-x        |
-| **Read + Write**                | 6                   | rw-        |
-| **Read + Write + Execute**      | 7                   | rwx        |
-
----
-
-### **Using `chmod` with Numeric Mode**
-
-- **Example 1**: Assign `read`, `write`, and `execute` to the owner; `read` and `write` to the group; and `read` to others:
-  ```bash
-  chmod 764 filename
-  ```
-
-- **Example 2**: Remove all permissions:
-  ```bash
-  chmod 000 filename
-  ```
-
-- **Example 3**: Assign `read` and `write` to the owner, and no permissions to group and others:
-  ```bash
-  chmod 600 filename
-  ```
-
-- **Example 4**: Assign `read` and `write` to the owner, and `read` to others:
-  ```bash
-  chmod 604 filename
-  ```
-
-- **Example 5**: Assign `execute` to everyone:
-  ```bash
-  chmod 111 filename
-  ```
-
-- **Example 6**: Assign `read` and `execute` to the owner, group, and others:
-  ```bash
-  chmod 555 filename
-  ```
-
----
-
-## **⏰ Power Management**  
+## **⏰ Power Management**
 - **`sudo shutdown`** – Schedule or perform system shutdown.  
   ```bash
   sudo shutdown                    # Schedules shutdown 1 minute from now (default behavior)
