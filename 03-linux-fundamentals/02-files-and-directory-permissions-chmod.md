@@ -170,6 +170,5 @@ By managing permissions carefully, you can protect your files and directories fr
 
 ### **📖 Further Reading**
 - [Official GNU chmod Documentation](https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html)
-- [Linux File Permissions Cheat Sheet](https://www.linux.org/threads/linux-permissions.4123/)
 
 ---
