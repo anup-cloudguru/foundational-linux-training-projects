@@ -14,16 +14,26 @@
 
 Each permission type is represented by a specific numerical value:
 
-| Permission Type      | Numerical Value |
-|----------------------|-----------------|
-| ❌ No permission        | 0               |
-| 🏃 Execute              | 1               |
-| ✍️ Write                | 2               |
-| ✍️➕🏃 Write + Execute      | 3               |
-| 📖 Read                 | 4               |
-| 📖➕🏃 Read + Execute       | 5               |
-| 📖➕✍️ Read + Write         | 6               |
-| 📖➕✍️➕🏃 Read + Write + Execute | 7             |
+| Permission Type             | Numerical Value | Symbol  |
+|-----------------------------|-----------------|---------|
+| ❌ No permission             | 0               | ---     |
+| 🏃 Execute                   | 1               | --x     |
+| ✍️ Write                     | 2               | -w-     |
+| ✍️➕🏃 Write + Execute         | 3               | -wx     |
+| 📖 Read                      | 4               | r--     |
+| 📖➕🏃 Read + Execute          | 5               | r-x     |
+| 📖➕✍️ Read + Write            | 6               | rw-     |
+| 📖➕✍️➕🏃 Read + Write + Execute | 7               | rwx     |
+
+In this table:
+- `---` means no permission.
+- `--x` means only execute permission.
+- `-w-` means only write permission.
+- `-wx` means write and execute permissions.
+- `r--` means read permission.
+- `r-x` means read and execute permissions.
+- `rw-` means read and write permissions.
+- `rwx` means read, write, and execute permissions.
 
 ---
 
