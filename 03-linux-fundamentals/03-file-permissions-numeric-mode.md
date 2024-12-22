@@ -1,30 +1,38 @@
 # Module 3: Linux Command Basics
-
 ## Chapter 3: File Permissions Using Numeric Mode
-
+![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) 
+![chmod](https://img.shields.io/badge/Command-chmod-orange)
+---
 In this chapter, we will explore how to assign file and directory permissions using numerical values. This method is an alternative to the letter-based approach discussed earlier and provides a concise way to define permissions.
+
+---
 
 ### Numerical Representation of Permissions
 
 Each permission type is represented by a specific numerical value:
 
-| Permission Type   | Numerical Value |
-|-------------------|-----------------|
-| No permission     | 0               |
-| Execute           | 1               |
-| Write             | 2               |
-| Write + Execute   | 3               |
-| Read              | 4               |
-| Read + Execute    | 5               |
-| Read + Write      | 6               |
-| Read + Write + Execute | 7         |
+| Permission Type      | Numerical Value |
+|----------------------|-----------------|
+| No permission        | 0               |
+| Execute              | 1               |
+| Write                | 2               |
+| Write + Execute      | 3               |
+| Read                 | 4               |
+| Read + Execute       | 5               |
+| Read + Write         | 6               |
+| Read + Write + Execute | 7             |
+
+---
 
 ### Structure of Permissions
 
 A file or directory’s permissions are divided into three groups:
+
 1. **User (Owner)** - The first digit in the numeric mode.
 2. **Group** - The second digit.
 3. **Others (Everyone else)** - The third digit.
+
+---
 
 ### Using `chmod` with Numeric Mode
 
@@ -32,85 +40,117 @@ To assign permissions using numerical values, use the `chmod` command followed b
 
 #### Examples:
 
-1. **Assign `read`, `write`, and `execute` to the owner; `read` and `write` to the group; and `read` to others**
-   ```bash
-   chmod 764 filename
-   ```
-   - **7**: `read`, `write`, and `execute` for the owner.
-   - **6**: `read` and `write` for the group.
-   - **4**: `read` for others.
+**Example 1: Assign `read`, `write`, and `execute` to the owner; `read` and `write` to the group; and `read` to others**
 
-   Run `ls -l filename` to verify the permissions. You should see:
-   ```
-   -rwxrw-r-- filename
-   ```
+```bash
+chmod 764 filename
+```
 
-2. **Remove all permissions**
-   ```bash
-   chmod 000 filename
-   ```
-   - No permissions for the owner, group, or others.
+- **7**: `read`, `write`, and `execute` for the owner.
+- **6**: `read` and `write` for the group.
+- **4**: `read` for others.
 
-   Run `ls -l filename` to verify the permissions:
-   ```
-   ---------- filename
-   ```
+Run `ls -l filename` to verify the permissions. You should see:
 
-3. **Assign `read` and `write` to the owner, and no permissions to group and others**
-   ```bash
-   chmod 600 filename
-   ```
-   - **6**: `read` and `write` for the owner.
-   - **0**: No permissions for the group.
-   - **0**: No permissions for others.
+```
+-rwxrw-r-- filename
+```
 
-   Run `ls -l filename` to verify the permissions:
-   ```
-   -rw------- filename
-   ```
+---
 
-4. **Assign `read` and `write` to the owner, and `read` to others**
-   ```bash
-   chmod 604 filename
-   ```
-   - **6**: `read` and `write` for the owner.
-   - **0**: No permissions for the group.
-   - **4**: `read` for others.
+**Example 2: Remove all permissions**
 
-   Run `ls -l filename` to verify the permissions:
-   ```
-   -rw----r-- filename
-   ```
+```bash
+chmod 000 filename
+```
 
-5. **Assign `execute` to everyone**
-   ```bash
-   chmod 111 filename
-   ```
-   - **1**: `execute` for the owner.
-   - **1**: `execute` for the group.
-   - **1**: `execute` for others.
+- No permissions for the owner, group, or others.
 
-   Run `ls -l filename` to verify the permissions:
-   ```
-   --x--x--x filename
-   ```
+Run `ls -l filename` to verify the permissions:
 
-6. **Assign `read` and `execute` to the owner, group, and others**
-   ```bash
-   chmod 555 filename
-   ```
-   - **5**: `read` and `execute` for the owner.
-   - **5**: `read` and `execute` for the group.
-   - **5**: `read` and `execute` for others.
+```
+---------- filename
+```
 
-   Run `ls -l filename` to verify the permissions:
-   ```
-   -r-xr-xr-x filename
-   ```
+---
+
+**Example 3: Assign `read` and `write` to the owner, and no permissions to group and others**
+
+```bash
+chmod 600 filename
+```
+
+- **6**: `read` and `write` for the owner.
+- **0**: No permissions for the group.
+- **0**: No permissions for others.
+
+Run `ls -l filename` to verify the permissions:
+
+```
+-rw------- filename
+```
+
+---
+
+**Example 4: Assign `read` and `write` to the owner, and `read` to others**
+
+```bash
+chmod 604 filename
+```
+
+- **6**: `read` and `write` for the owner.
+- **0**: No permissions for the group.
+- **4**: `read` for others.
+
+Run `ls -l filename` to verify the permissions:
+
+```
+-rw----r-- filename
+```
+
+---
+
+**Example 5: Assign `execute` to everyone**
+
+```bash
+chmod 111 filename
+```
+
+- **1**: `execute` for the owner.
+- **1**: `execute` for the group.
+- **1**: `execute` for others.
+
+Run `ls -l filename` to verify the permissions:
+
+```
+--x--x--x filename
+```
+
+---
+
+**Example 6: Assign `read` and `execute` to the owner, group, and others**
+
+```bash
+chmod 555 filename
+```
+
+- **5**: `read` and `execute` for the owner.
+- **5**: `read` and `execute` for the group.
+- **5**: `read` and `execute` for others.
+
+Run `ls -l filename` to verify the permissions:
+
+```
+-r-xr-xr-x filename
+```
+
+---
 
 ### Using Online Tools
 
 If you find it challenging to remember the numerical values, you can use online `chmod` calculators. Simply search for “Linux chmod calculator”, select the desired permissions, and the tool will generate the numeric representation for you.
+
+---
 
 ### Key Takeaways
 
