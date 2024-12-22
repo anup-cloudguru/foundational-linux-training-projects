@@ -1,7 +1,7 @@
 # Module 3: Linux Command Basics
 
-## Chapter 3: File Permissions Using Numeric Mode
-![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) 
+## Chapter 3: File Permissions Using Numeric Mode  
+![Linux](https://img.shields.io/badge/Linux-Fundamentals-green)  
 ![chmod](https://img.shields.io/badge/Command-chmod-orange)
 
 ---
@@ -12,7 +12,7 @@
 
 ### 🔢 Numerical Representation of Permissions
 
-Each permission type is represented by a specific numerical value:
+Each permission type is represented by a specific numerical value. These values are **added together** to create the numeric mode for each user (owner), group, and others.
 
 | **Permission Type**             | **Numerical Value** | **Symbol** |
 |----------------------------------|---------------------|------------|
@@ -25,33 +25,24 @@ Each permission type is represented by a specific numerical value:
 | **Read + Write**                | 6                   | rw-        |
 | **Read + Write + Execute**      | 7                   | rwx        |
 
-In this table:
-- `---` means **no permission**.
-- `--x` means **execute** permission only.
-- `-w-` means **write** permission only.
-- `-wx` means **write** and **execute** permissions.
-- `r--` means **read** permission only.
-- `r-x` means **read** and **execute** permissions.
-- `rw-` means **read** and **write** permissions.
-- `rwx` means **read**, **write**, and **execute** permissions.
+- **Read** (`r`) = 4  
+- **Write** (`w`) = 2  
+- **Execute** (`x`) = 1
+
+You add these values to assign multiple permissions. For example:
+- `4` (Read) + `2` (Write) = `6` (Read + Write)
+- `4` (Read) + `1` (Execute) = `5` (Read + Execute)
 
 ---
 
 ### 📂 Structure of Permissions
 
 A file or directory’s permissions are divided into three groups:
-
 1. **👤 User (Owner)**: The first digit in the numeric mode.
 2. **👥 Group**: The second digit.
 3. **🌍 Others (Everyone else)**: The third digit.
 
-Each digit corresponds to the sum of the following permissions:
-
-- **Read** (`r`) = 4
-- **Write** (`w`) = 2
-- **Execute** (`x`) = 1
-
-The values for each group are added together to define the permissions. For example, if you want the owner to have `read` and `write` permissions, the numeric value would be **6** (4 for read + 2 for write).
+Each digit is the sum of the permission values (Read = 4, Write = 2, Execute = 1). For example, if you want the owner to have `read` and `write` permissions, the numeric value would be **6** (4 for read + 2 for write).
 
 ---
 
@@ -76,6 +67,11 @@ Run `ls -l filename` to verify the permissions:
 ```
 -rwxrw-r-- filename
 ```
+**Explanation**:  
+- `-rwxrw-r--`: The first character (`-`) indicates a regular file.  
+- `rwx`: The owner has read, write, and execute permissions.  
+- `rw-`: The group has read and write permissions.  
+- `r--`: Others have read permissions only.
 
 ---
 
@@ -169,7 +165,7 @@ Run `ls -l filename` to verify the permissions:
 
 ### 🌐 Using Online Tools
 
-If you find it challenging to remember the numerical values, you can use online `chmod` calculators. Simply search for “Linux chmod calculator,” select the desired permissions, and the tool will generate the numeric representation for you.
+If you find it challenging to remember the numerical values, you can use online `chmod` calculators. Simply search for “Linux chmod calculator,” select the desired permissions, and the tool will generate the numeric representation for you. These tools allow you to easily visualize the permission combinations and their corresponding numeric values.
 
 ---
 
