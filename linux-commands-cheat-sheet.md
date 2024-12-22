@@ -18,7 +18,7 @@
   hostname -I                         # Display the IP address of the system
   ```  
 
----  
+---
 
 ## **🔐 Accessing Linux via SSH** 🌐  
 - **`ssh`** – Secure Shell to access remote systems.  
@@ -28,7 +28,7 @@
   ```  
   **Note**: Use the `-l` option when the remote username differs from your local username.  
 
----  
+---
 
 ## **👤 User and Access Management**  
 - **`whoami`** – Display the current logged-in username.  
@@ -53,7 +53,7 @@
   exit                                # Exit the current user shell session
   ```  
 
----  
+---
 
 ## **⎸️ Interrupt a Running Command or Process**  
 - **`Ctrl + C`** – Interrupt a running command or process.  
@@ -61,7 +61,7 @@
   # Press Ctrl + C to stop a running process
   ```  
 
----  
+---
 
 ## **📝 Basic Commands**  
 - **`pwd`** – Print the current working directory.  
@@ -97,7 +97,7 @@
   cat -n file.txt                         # Display content with line numbers
   ```  
 
----  
+---
 
 ## **📂 File and Directory Management**  
 - **`touch`** – Create an empty file.  
@@ -142,7 +142,7 @@
   clear                               # Clears the terminal display
   ```  
 
----  
+---
 
 ## **🔗 Creating Links**  
 - **`ln -s`** – Create a soft (symbolic) link.  
@@ -155,7 +155,7 @@
   ln <source_file> <link_name>       # Create a hard link to the source file
   ```  
 
----  
+---
 
 ## **🛡️ File and Directory Permissions**  
 - **`chmod`** – Change file or directory permissions.  
@@ -186,7 +186,59 @@
   -rw-r--r-- 1 user1 user1 1048576 Dec 17 10:00 example.txt
   ```  
 
----  
+---
+
+## **🔢 Numeric Mode for File Permissions**  
+In this mode, permissions are assigned using numbers rather than letters. Each permission type has a numerical value, and you combine them to define permissions for the owner, group, and others.
+
+### **Numerical Representation of Permissions**
+
+| **Permission Type**             | **Numerical Value** | **Symbol** |
+|----------------------------------|---------------------|------------|
+| **No permission**               | 0                   | ---        |
+| **Execute**                     | 1                   | --x        |
+| **Write**                       | 2                   | -w-        |
+| **Write + Execute**             | 3                   | -wx        |
+| **Read**                        | 4                   | r--        |
+| **Read + Execute**              | 5                   | r-x        |
+| **Read + Write**                | 6                   | rw-        |
+| **Read + Write + Execute**      | 7                   | rwx        |
+
+---
+
+### **Using `chmod` with Numeric Mode**
+
+- **Example 1**: Assign `read`, `write`, and `execute` to the owner; `read` and `write` to the group; and `read` to others:
+  ```bash
+  chmod 764 filename
+  ```
+
+- **Example 2**: Remove all permissions:
+  ```bash
+  chmod 000 filename
+  ```
+
+- **Example 3**: Assign `read` and `write` to the owner, and no permissions to group and others:
+  ```bash
+  chmod 600 filename
+  ```
+
+- **Example 4**: Assign `read` and `write` to the owner, and `read` to others:
+  ```bash
+  chmod 604 filename
+  ```
+
+- **Example 5**: Assign `execute` to everyone:
+  ```bash
+  chmod 111 filename
+  ```
+
+- **Example 6**: Assign `read` and `execute` to the owner, group, and others:
+  ```bash
+  chmod 555 filename
+  ```
+
+---
 
 ## **⏰ Power Management**  
 - **`sudo shutdown`** – Schedule or perform system shutdown.  
@@ -205,9 +257,9 @@
   sudo shutdown -r 23:00            # Schedule a reboot at 11:00 PM
   ```  
 
----  
+---
 
 ### **💡 Note**  
 This cheat sheet provides a quick reference for essential Linux commands. Perfect for both beginners and advanced users! 🐧  
 
----  
+---
