@@ -164,3 +164,4 @@ If you find it challenging to remember the numerical values, you can use online 
 
 By understanding both the letter-based and numeric-based approaches, you can efficiently manage permissions on files and directories in Linux.
 
+---
