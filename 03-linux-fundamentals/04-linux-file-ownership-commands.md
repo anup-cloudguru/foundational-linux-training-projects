@@ -38,15 +38,34 @@ chown [OPTION] OWNER[:GROUP] FILE
 - **-R**: Recursively apply changes to all files and directories.
 - **-v**: Verbose mode, which provides detailed output of the changes.
 
-**Example**:  
-```bash
-chown -v user1:group1 filename
-```
+**Examples**:  
 
-Output:
-```
-changed ownership of 'filename' from user2:group2 to user1:group1
-```
+- **Change both owner and group**:  
+  ```bash
+  chown -v user1:group1 filename
+  ```
+  Output:
+  ```
+  changed ownership of 'filename' from user2:group2 to user1:group1
+  ```
+
+- **Change only the owner**:  
+  ```bash
+  chown -v user1 filename
+  ```
+  Output:
+  ```
+  changed ownership of 'filename' from user2 to user1
+  ```
+
+- **Change only the group**:  
+  ```bash
+  chown -v :group1 filename
+  ```
+  Output:
+  ```
+  changed group of 'filename' from group2 to group1
+  ```
 
 ---
 
