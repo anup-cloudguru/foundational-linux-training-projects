@@ -85,6 +85,38 @@ chgrp [OPTION] GROUP FILE
 - **-R**: Recursively apply changes to all files and directories.
 - **-v**: Verbose mode, which provides detailed output of the changes.
 
+**Examples**:
+
+- **Change the group ownership of a file**:  
+  ```bash
+  chgrp -v group1 filename
+  ```
+  Output:
+  ```
+  changed group of 'filename' from group2 to group1
+  ```
+
+- **Recursively change the group ownership of a directory**:  
+  ```bash
+  chgrp -v -R group1 /path/to/directory
+  ```
+  Output:
+  ```
+  changed group of '/path/to/directory/file1' from group2 to group1
+  changed group of '/path/to/directory/file2' from group2 to group1
+  ```
+
+- **Change group ownership for multiple files**:  
+  ```bash
+  chgrp -v group1 file1 file2 file3
+  ```
+  Output:
+  ```
+  changed group of 'file1' from group2 to group1
+  changed group of 'file2' from group2 to group1
+  changed group of 'file3' from group2 to group1
+  ```
+
 ---
 
 ### **🔄 Combining Commands, Options, and Arguments**
@@ -134,6 +166,14 @@ This command changes the group ownership of `filename` to `group1`.
 chgrp -R group1 /path/to/directory
 ```
 This command changes the group ownership of all files and directories within `/path/to/directory` to `group1`.
+
+---
+
+#### **Example 6: Change group ownership for multiple files**  
+```bash
+chgrp group1 file1 file2 file3
+```
+This command changes the group ownership of `file1`, `file2`, and `file3` to `group1`.
 
 ---
 
