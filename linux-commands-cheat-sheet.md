@@ -1,4 +1,4 @@
-# **🐧 Linux Command Cheat Sheet** 🛠️
+# **🐧 Linux Command Cheat Sheet** 🛠️  
 
 ---
 
@@ -78,7 +78,7 @@
   ```bash
   cd /path/to/directory             # Navigate to a specific directory
   cd ..                             # Go back one directory level
-  cd or cd ~                        # Go to the home directory
+  cd                                # Go to the home directory
   cd /                              # Go to the root directory
   ```
 
@@ -176,28 +176,28 @@
   chmod -R u+rw directory             # Recursively add read and write permissions for user
   ```
 
-  **Permission Levels**:  
-  - **User (u)**: The owner of the file.  
-  - **Group (g)**: Users belonging to the same group as the file owner.  
-  - **Others (o)**: All other users.  
+### **Permission Levels**:  
+- **User (u)**: The owner of the file.  
+- **Group (g)**: Users belonging to the same group as the file owner.  
+- **Others (o)**: All other users.  
 
-  **Permission Types**:  
-  - **Read (r)**: View file contents.  
-  - **Write (w)**: Modify or delete a file.  
-  - **Execute (x)**: Run a file if it’s a script or program.  
+### **Permission Types**:  
+- **Read (r)**: View file contents.  
+- **Write (w)**: Modify or delete a file.  
+- **Execute (x)**: Run a file if it’s a script or program.  
 
-  **Viewing Permissions**:  
-  Use `ls -l` to view file permissions:  
-  ```bash
-  $ ls -l
-  -rw-r--r-- 1 user1 user1 1048576 Dec 17 10:00 example.txt
-  ```
+### **Viewing Permissions**:  
+Use `ls -l` to view file permissions:  
+```bash
+$ ls -l
+-rw-r--r-- 1 user1 user1 1048576 Dec 17 10:00 example.txt
+```
 
 ---
 
 ## **🔢 Numeric Mode for File Permissions**
 
-In this mode, permissions are assigned using numbers rather than letters. Each permission type has a numerical value, and you combine them to define permissions for the owner, group, and others.
+In numeric mode, permissions are assigned using numbers rather than letters. Each permission type has a numerical value, and you combine them to define permissions for the owner, group, and others.
 
 ### **Numerical Representation of Permissions**
 
@@ -212,34 +212,24 @@ In this mode, permissions are assigned using numbers rather than letters. Each p
 | **Read + Write**                | 6                   | rw-        |
 | **Read + Write + Execute**      | 7                   | rwx        |
 
-### **Using `chmod` with Numeric Mode**
+### **Examples with `chmod`**
 
-- **Example 1**: Assign `read`, `write`, and `execute` to the owner; `read` and `write` to the group; and `read` to others:
+- Assign `read`, `write`, and `execute` to the owner; `read` and `write` to the group; and `read` to others:
   ```bash
   chmod 764 filename
   ```
 
-- **Example 2**: Remove all permissions:
+- Remove all permissions:
   ```bash
   chmod 000 filename
   ```
 
-- **Example 3**: Assign `read` and `write` to the owner, and no permissions to group and others:
+- Assign `read` and `write` to the owner, and no permissions to group and others:
   ```bash
   chmod 600 filename
   ```
 
-- **Example 4**: Assign `read` and `write` to the owner, and `read` to others:
-  ```bash
-  chmod 604 filename
-  ```
-
-- **Example 5**: Assign `execute` to everyone:
-  ```bash
-  chmod 111 filename
-  ```
-
-- **Example 6**: Assign `read` and `execute` to the owner, group, and others:
+- Assign `read` and `execute` to everyone:
   ```bash
   chmod 555 filename
   ```
@@ -248,9 +238,9 @@ In this mode, permissions are assigned using numbers rather than letters. Each p
 
 ## **🛠️ File Ownership Commands**
 
-#### **1️⃣ `chown` (Change Owner)**
+### **1️⃣ `chown` (Change Owner)**
 
-The **`chown`** command is used to change the owner and optionally the group of a file or directory.
+The **`chown`** command changes the owner and optionally the group of a file or directory.
 
 **Syntax**:  
 ```bash
@@ -261,31 +251,31 @@ chown [OPTION] OWNER[:GROUP] FILE
 - **GROUP**: (Optional) The new group for the file or directory.
 - **FILE**: The file or directory whose ownership you want to change.
 
-##### **Common Options**:
-- **-R**: Recursively apply changes to all files and directories.
-- **-v**: Verbose mode, which provides detailed output of the changes.
+**Common Options**:  
+- **`-R`**: Recursively apply changes to all files and directories.
+- **`-v`**: Verbose mode, provides detailed output of changes.
 
 **Examples**:
-- **Change the owner of a file**:
+- Change the owner of a file:
   ```bash
   chown user1 filename
   ```
 
-- **Change both owner and group**:
+- Change both owner and group:
   ```bash
   chown user1:group1 filename
   ```
 
-- **Recursively change ownership**:
+- Recursively change ownership:
   ```bash
   chown -R user1:group1 /path/to/directory
   ```
 
 ---
 
-#### **2️⃣ `chgrp` (Change Group)**
+### **2️⃣ `chgrp` (Change Group)**
 
-The **`chgrp`** command is used to change the group ownership of a file or directory.
+The **`chgrp`** command changes the group ownership of a file or directory.
 
 **Syntax**:  
 ```bash
@@ -295,19 +285,55 @@ chgrp [OPTION] GROUP FILE
 - **GROUP**: The new group for the file or directory.
 - **FILE**: The file or directory whose group ownership you want to change.
 
-##### **Common Options**:
-- **-R**: Recursively apply changes to all files and directories.
-- **-v**: Verbose mode, which provides detailed output of the changes.
+**Common Options**:  
+- **`-R`**: Recursively apply changes to all files and directories.
+- **`-v`**: Verbose mode, provides detailed output of changes.
 
 **Examples**:
-- **Change the group of a file**:
+- Change the group of a file:
   ```bash
   chgrp group1 filename
   ```
 
-- **Recursively change the group of files**:
+- Recursively change the group of files:
   ```bash
   chgrp -R group1 /path/to/directory
+  ```
+
+---
+
+## **🌟 Wildcards in Linux**
+
+Wildcards are special characters used for pattern matching in filenames or directories.  
+
+### **1️⃣ Common Wildcards**
+
+| Wildcard | Matches                                 | Example                | Output                                 |
+|----------|-----------------------------------------|------------------------|----------------------------------------|
+| `*`      | Zero or more characters                | `ls ABC*`              | `ABC123.txt`, `ABC.txt`, `ABC_Notes`  |
+| `?`      | Exactly one character                  | `ls file?.txt`         | `file1.txt`, `fileA.txt`              |
+| `{}`     | A sequence or set of choices           | `echo {A,B}_report`    | `A_report`, `B_report`                |
+| `[]`     | One character from a set or range      | `ls file[1-3].txt`     | `file1.txt`, `file2.txt`              |
+
+### **2️⃣ Examples**
+- Match all `.txt` files:  
+  ```bash
+  ls *.txt
+  ```
+
+- Match files with exactly one character:  
+  ```bash
+  ls file?.txt
+  ```
+
+- Create multiple files:  
+  ```bash
+  touch {A,B,C}_report.txt
+  ```
+
+- List files with a range of characters:  
+  ```bash
+  ls file[1-3].txt
   ```
 
 ---
@@ -316,11 +342,11 @@ chgrp [OPTION] GROUP FILE
 
 - **`sudo shutdown`** – Schedule or perform system shutdown.  
   ```bash
-  sudo shutdown                      # Schedules shutdown 1 minute from now (default behavior)
-  sudo shutdown +10                  # Schedules shutdown 10 minutes from now
+  sudo shutdown                      # Schedules shutdown 1 minute from now (default)
+  sudo shutdown +10                  # Schedules shutdown in 10 minutes
   sudo shutdown 23:00                # Schedules shutdown at 11:00 PM
-  sudo shutdown now                  # Shuts down the system immediately
-  sudo shutdown -c                   # Cancels a scheduled shutdown
+  sudo shutdown now                  # Shut down the system immediately
+  sudo shutdown -c                   # Cancel a scheduled shutdown
   ```
 
 - **`sudo reboot`** – Schedule or perform system reboot.  
@@ -332,7 +358,8 @@ chgrp [OPTION] GROUP FILE
 
 ---
 
-### **💡 Note**  
-This cheat sheet provides a quick reference for essential Linux commands. Perfect for both beginners and advanced users! 🐧  
+## **💡 Note**
+
+This cheat sheet provides a quick reference for essential Linux commands, tailored for both beginners and advanced users. Master these commands, and you're on your way to Linux proficiency! 🐧  
 
 ---
