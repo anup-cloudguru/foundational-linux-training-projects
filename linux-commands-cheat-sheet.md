@@ -1,4 +1,4 @@
-# **🐧 Linux Command Cheat Sheet** 🛠️  
+# **🐧 Linux Command Cheat Sheet** 🛠️
 
 ---
 
@@ -67,7 +67,7 @@
 
 ---
 
-## **📝 Basic Commands**
+## **🖝 Basic Commands**
 
 - **`pwd`** – Print the current working directory.  
   ```bash
@@ -195,7 +195,50 @@ $ ls -l
 
 ---
 
-## **🔢 Numeric Mode for File Permissions**
+## **🔤 ACL (Access Control List) Commands**
+
+ACLs allow more fine-grained control of file permissions than the traditional Unix model.
+
+### **1️⃣ Viewing ACLs**
+
+- **`getfacl`** – Display the ACL of a file or directory.  
+  ```bash
+  getfacl filename                   # View the ACL of a specific file
+  getfacl /path/to/directory         # View the ACL of a directory
+  ```
+
+### **2️⃣ Setting ACLs**
+
+- **`setfacl`** – Modify the ACL of a file or directory.  
+  ```bash
+  setfacl -m u:username:rwx filename # Grant rwx permissions to a user
+  setfacl -m g:groupname:rw filename # Grant rw permissions to a group
+  setfacl -m o::r filename           # Set permissions for others
+  ```
+
+### **3️⃣ Removing ACL Entries**
+
+- Remove specific ACL entries:  
+  ```bash
+  setfacl -x u:username filename     # Remove ACL entry for a specific user
+  setfacl -x g:groupname filename    # Remove ACL entry for a group
+  ```
+
+- Remove all ACL entries:  
+  ```bash
+  setfacl -b filename                # Remove all ACLs and revert to standard permissions
+  ```
+
+### **4️⃣ Recursive ACL Operations**
+
+- Apply ACLs recursively:  
+  ```bash
+  setfacl -Rm u:username:rw /path/to/directory
+  ```
+
+---
+
+## **🔄 Numeric Mode for File Permissions**
 
 In numeric mode, permissions are assigned using numbers rather than letters. Each permission type has a numerical value, and you combine them to define permissions for the owner, group, and others.
 
@@ -236,7 +279,7 @@ In numeric mode, permissions are assigned using numbers rather than letters. Eac
 
 ---
 
-## **🛠️ File Ownership Commands**
+## **🔧 File Ownership Commands**
 
 ### **1️⃣ `chown` (Change Owner)**
 
