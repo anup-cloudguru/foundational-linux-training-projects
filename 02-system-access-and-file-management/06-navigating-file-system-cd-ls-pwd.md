@@ -122,5 +122,3 @@ The `ls` command lists the contents of a directory. It supports various options 
 By mastering the commands `pwd`, `cd`, and `ls`, you gain essential skills for exploring and managing the Linux file system. These commands form the foundation of Linux system administration and efficient file management.  
 
 ---
-
----
