@@ -2,7 +2,9 @@
 
 ## **Chapter 3: Download and Install Linux (CentOS Stream 9)**  
 
-![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) ![Virtual Lab Setup](https://img.shields.io/badge/Virtual%20Lab%20Setup-blue) ![CentOS Installation](https://img.shields.io/badge/CentOS%20Installation-orange)  
+![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) 
+![Virtual Lab Setup](https://img.shields.io/badge/Virtual%20Lab%20Setup-blue) 
+![CentOS Installation](https://img.shields.io/badge/CentOS%20Installation-orange)  
 
 ---
 
@@ -44,21 +46,25 @@ In this chapter, we will cover how to download and install the CentOS Stream 9 o
 
 On the **Installation Summary** screen, review and adjust the following settings:
 
-**🔧 Localization:**
+**🔧 Localization:**  
 - **Language and Keyboard Layout**: Select the appropriate language and keyboard layout for the installation (e.g., English (India), English (India, with rupee)), and click **"Continue"**.
 - **Date & Time**: Set the correct time zone for your region (e.g., Asia/Kolkata).
 - **Language Support**: Ensure your preferred language is selected.
 
-**🌄 Software:**
+**🌄 Software:**  
 - **Installation Source**: This is typically set to **Local Media** if the ISO file is attached. No changes are needed here.
-- **Software Selection**: The screenshot shows **Server with GUI** selected. Choose this if you need a graphical interface; otherwise, select **Minimal Install** for a lightweight server setup.
+- **Software Selection**:  
+  - Choose **Server with GUI** if you need a graphical interface.  
+  - Select **Minimal Install** for a lightweight server setup.
 
-**🛠️ System:**
+**🛠️ System:**  
 - **Installation Destination**: Select the virtual hard disk created in the previous chapter. If needed, modify the partitioning options or leave the default **Automatic Partitioning**. Click **Done** to save.
 - **KDUMP**: Leave this enabled unless you have specific requirements to disable it.
-- **Network & Hostname**: Ensure the network adapter is enabled for internet access. Optionally, assign a hostname for the system (e.g., centos-vm.local).
+- **Network & Hostname**:  
+  - Ensure the network adapter is enabled for internet access.  
+  - Optionally, assign a hostname for the system (e.g., `centos-vm.local`).
 
-**🔑 User Settings:**
+**🔑 User Settings:**  
 - **Root Password**: Set a strong root password to secure the system.
 - **User Creation**: Create a new user account with administrator privileges. This is recommended for better security than using the root account for daily tasks.
 
@@ -75,32 +81,31 @@ Click **"Begin Installation"** to start the installation process.
 
 ## **🖼 Screenshots**
 
-### **1. CentOS Download Page**
+### **1️⃣ CentOS Download Page**  
 ![CentOS Download Page](screenshots/01-centos-download-page.png)  
 *Download the CentOS Stream 9 ISO image.*
 
-### **2. Attach ISO to Virtual Machine**
+### **2️⃣ Attach ISO to Virtual Machine**  
 ![Attach ISO](screenshots/02-attach-centos-iso-to-vm.png)  
 *Attach the CentOS ISO file to the virtual machine.*
 
-### **3. Installation Menu**
+### **3️⃣ Installation Menu**  
 ![Installation Menu](screenshots/03-centos-installation-menu.png)  
 *Installation menu for CentOS Stream 9.*
 
-### **4. Installation Summary Screen**
+### **4️⃣ Installation Summary Screen**  
 ![Installation Summary](screenshots/04-centos-installation-summary.png)  
 *Options available on the installation summary screen.*
 
-### **5. CentOS Home Screen**
+### **5️⃣ CentOS Home Screen**  
 ![CentOS Home Screen](screenshots/05-centos-home-screen.png)  
 *Initial view of the CentOS home screen after installation.*
 
 ---
 
-## **💡 Note**
-The CentOS Stream 9 installation is now complete. The virtual machine is ready for further configuration and use. In the next chapter, we'll explore post-installation setup and basic commands to get started with CentOS Stream 9.
+## **💡 Note**  
+The CentOS Stream 9 installation is now complete. The virtual machine is ready for further configuration and use.  
 
-Feel free to continue to the next chapter, where I'll guide you through post-installation tasks for CentOS Stream 9!  
+In the next chapter, we’ll explore post-installation setup and basic commands to get started with CentOS Stream 9!  
 
 ---
-
