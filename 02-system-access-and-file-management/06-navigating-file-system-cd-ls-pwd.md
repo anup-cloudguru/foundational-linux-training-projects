@@ -1,126 +1,126 @@
-# **Module 2: System Access and File Management**
-
-## **Chapter 6: Navigating the File System (cd, ls, pwd)**
-
-### **Introduction**  
-In this chapter, we will explore the basic Linux commands for navigating the file system:  
-- **`cd`**: Used to change the current directory.  
-- **`pwd`**: Prints the full path of the current working directory.  
-- **`ls`**: Lists the contents of a directory.  
-
-Mastering these commands will help you efficiently move between directories, locate files, and explore the Linux file system structure.  
+# **Module 2: System Access and File Management**  
+## **Chapter 6: Navigating the File System (`cd`, `ls`, `pwd`)**  
+![Linux Basics](https://img.shields.io/badge/Linux-Basics-green) ![Navigation](https://img.shields.io/badge/File_System-Navigation-blue) ![Command_Line](https://img.shields.io/badge/Command-Line_Tools-orange)  
 
 ---
 
-#### **1.1 `pwd`: Print Working Directory**  
-The `pwd` command displays the full path of your current location in the file system. It helps confirm which directory you are currently working in.  
+### **🖥️ Introduction**  
+In this chapter, we will explore the fundamental Linux commands for navigating the file system:  
+- **`pwd`**: Print the full path of the current working directory.  
+- **`cd`**: Change the current directory.  
+- **`ls`**: List the contents of a directory.  
+
+Mastering these commands is essential for navigating and managing files in a Linux environment effectively.  
+
+---
+
+### **1️⃣ `pwd`: Print Working Directory**  
+The `pwd` command displays the full path of your current location in the file system. It confirms your current working directory.  
 
 **Example Command**:  
 ```bash
 pwd
 ```  
 
-**Example Output** (Text Output):  
+**Example Output**:  
 ```
 /home/anupmoitra
-```
+```  
 
-**Example Screenshot** (Terminal Output):  
+**Screenshot Example**:  
 ![Output of pwd](screenshots/01-output-of-pwd.png)  
-*Figure 1: Displaying the current directory using `pwd`.*
+*Figure 1: Displaying the current directory using `pwd`.*  
 
 ---
 
-#### **1.2 `cd`: Change Directory**  
-The `cd` command is used to navigate between directories.  
+### **2️⃣ `cd`: Change Directory**  
+The `cd` command is used to navigate between directories in the Linux file system.  
 
-**Common Usage Examples with Screenshots**:  
+#### **Common Usage Examples**:  
 
-1. **Navigate to the root directory**:  
+1. **Navigate to the Root Directory**:  
    ```bash
    cd /
    ```  
-   **Example Screenshot**:  
+   **Screenshot Example**:  
    ![Changing to root directory](screenshots/02-navigate-to-root.png)  
-   *Figure 2: Changing to the root directory using `cd /`.*
+   *Figure 2: Changing to the root directory using `cd /`.*  
 
-2. **Navigate to a specific directory**:  
+2. **Navigate to a Specific Directory**:  
    ```bash
    cd /etc
    ```  
-   **Example Screenshot**:  
+   **Screenshot Example**:  
    ![Changing to /etc directory](screenshots/03-navigate-to-etc.png)  
-   *Figure 3: Changing to the `/etc` directory using `cd`.*
+   *Figure 3: Changing to the `/etc` directory using `cd`.*  
 
-3. **Go back one directory level**:  
+3. **Go Back One Directory Level**:  
    ```bash
    cd ..
    ```  
-   **Example Screenshot**:  
+   **Screenshot Example**:  
    ![Going up one level](screenshots/04-go-up-one-level.png)  
-   *Figure 4: Moving back one directory level with `cd ..`.*
+   *Figure 4: Moving back one directory level with `cd ..`.*  
 
-#### **4. Return to the Home Directory**  
-In Linux, both **`cd`** (with no arguments) and **`cd ~`** take you to your home directory. While **`cd`** is the default command for this purpose, **`cd ~`** explicitly specifies the home directory.  
-
-**Example Commands**:  
-```bash
-cd          # Takes you to your home directory
-cd ~        # Also takes you to your home directory
-```  
-
-**Example Screenshot**:  
-![Returning to the home directory](screenshots/05-return-home.png)  
-*Figure 5: Returning to the home directory using `cd` or `cd ~`.*
+4. **Return to the Home Directory**:  
+   ```bash
+   cd          # Takes you to your home directory  
+   cd ~        # Also takes you to your home directory  
+   ```  
+   **Screenshot Example**:  
+   ![Returning to the home directory](screenshots/05-return-home.png)  
+   *Figure 5: Returning to the home directory using `cd` or `cd ~`.*  
 
 ---
 
-#### **1.3 `ls`: List Directory Contents**  
-The `ls` command lists the contents of a directory. It supports various options to display additional details.  
+### **3️⃣ `ls`: List Directory Contents**  
+The `ls` command lists the contents of a directory. It supports various options for detailed output.  
 
-**Common Options**:  
+#### **Common Options**:  
 - **`ls`**: Lists files and directories in the current directory.  
-- **`ls -l`**: Displays detailed information such as file permissions, ownership, and size in a long listing format.  
-- **`ls -lt`**: Displays detailed information in a long listing format, sorted by modification time, with the most recently modified files at the top.  
-- **`ls -ltr`**: Displays detailed information in a long listing format, sorted by modification time, with the most recently modified files at the bottom.  
+- **`ls -l`**: Displays detailed information (permissions, ownership, size) in a long listing format.  
+- **`ls -lt`**: Displays detailed information sorted by modification time (newest first).  
+- **`ls -ltr`**: Displays detailed information sorted by modification time (oldest first).  
 
-**Example Commands and Screenshots**:  
+#### **Example Commands and Screenshots**:  
 
 1. **Basic `ls` Command**:  
    ```bash
    ls
    ```  
-   **Example Screenshot**:  
+   **Screenshot Example**:  
    ![Listing directory contents using `ls`](screenshots/06-ls-basic.png)  
-   *Figure 1: Listing directory contents using `ls`.*
+   *Figure 6: Listing directory contents using `ls`.*  
 
 2. **Detailed Listing with `ls -l`**:  
    ```bash
    ls -l
    ```  
-   **Example Screenshot**:  
+   **Screenshot Example**:  
    ![Detailed listing using `ls -l`](screenshots/07-ls-l.png)  
-   *Figure 2: Detailed listing of directory contents using `ls -l`.*
+   *Figure 7: Detailed listing of directory contents using `ls -l`.*  
 
 3. **Sorted by Modification Time with `ls -lt`**:  
    ```bash
    ls -lt
    ```  
-   **Example Screenshot**:  
+   **Screenshot Example**:  
    ![Sorted listing using `ls -lt`](screenshots/08-ls-lt.png)  
-   *Figure 3: Directory contents sorted by modification time (newest first) using `ls -lt`.*
+   *Figure 8: Directory contents sorted by modification time (newest first) using `ls -lt`.*  
 
 4. **Sorted by Modification Time (Reverse Order) with `ls -ltr`**:  
    ```bash
    ls -ltr
    ```  
-   **Example Screenshot**:  
+   **Screenshot Example**:  
    ![Sorted listing using `ls -ltr`](screenshots/09-ls-ltr.png)  
-   *Figure 4: Directory contents sorted by modification time (oldest first) using `ls -ltr`.*
+   *Figure 9: Directory contents sorted by modification time (oldest first) using `ls -ltr`.*  
 
 ---
 
-## **Conclusion**  
-By mastering `cd`, `pwd`, and `ls`, you can efficiently navigate and explore the Linux file system. These commands form the foundation of system administration and file management tasks in Linux environments.  
+### **✅ Conclusion**  
+By mastering the commands `pwd`, `cd`, and `ls`, you gain essential skills for exploring and managing the Linux file system. These commands form the foundation of Linux system administration and efficient file management.  
+
+---
 
 ---
