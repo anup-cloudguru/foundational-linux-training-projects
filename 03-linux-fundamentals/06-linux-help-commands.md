@@ -1,6 +1,6 @@
 # **Module 3: Linux Command Basics**
 
-## **Chapter 5: Linux Help Commands**
+## **Chapter 6: Linux Help Commands**
 
 ![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) ![whatis](https://img.shields.io/badge/Command-whatis-blue) ![--help](https://img.shields.io/badge/Command---help-orange) ![man](https://img.shields.io/badge/Command-man-purple)
 
