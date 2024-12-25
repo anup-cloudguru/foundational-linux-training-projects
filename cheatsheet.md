@@ -73,3 +73,14 @@
   ```
 
 ---
+
+## **🔑 Changing User Passwords**
+
+- **`passwd`** – Change user passwords.  
+  Use this to change your own password or another user’s password (requires sudo for other users).
+  ```bash
+  passwd                            # Change your own password
+  sudo passwd username              # Change another user's password (requires sudo)
+  ```
+
+---
