@@ -35,3 +35,13 @@
   ```
 
 ---
+
+## **⎸️ Interrupt a Running Command or Process**
+
+- **`Ctrl + C`** – Stop a running command or process.  
+  If you accidentally run a command that’s taking too long or is stuck, you can regain control of the terminal by pressing `Ctrl + C`.
+  ```bash
+  # Press Ctrl + C to stop a running process
+  ```
+
+---
