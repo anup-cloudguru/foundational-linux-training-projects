@@ -114,5 +114,3 @@ passwd: password fails the dictionary check
 Changing passwords is a fundamental skill in Linux system management. By mastering the `passwd` command, you can ensure secure access for yourself and other users while adhering to best practices for password security.  
 
 ---
-
----
