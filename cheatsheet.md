@@ -1,4 +1,4 @@
-# **🐧 Beginner's Guide to Linux Network Commands** 🛠️
+# **🐧 Beginner's Guide to Linux Commands** 🛠️
 
 ---
 
@@ -42,6 +42,34 @@
   If you accidentally run a command that’s taking too long or is stuck, you can regain control of the terminal by pressing `Ctrl + C`.
   ```bash
   # Press Ctrl + C to stop a running process
+  ```
+
+---
+
+## **📁 Navigating the File System**
+
+- **`pwd`** – Print the current working directory.  
+  Use this command to see the full path of the directory you’re currently in.
+  ```bash
+  pwd
+  ```
+
+- **`cd`** – Change the current directory.  
+  Navigate to different directories in the file system using these commands:
+  ```bash
+  cd /path/to/directory             # Navigate to a specific directory
+  cd ..                             # Go back one directory level
+  cd                                # Go to the home directory
+  cd /                              # Go to the root directory
+  ```
+
+- **`ls`** – List the contents of a directory.  
+  View files and directories in the current location. You can use these options for more details:
+  ```bash
+  ls                                # List files in the current directory
+  ls -l                             # Detailed listing
+  ls -lt                            # Sort by modification time
+  ls -ltr                           # Reverse order of modification time
   ```
 
 ---
