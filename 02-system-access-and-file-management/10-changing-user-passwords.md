@@ -1,100 +1,118 @@
-# **Module 2: System Access and File Management**
-
-## **Chapter 10: Changing User Passwords in Linux**
-
-### **Introduction**  
-In this chapter, we will learn how to change a user password in Linux. This process is essential for maintaining the security of user accounts. Whether you're changing your own password or modifying the password of another user (as the root user), understanding this command is key to managing user credentials.
-
-**What We Will Learn:**
-- How to change your own password.
-- How to change another user's password (as root).
-- Important considerations for password security and best practices.
+# **Module 2: System Access and File Management**  
+## **Chapter 10: Changing User Passwords in Linux**  
+![Linux Security](https://img.shields.io/badge/Linux-Password_Management-blue) ![System Administration](https://img.shields.io/badge/System-Administration-green)  
 
 ---
 
-### **1. The `passwd` Command**
+### **📖 Introduction**  
+Managing user passwords is a critical aspect of Linux system administration. The ability to change passwords ensures secure access and helps maintain system integrity.  
 
-The `passwd` command is used to change a user’s password in Linux. This command is simple to use and requires the current password for verification.
+In this chapter, we will learn:  
+- How to change your own password.  
+- How to change another user's password (as root).  
+- Password security best practices.  
 
-**Basic Syntax**:
+---
+
+### **🔑 1. The `passwd` Command**  
+The `passwd` command is the primary tool for changing user passwords in Linux. It is simple and interactive, requiring minimal input.  
+
+**Basic Syntax**:  
 ```bash
 passwd [username]
-```
+```  
 
-**Important Note**:  
-- If you use `passwd` without specifying a username, it will change the password for the currently logged-in user.
-- If you are logged in as `root`, you can use `passwd username` to change another user's password.
+**Key Points**:  
+- Without specifying a username, `passwd` changes the password of the currently logged-in user.  
+- Only the root user can change another user’s password.  
 
 ---
 
-### **2. Steps to Change Your Own Password**
+### **🔒 2. Changing Your Own Password**  
 
-1. **Open the Terminal**: Log in to your Linux machine and open the terminal.
-2. **Run the `passwd` Command**:
+#### **Steps**:  
+1. **Open Terminal**: Log in and launch the terminal.  
+2. **Run the `passwd` Command**:  
    ```bash
    passwd
-   ```
-3. **Enter Current Password**: You will be prompted to enter your current password.
-4. **Set a New Password**: Enter your new password. Ensure it meets security requirements (e.g., minimum length of 8 characters, not a dictionary word, and no sequences like `1234`).
-5. **Confirm the New Password**: Retype your new password for confirmation.
-6. **Success Message**: If the password meets the requirements, you will see the message: `password authentication tokens updated successfully`.
+   ```  
+3. **Enter Current Password**: For verification, the system prompts you to enter your current password.  
+4. **Set a New Password**: Enter a strong password that meets complexity requirements.  
+5. **Confirm the Password**: Re-enter your new password for confirmation.  
+6. **Success Message**: You’ll see:  
+   `password authentication tokens updated successfully`.  
 
-**Example**:
+#### **Example**:  
 ```bash
-$ passwd
-Changing password for user anupmoitra
-Current password: [Enter your current password]
-New password: [Enter a new, secure password]
-Retype new password: [Re-enter the new password]
-```
+$ passwd  
+Changing password for user johndoe  
+Current password: [Enter current password]  
+New password: [Enter a secure password]  
+Retype new password: [Re-enter the secure password]  
+```  
 
-**Security Tip**: Choose a strong password that does not match common dictionary words and avoid easily guessable patterns.
+#### **Security Tip**:  
+Choose a password that includes:  
+- At least 8 characters.  
+- A mix of uppercase, lowercase, numbers, and symbols.  
+- No dictionary words or easily guessable sequences like `12345`.  
 
-**Screenshot Example**:  
-![Screenshot Example 1](screenshots/01-current-user-pass-change.png)  
-*Figure 1: Changing Password for Current User*
+#### **Screenshot**:  
+![Changing Password for Current User](screenshots/01-current-user-pass-change.png)  
+*Figure 1: Changing Password for Current User*  
 
 ---
 
-### **3. Changing Another User’s Password (As Root)**
+### **🛠️ 3. Changing Another User’s Password (As Root)**  
 
-1. **Switch to Root**: Use the `sudo` command or log in as `root` if you have the permissions.
-2. **Run the `passwd` Command with Username**:
+#### **Steps**:  
+1. **Switch to Root User**: Use `sudo` or log in as the root account.  
+2. **Run the `passwd` Command with the Username**:  
    ```bash
-   sudo passwd username
-   ```
-3. **Enter the New Password**: Follow the same process as outlined in Step 2 for changing your own password.
+   sudo passwd <username>
+   ```  
+3. **Set a New Password**: Enter and confirm the new password for the user.  
 
-**Example**:
+#### **Example**:  
 ```bash
-$ sudo passwd anupmoitra
-Changing password for user anupmoitra
-New password: [Enter a new, secure password]
-Retype new password: [Re-enter the new password]
-```
+$ sudo passwd johndoe  
+Changing password for user johndoe  
+New password: [Enter a secure password]  
+Retype new password: [Re-enter the secure password]  
+```  
 
-**Screenshot Example**:  
-![Screenshot Example 2](screenshots/02-other-user-pass-change.png)  
-*Figure 2: Changing Another User’s Password as Root*
-
-**Reminder**: Only the root user can change passwords for other users, so be cautious when performing this operation.
+#### **Screenshot**:  
+![Changing Another User's Password](screenshots/02-other-user-pass-change.png)  
+*Figure 2: Changing Another User’s Password as Root*  
 
 ---
 
-### **4. Common Issues and Considerations**
+### **⚠️ 4. Common Issues and Considerations**  
 
-- **Password Complexity**: Linux systems often have password complexity checks. Avoid using simple, sequential, or dictionary words for passwords.
-- **Minimum Length Requirement**: Passwords should be at least 8 characters long, but this may vary depending on system settings.
-- **Password History**: Some systems may restrict users from reusing recent passwords for a certain number of changes.
+1. **Password Complexity Requirements**:  
+   - Ensure your password includes a mix of characters and is sufficiently complex.  
 
-**Example Error Messages**:
-- **"Password too short"**: Your password must meet the minimum length requirement.
-- **"Password fails the dictionary check"**: Choose a more complex password that is not a simple word found in the dictionary.
+2. **Minimum Length**:  
+   - Default requirement is 8 characters, but system policies might vary.  
+
+3. **Password History Policies**:  
+   - Some systems prevent reusing recent passwords.  
+
+#### **Common Errors**:  
+- **"Password too short"**: Choose a longer password.  
+- **"Password fails the dictionary check"**: Use a password that is not a common word.  
+
+#### **Example Error Messages**:  
+```bash
+passwd: password too short  
+passwd: password fails the dictionary check  
+```  
 
 ---
 
-### **Conclusion**
+### **📝 Conclusion**  
+Changing passwords is a fundamental skill in Linux system management. By mastering the `passwd` command, you can ensure secure access for yourself and other users while adhering to best practices for password security.  
 
-Changing passwords is a fundamental task for maintaining user security and system integrity. By mastering the `passwd` command, you'll ensure that user credentials are protected and comply with best practices.
+---
 
 ---
