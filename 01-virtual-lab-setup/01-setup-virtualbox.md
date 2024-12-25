@@ -1,54 +1,63 @@
-# Module 1: Virtual Lab Setup
+# **Module 1: Virtual Lab Setup**
 
-## Chapter 1: Download and Install VirtualBox
+## **Chapter 1: Download and Install VirtualBox**
 
-### Introduction
-In this chapter, we will guide you through the process of downloading and installing VirtualBox on your system. This will establish a foundational lab that supports our learning of Linux basics and prepares us for future topics.
-
----
-
-### Step-by-Step Instructions
-
-#### 1. Download the VirtualBox Installer
-- Visit the [VirtualBox website](https://www.virtualbox.org/wiki/Downloads).
-- Choose the installer that matches your operating system and download it.
-
-#### 2. Run the Installer
-- Launch the downloaded installer file.
-- Follow the on-screen prompts to proceed with the installation.
-  - Select installation location.
-  - Customize setup options if needed.
-  - Click "Install" to start the installation process.
-
-#### 3. Verify Installation
-- Open VirtualBox to ensure it is properly installed.
-- Check the version number to confirm a successful installation.
+![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) ![Virtual Lab Setup](https://img.shields.io/badge/Virtual%20Lab%20Setup-blue) ![Installing VirtualBox](https://img.shields.io/badge/Installing%20VirtualBox-orange)
 
 ---
 
-### Screenshots
+### **🖥️ Introduction**
+In this chapter, we will guide you through the process of downloading and installing **VirtualBox** on your system. This step will establish the foundational virtual lab required to support your learning of Linux basics and prepare you for future topics.
 
-#### 1. VirtualBox Download Page
-![VirtualBox Download Page](screenshots/01-virtualbox-download-page.png)
+---
+
+### **🔧 Step-by-Step Instructions**
+
+#### **1️⃣ Download the VirtualBox Installer**
+- Visit the [VirtualBox Downloads page](https://www.virtualbox.org/wiki/Downloads).
+- Select the installer that matches your operating system (Windows, macOS, or Linux).
+- Download the appropriate installer.
+
+#### **2️⃣ Run the Installer**
+- After downloading, launch the installer.
+- Follow the on-screen instructions:
+  - Select the installation location (default is fine).
+  - Choose additional setup options (network features, shortcuts).
+  - Click **Install** to begin the installation process.
+
+#### **3️⃣ Verify Installation**
+- Once installed, open **VirtualBox**.
+- Confirm the installation by checking the version number in the menu (Help > About VirtualBox).
+
+---
+
+### **📸 Screenshots**
+
+#### **1️⃣ VirtualBox Download Page**
+![VirtualBox Download Page](screenshots/01-virtualbox-download-page.png)  
 *Figure 1: VirtualBox Download Page*
 
-#### 2. VirtualBox Installer Start
-![VirtualBox Installer Start](screenshots/02-virtualbox-installer-start.png)
+#### **2️⃣ VirtualBox Installer Start**
+![VirtualBox Installer Start](screenshots/02-virtualbox-installer-start.png)  
 *Figure 2: VirtualBox Installer Start*
 
-#### 3. VirtualBox Installation Progress
-![VirtualBox Installation Progress](screenshots/03-virtualbox-installation-progress.png)
+#### **3️⃣ VirtualBox Installation Progress**
+![VirtualBox Installation Progress](screenshots/03-virtualbox-installation-progress.png)  
 *Figure 3: VirtualBox Installation Progress*
 
-#### 4. VirtualBox Installation Finish
-![VirtualBox Installation Finish](screenshots/04-virtualbox-installation-finish.png)
+#### **4️⃣ VirtualBox Installation Finish**
+![VirtualBox Installation Finish](screenshots/04-virtualbox-installation-finish.png)  
 *Figure 4: VirtualBox Installation Finish*
 
-#### 5. VirtualBox First Launch
-![VirtualBox First Launch](screenshots/05-virtualbox-first-launch.png)
+#### **5️⃣ VirtualBox First Launch**
+![VirtualBox First Launch](screenshots/05-virtualbox-first-launch.png)  
 *Figure 5: VirtualBox First Launch*
 
 ---
+
+### **⚙️ Post-Installation Configuration (Optional)**
+- Once VirtualBox is installed, check your **network settings** to ensure proper connectivity for your virtual machines.
+- You may also want to install the **VirtualBox Extension Pack** for enhanced functionality (such as USB support and improved performance). This can be downloaded from the [VirtualBox website](https://www.virtualbox.org/wiki/Downloads).
 
 **Note**: Carefully follow the installation prompts to avoid any issues.
 
