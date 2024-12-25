@@ -1,21 +1,25 @@
-# Module 2: System Access and File Management  
-## Chapter 2: Accessing Linux Systems  
+# **Module 2: System Access and File Management**  
+## **Chapter 2: Accessing Linux Systems**  
+![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) ![System Access](https://img.shields.io/badge/System%20Access-blue) ![Accessing Linux Systems](https://img.shields.io/badge/Accessing%20Linux%20Systems-orange)
 
-### Introduction  
+
+---
+
+### **🖥️ Introduction**  
 In this chapter, we will delve into the two primary methods of accessing a Linux system: **Console Access** and **Remote Access**. Understanding these methods is essential for managing and troubleshooting Linux systems effectively, whether you’re working on a local machine or accessing remote servers.
 
 ---
 
-### What We Will Learn  
+### **📚 What We Will Learn**  
 - The distinctions between Console Access and Remote Access.  
 - How to use the console for direct access to a Linux system.  
 - The process of connecting to a Linux system remotely using tools like PuTTY and SSH.  
 
 ---
 
-### Types of Access  
+### **🔑 Types of Access**  
 
-#### 1. **Console Access**  
+#### **1. Console Access**  
 Console access involves directly interacting with the operating system through a physical or virtual connection to the machine.
 
 - **Example Setup**:  
@@ -31,7 +35,7 @@ Console access involves directly interacting with the operating system through a
 
 ---
 
-#### 2. **Remote Access**  
+#### **2. Remote Access**  
 Remote access refers to connecting to a Linux system over a network from another computer, providing the ability to manage systems without physical access.
 
 - **Why Remote Access Is Important**:  
@@ -44,7 +48,7 @@ Remote access refers to connecting to a Linux system over a network from another
 
 ---
 
-### How to Connect Remotely  
+### **🔧 How to Connect Remotely**  
 
 #### **Using PuTTY (Windows)**  
 1. Download and install **PuTTY** from the [PuTTY Official Website](https://www.putty.org/).  
@@ -78,7 +82,7 @@ ssh root@192.168.1.100
 
 ---
 
-### Conclusion  
+### **✅ Conclusion**  
 In this chapter, we examined the fundamentals of accessing a Linux system through both console and remote methods. Remote access via SSH, in particular, is essential for efficient server management and is widely used in professional environments.
 
 ---
