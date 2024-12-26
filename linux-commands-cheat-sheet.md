@@ -222,6 +222,56 @@ cp file1 file2 file3 /path/to/destination_directory # Copy multiple files into a
 
 ---
 
+## 📂 **Copying Files and Directories**
+
+### **`cp`** – Copy Files  
+Use this command to copy files from one location to another.
+
+```bash
+cp source_file destination_file               # Copy a file to a new location
+cp source_file /path/to/destination_directory # Copy a file into a directory
+```
+
+### **`cp -R`** – Copy Directories and Their Contents  
+Use the `-R` (recursive) option to copy a directory along with all its files and subdirectories.
+
+```bash
+cp -R source_directory destination_directory  # Copy a directory and its entire contents
+```
+
+### **`cp` with Multiple Files**  
+You can also copy multiple files into a directory.
+
+```bash
+cp file1 file2 file3 /path/to/destination_directory # Copy multiple files into a directory
+```
+
+---
+
+## ✏️ **Renaming Files and Directories**
+
+### **`mv`** – Rename Files or Directories  
+The `mv` command is used to rename files or directories. Essentially, it moves the source file or directory to the destination with a new name.
+
+#### **Usage:**
+
+- Rename a file:
+  ```bash
+  mv old_filename new_filename
+  ```
+
+- Rename a directory:
+  ```bash
+  mv old_directory_name new_directory_name
+  ```
+
+- Move and rename simultaneously:
+  ```bash
+  mv file_or_directory /new/path/new_name
+  ```
+
+---
+
 ## 🔍 **Finding Files and Directories**
 
 ### **Using the `find` Command**  
