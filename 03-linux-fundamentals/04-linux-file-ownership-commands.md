@@ -1,4 +1,4 @@
-# **Module 3: Linux Command Basics**
+# **Module 3: Linux Fundamentals**
 
 ## **Chapter 4: File Ownership Commands (chown, chgrp)**
 
