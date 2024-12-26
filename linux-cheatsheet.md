@@ -623,4 +623,163 @@ Use `man` to learn more about `chown` and `chgrp` options:
 man chown
 man chgrp
 ```
+
+---
+
+## 🔑 **Key Commands for ACL (Access Control List)** 🛡️
+
+---
+
+### 1️⃣ **`setfacl` Command** - Set or Modify ACL Entries
+
+#### **Purpose:**  
+Used to set or modify Access Control List (ACL) entries for files and directories.
+
+#### **Syntax:**
+
+```bash
+setfacl [OPTION] ENTRY FILE
+```
+
+---
+
+#### **Examples:**
+
+##### **Grant permissions to a user:**
+
+```bash
+setfacl -m u:<username>:<permissions> <file>
+```
+Example:
+```bash
+setfacl -m u:user1:rw file.txt
+```
+This grants **read and write** permissions to `user1` on `file.txt`.
+
+##### **Grant permissions to a group:**
+
+```bash
+setfacl -m g:<groupname>:<permissions> <file>
+```
+Example:
+```bash
+setfacl -m g:developers:r file.txt
+```
+This grants **read** permission to the group `developers` on `file.txt`.
+
+##### **Apply permissions recursively to a directory:**
+
+```bash
+setfacl -R -m u:<username>:<permissions> <directory>
+```
+Example:
+```bash
+setfacl -R -m u:user1:rw /data
+```
+This grants **read and write** permissions to `user1` for all files in the `/data` directory.
+
+##### **Remove a specific ACL entry:**
+
+```bash
+setfacl -x u:<username> <file>
+```
+Example:
+```bash
+setfacl -x u:user1 file.txt
+```
+This **removes** the ACL entry for `user1` on `file.txt`.
+
+##### **Remove all ACL entries:**
+
+```bash
+setfacl -b <file>
+```
+Example:
+```bash
+setfacl -b file.txt
+```
+This **removes all ACL entries** from `file.txt`.
+
+##### **Set ACL inheritance for a directory:**
+
+```bash
+setfacl -m d:u:<username>:<permissions> <directory>
+```
+Example:
+```bash
+setfacl -m d:u:user1:rw /data
+```
+This **sets default ACLs** for `user1` to **read and write** in the `/data` directory and any new files created inside it.
+
+---
+
+### 2️⃣ **`getfacl` Command** - View ACL Entries
+
+#### **Purpose:**  
+Used to view the ACL entries of a file or directory.
+
+#### **Syntax:**
+
+```bash
+getfacl <file>
+```
+
+Example:
+```bash
+getfacl file.txt
+```
+This shows the **ACL entries** for `file.txt`.
+
+---
+
+## 🆘 **Key Commands for Linux Help** 💡
+
+---
+
+### 1️⃣ **`whatis` Command** - Provides a One-Line Summary of Commands
+
+#### **Purpose:**  
+This command gives a concise, one-line description of the specified command.
+
+#### **Syntax:**
+
+```bash
+whatis <command>
+```
+
+---
+
+#### **Examples:**
+
+##### **Get a description of the `ls` command:**
+
+```bash
+whatis ls
+```
+**Output:**
+```bash
+ls (1)             - list directory contents
+```
+
+##### **Get a description of the `cd` command:**
+
+```bash
+whatis cd
+```
+**Output:**
+```bash
+cd (1p)            - change working directory
+cd (bash built-in) - change the shell working directory
+```
+
+##### **Get a description of the `pwd` command:**
+
+```bash
+whatis pwd
+```
+**Output:**
+```bash
+pwd (1)            - print name of current/working directory
+```
+
 ---
