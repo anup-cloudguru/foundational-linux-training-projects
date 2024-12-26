@@ -323,3 +323,76 @@ cat <link_name>                    # View content of the hard link
 ```
 
 ---
+
+## 🛠️ **`chmod` Command - File and Directory Permissions**️
+
+### **View File Permissions**
+
+#### **`ls -l`** – View the Permissions and Details of Files and Directories  
+Use this command to view the file permissions and additional details.
+
+```bash
+ls -l <file_or_directory>        # View file/directory permissions
+```
+
+### **Change Permissions with `chmod`**
+
+#### **`chmod g-w`** – Remove Write Permission from the Group  
+Use this command to remove write permission from the group.
+
+```bash
+chmod g-w <file_name>            # Remove write permission from the group
+```
+
+#### **`chmod a-r`** – Remove Read Permission for Everyone  
+This removes read permission for the user, group, and others.
+
+```bash
+chmod a-r <file_name>            # Remove read permission for everyone
+```
+
+#### **`chmod ug+rw`** – Grant Read and Write Permissions to User and Group  
+This command grants read and write permissions to both the user and the group.
+
+```bash
+chmod ug+rw <file_name>          # Grant read and write permissions to user and group
+```
+
+#### **`chmod u+x`** – Grant Execute Permission to the User  
+Use this command to grant execute permission to the user.
+
+```bash
+chmod u+x <file_name>            # Grant execute permission to user
+```
+
+#### **`chmod a+x`** – Grant Execute Permission to Everyone  
+This command grants execute permission to the user, group, and others.
+
+```bash
+chmod a+x <file_name>            # Grant execute permission to everyone
+```
+
+#### **`chmod -R u+rw`** – Grant Read and Write Permissions Recursively  
+Grant read and write permissions to all files and subdirectories within a directory.
+
+```bash
+chmod -R u+rw <directory_name>   # Grant read and write permissions recursively
+```
+
+### **Directory Permissions**
+
+#### **`chmod a-x`** – Remove Execute Permission from a Directory  
+This prevents anyone from using `cd` to enter the directory.
+
+```bash
+chmod a-x <directory_name>       # Remove execute permission from a directory
+```
+
+#### **`chmod a+x`** – Restore Execute Permission for a Directory  
+Restores the execute permission so that users can `cd` into the directory.
+
+```bash
+chmod a+x <directory_name>       # Restore execute permission for a directory
+```
+
+---
