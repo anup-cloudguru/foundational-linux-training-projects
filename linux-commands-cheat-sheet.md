@@ -246,6 +246,78 @@ The `mv` command is used to rename files or directories. Essentially, it moves t
 
 ---
 
+## 📂 **Copying Files and Directories**
+
+### **`cp` – Copy Files**  
+Use this command to copy files from one location to another.  
+
+```bash
+cp source_file destination_file               # Copy a file to a new location  
+cp source_file /path/to/destination_directory # Copy a file into a directory  
+```  
+
+### **`cp -R` – Copy Directories and Their Contents**  
+Use the `-R` (recursive) option to copy a directory along with all its files and subdirectories.  
+
+```bash
+cp -R source_directory destination_directory  # Copy a directory and its entire contents  
+```  
+
+### **Copy Multiple Files**  
+You can also copy multiple files into a directory.  
+
+```bash
+cp file1 file2 file3 /path/to/destination_directory # Copy multiple files into a directory  
+```  
+
+---
+
+## 📂 **Renaming Files and Directories**
+
+### **`mv` – Rename or Move Files and Directories**  
+The `mv` command can be used to rename files or directories by specifying the new name as the destination.  
+
+```bash
+mv old_file_name new_file_name                # Rename a file  
+mv old_directory_name new_directory_name      # Rename a directory  
+```  
+
+---
+
+## 📂 **Adding Text to Files Using Redirects**
+
+### **`>` – Overwrite File Content**  
+Writes or overwrites text to a file.  
+
+```bash
+echo "Linux is powerful." > file.txt          # Overwrites file content  
+```  
+
+### **`>>` – Append Text to a File**  
+Adds new content to an existing file without overwriting.  
+
+```bash
+echo "It powers servers." >> file.txt         # Appends content to the file  
+```  
+
+### **Redirect Command Outputs to Files**  
+
+#### **Overwrite Command Output**  
+Save the output of a command to a file (overwrites the file content).  
+
+```bash
+ls -ltr > directory_listing.txt               # Save command output to a file  
+```  
+
+#### **Append Command Output**  
+Add the output of a command to an existing file without overwriting.  
+
+```bash
+date >> directory_listing.txt                 # Append the current date to the file  
+```  
+
+---
+
 ## 🔍 **Finding Files and Directories**
 
 ### **Using the `find` Command**  
