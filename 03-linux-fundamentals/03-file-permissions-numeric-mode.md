@@ -1,4 +1,4 @@
-# Module 3: Linux Command Basics
+# Module 3: Linux Fundamentals
 
 ## Chapter 3: File Permissions Using Numeric Mode  
 ![Linux](https://img.shields.io/badge/Linux-Fundamentals-green)  ![chmod](https://img.shields.io/badge/Command-chmod-orange)
