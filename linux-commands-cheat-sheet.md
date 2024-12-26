@@ -487,7 +487,7 @@ These tools visualize the permission combinations and their corresponding numeri
 
 ## 👥 **`chown` and `chgrp` Commands - Managing File Ownership**️
 
-### 1️⃣ **`chown` Command** 🛠️
+### 1️⃣ **`chown` Command** 
 
 #### **Purpose:**  
 Change the owner (and optionally the group) of a file or directory.
@@ -537,7 +537,7 @@ chown -v :group1 filename
 chown -R user1:group1 /path/to/directory
 ```
 
-### 2️⃣ **`chgrp` Command** 🔑
+### 2️⃣ **`chgrp` Command** 
 
 #### **Purpose:**  
 Change the group ownership of a file or directory.
@@ -626,7 +626,7 @@ man chgrp
 
 ---
 
-## 🔑 **Key Commands for ACL (Access Control List)** 🛡️
+## 🔑 **Key Commands for ACL (Access Control List)** 
 
 ---
 
