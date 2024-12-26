@@ -813,8 +813,6 @@ exit: exit [n]
     ...
 ```
 
----
-
 ### 3️⃣ **`man` Command** - Display Manual Pages for Commands
 
 #### **Purpose:**  
