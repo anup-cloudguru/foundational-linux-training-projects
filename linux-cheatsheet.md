@@ -106,7 +106,7 @@ ls -ltr                           # Reverse order of modification time
 
 ---
 
-## 📄 **Creating and Editing Files** ✍️
+## 📄 **Creating and Editing Files**
 
 ### **Creating Empty Files**
 
@@ -174,7 +174,7 @@ sudo passwd username               # Update another user's password
 
 ---
 
-## 📂 **Copying Directories** 📁
+## 📂 **Copying Directories**
 
 ### **`cp -R`** – Copy Directories and Their Contents  
 Use the `-R` option to copy a directory along with all its files and subdirectories.
@@ -185,7 +185,7 @@ cp -R source_directory destination_directory   # Copy a directory and its conten
 
 ---
 
-## 🔍 **Finding Files and Directories** 🔎
+## 🔍 **Finding Files and Directories**
 
 ### **Using the `find` Command**  
 The `find` command allows you to search for files and directories based on various criteria.
@@ -231,5 +231,45 @@ sudo updatedb                       # Update the database for accurate results
 | **Customization**    | Highly flexible search criteria     | Limited to filenames            |
 | **Database Required**| No                                  | Yes                             |
 | **Requires Update**  | No                                  | Yes (with `updatedb`)           |
+
+---
+
+## 🌟 **Wildcards in Linux**
+
+Wildcards help match patterns in filenames and simplify tasks like searching, copying, and deleting files.
+
+### **Types of Wildcards**
+
+#### **`*` (Asterisk)** – Matches Any Number of Characters  
+Use the asterisk to match any sequence of characters.
+
+```bash
+ls ABC*       # Lists files starting with "ABC"
+rm ABC*       # Deletes files starting with "ABC"
+```
+
+
+#### **`?` (Question Mark)** – Matches Exactly One Character  
+Use the question mark to match a single character.
+
+```bash
+ls A?.txt     # Matches files like A1.txt, A2.txt
+```
+
+
+#### **`{}` (Curly Braces)** – Creates Sequences or Multiple Options  
+Use curly braces to create a sequence of files or specify multiple options.
+
+```bash
+touch file{1..5}.txt     # Creates file1.txt to file5.txt
+```
+
+
+#### **`[]` (Square Brackets)** – Matches One Character from a Set  
+Use square brackets to match one character from a specified set.
+
+```bash
+ls file[A-C]*   # Matches fileA.txt, fileB.txt, fileC.txt
+```
 
 ---
