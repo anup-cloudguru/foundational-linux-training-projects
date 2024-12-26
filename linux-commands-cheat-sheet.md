@@ -709,8 +709,6 @@ setfacl -m d:u:user1:rw /data
 ```
 This **sets default ACLs** for `user1` to **read and write** in the `/data` directory and any new files created inside it.
 
----
-
 ### 2️⃣ **`getfacl` Command** - View ACL Entries
 
 #### **Purpose:**  
@@ -730,7 +728,7 @@ This shows the **ACL entries** for `file.txt`.
 
 ---
 
-## 🆘 **Key Commands for Linux Help** 💡
+## 🆘 **Key Commands for Linux Help**
 
 ### 1️⃣ **`whatis` Command** - Provides a One-Line Summary of Commands
 
