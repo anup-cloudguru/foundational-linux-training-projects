@@ -206,9 +206,10 @@ Wildcards help match patterns in filenames and simplify tasks like searching, co
   ```bash
   ls file[A-C]*   # Matches fileA.txt, fileB.txt, fileC.txt
   ```
-## **🔗 Soft Links and Hard Links**  
 
 ---
+
+## **🔗 Soft Links and Hard Links**  
 
 ### **Soft Links (Symbolic Links)**  
 - **`ln -s`** – Create a symbolic (soft) link to a file or directory.  
