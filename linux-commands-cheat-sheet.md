@@ -213,7 +213,7 @@ Use the `-R` (recursive) option to copy a directory along with all its files and
 cp -R source_directory destination_directory  # Copy a directory and its entire contents
 ```
 
-### **`cp` with Multiple Files  
+### **`cp`** with Multiple Files  
 You can also copy multiple files into a directory.
 
 ```bash
