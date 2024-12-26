@@ -641,8 +641,6 @@ Used to set or modify Access Control List (ACL) entries for files and directorie
 setfacl [OPTION] ENTRY FILE
 ```
 
----
-
 #### **Examples:**
 
 ##### **Grant permissions to a user:**
@@ -734,8 +732,6 @@ This shows the **ACL entries** for `file.txt`.
 
 ## 🆘 **Key Commands for Linux Help** 💡
 
----
-
 ### 1️⃣ **`whatis` Command** - Provides a One-Line Summary of Commands
 
 #### **Purpose:**  
@@ -746,8 +742,6 @@ This command gives a concise, one-line description of the specified command.
 ```bash
 whatis <command>
 ```
-
----
 
 #### **Examples:**
 
@@ -781,5 +775,79 @@ whatis pwd
 ```bash
 pwd (1)            - print name of current/working directory
 ```
+
+### 2️⃣ **`help` Command** - Get Help for Built-In Shell Commands
+
+#### **Purpose:**  
+The `help` command provides information about built-in shell commands.
+
+#### **Syntax:**
+
+```bash
+help <command>
+```
+
+#### **Examples:**
+
+##### **Get help for the `cd` command:**
+
+```bash
+help cd
+```
+**Output:**
+```bash
+cd: cd [dir]
+    Change the shell working directory.
+    ...
+```
+
+##### **Get help for the `exit` command:**
+
+```bash
+help exit
+```
+**Output:**
+```bash
+exit: exit [n]
+    Exit the shell.
+    ...
+```
+
+---
+
+### 3️⃣ **`man` Command** - Display Manual Pages for Commands
+
+#### **Purpose:**  
+The `man` command shows detailed documentation (manual pages) for commands, including their options, usage, and examples.
+
+#### **Syntax:**
+
+```bash
+man <command>
+```
+
+#### **Examples:**
+
+##### **View the manual page for the `ls` command:**
+
+```bash
+man ls
+```
+This opens a detailed manual with information about the `ls` command, including all available options.
+
+##### **View the manual page for the `chmod` command:**
+
+```bash
+man chmod
+```
+This displays detailed documentation on changing file permissions with `chmod`.
+
+### 🗂️ **Comparison of `whatis`, `help`, and `man`**
+
+| **Command** | **Purpose**                                   | **Level of Detail**      | **Use Case**                              |
+|-------------|-----------------------------------------------|--------------------------|-------------------------------------------|
+| `whatis`    | Provides a one-line description of a command. | Low                      | Quickly check what a command does.        |
+| `help`      | Explains built-in shell commands.             | Moderate                 | Learn about specific shell commands.      |
+| `man`       | Displays detailed manual pages for commands.  | High                     | Explore full documentation for commands.  |
 
 ---
