@@ -487,8 +487,6 @@ These tools visualize the permission combinations and their corresponding numeri
 
 ## 👥 **`chown` and `chgrp` Commands - Managing File Ownership**️
 
----
-
 ### 1️⃣ **`chown` Command** 🛠️
 
 #### **Purpose:**  
