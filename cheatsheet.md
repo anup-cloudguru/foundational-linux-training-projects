@@ -509,3 +509,86 @@ Wildcards help match patterns in filenames and simplify tasks like searching, co
   ```
 
 ---
+
+### **Key Commands for ACL (Access Control List)**
+
+---
+
+#### **1️⃣ `setfacl` Command**  
+Used to **set or modify ACL entries**.
+
+- **Syntax**:  
+  ```bash
+  setfacl [OPTION] ENTRY FILE
+  ```
+
+- **Grant permissions to a user**:  
+  ```bash
+  setfacl -m u:<username>:<permissions> <file>
+  ```
+  Example:  
+  ```bash
+  setfacl -m u:user1:rw file.txt
+  ```
+
+- **Grant permissions to a group**:  
+  ```bash
+  setfacl -m g:<groupname>:<permissions> <file>
+  ```
+  Example:  
+  ```bash
+  setfacl -m g:developers:r file.txt
+  ```
+
+- **Apply permissions recursively to a directory**:  
+  ```bash
+  setfacl -R -m u:<username>:<permissions> <directory>
+  ```
+  Example:  
+  ```bash
+  setfacl -R -m u:user1:rw /data
+  ```
+
+- **Remove a specific ACL entry**:  
+  ```bash
+  setfacl -x u:<username> <file>
+  ```
+  Example:  
+  ```bash
+  setfacl -x u:user1 file.txt
+  ```
+
+- **Remove all ACL entries**:  
+  ```bash
+  setfacl -b <file>
+  ```
+  Example:  
+  ```bash
+  setfacl -b file.txt
+  ```
+
+- **Set ACL inheritance for a directory**:  
+  ```bash
+  setfacl -m d:u:<username>:<permissions> <directory>
+  ```
+  Example:  
+  ```bash
+  setfacl -m d:u:user1:rw /data
+  ```
+
+---
+
+#### **2️⃣ `getfacl` Command**  
+Used to **view ACL entries**.
+
+- **Syntax**:  
+  ```bash
+  getfacl <file>
+  ```
+
+- **Example**:  
+  ```bash
+  getfacl file.txt
+  ```
+  
+---
