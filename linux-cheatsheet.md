@@ -73,3 +73,38 @@ If you accidentally run a command that takes too long or gets stuck, press `Ctrl
 ```
 
 ---
+
+## 📁 **Navigating the File System**
+
+### **`pwd`** – Print the Current Working Directory  
+This shows the full path of the directory you’re currently in.
+
+```bash
+pwd
+```
+
+---
+
+### **`cd`** – Change the Current Directory  
+Navigate through folders in the file system using these commands:
+
+```bash
+cd /path/to/directory             # Go to a specific directory
+cd ..                             # Go back one directory level
+cd                                # Go to the home directory
+cd /                              # Go to the root directory
+```
+
+---
+
+### **`ls`** – List the Contents of a Directory  
+View files and directories in your current location:
+
+```bash
+ls                                # Basic list of files
+ls -l                             # Detailed listing
+ls -lt                            # Sort by modification time
+ls -ltr                           # Reverse order of modification time
+```
+
+---
