@@ -31,3 +31,15 @@ hostname -I       # Displays all system IP addresses
 ```
 
 ---
+
+## 🔐 **Accessing Linux via SSH**
+
+### **`ssh`** – Secure Shell to Access Remote Systems  
+Use this command to securely connect to another computer over a network. You’ll need the remote system’s IP address or hostname.
+
+```bash
+ssh user@hostname_or_ip           # Access a remote system via SSH
+ssh -l username hostname_or_ip    # Specify the username explicitly
+```
+
+---
