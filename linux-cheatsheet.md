@@ -173,3 +173,14 @@ sudo passwd username               # Update another user's password
 ```
 
 ---
+
+## 📂 **Copying Directories** 📁
+
+### **`cp -R`** – Copy Directories and Their Contents  
+Use the `-R` option to copy a directory along with all its files and subdirectories.
+
+```bash
+cp -R source_directory destination_directory   # Copy a directory and its contents
+```
+
+---
