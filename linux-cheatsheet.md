@@ -83,7 +83,6 @@ This shows the full path of the directory you’re currently in.
 pwd
 ```
 
----
 
 ### **`cd`** – Change the Current Directory  
 Navigate through folders in the file system using these commands:
@@ -94,8 +93,6 @@ cd ..                             # Go back one directory level
 cd                                # Go to the home directory
 cd /                              # Go to the root directory
 ```
-
----
 
 ### **`ls`** – List the Contents of a Directory  
 View files and directories in your current location:
