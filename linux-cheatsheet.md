@@ -161,3 +161,14 @@ vim filename                       # Open a file in Vim editor
 ```
 
 ---
+
+## 🔑 **Changing User Passwords**
+
+### **`passwd`** – Change User Passwords  
+Use this command to update your password or reset another user's password (requires `sudo` for other users).
+
+```bash
+passwd                             # Update your own password
+sudo passwd username               # Update another user's password
+
+---
