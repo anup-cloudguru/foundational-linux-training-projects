@@ -507,8 +507,6 @@ chown [OPTION] OWNER[:GROUP] FILE
 - **-R:** Apply changes recursively.
 - **-v:** Verbose output.
 
----
-
 #### **Examples:**
 
 ##### **Change both owner and group:**
@@ -540,8 +538,6 @@ chown -v :group1 filename
 ```bash
 chown -R user1:group1 /path/to/directory
 ```
-
----
 
 ### 2️⃣ **`chgrp` Command** 🔑
 
