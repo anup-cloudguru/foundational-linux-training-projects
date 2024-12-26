@@ -62,3 +62,14 @@ sudo shutdown -r 23:00              # Schedule a reboot at 11:00 PM
 ```
 
 ---
+
+## ⎸️ **Interrupt a Running Command or Process**
+
+### **`Ctrl + C`** – Stop a Running Command or Process  
+If you accidentally run a command that takes too long or gets stuck, press `Ctrl + C` to regain control of the terminal.
+
+```bash
+# Press Ctrl + C to stop a running process
+```
+
+---
