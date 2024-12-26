@@ -51,6 +51,17 @@ whoami                       # Displays the current logged-in user
 
 ---
 
+## 🧹 **Terminal Management**
+
+### **`clear`** – Clear the Terminal Screen  
+Use this command to clear all the previous commands and output from the terminal screen.
+
+```bash
+clear                       # Clears the terminal screen
+```
+
+---
+
 ## ⏰ **Power Management** 
 ### **`sudo shutdown`** – Schedule or Perform System Shutdown
 Use this command to schedule or immediately shut down the system.
