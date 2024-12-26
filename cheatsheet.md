@@ -761,3 +761,23 @@ Opens the manual page for a command, offering comprehensive documentation.
 📌 Practice using these commands frequently to become familiar with Linux and its extensive toolset.
 
 ---
+
+## **⏰ Power Management**
+
+- **`sudo shutdown`** – Schedule or perform system shutdown.  
+  ```bash
+  sudo shutdown                      # Schedules shutdown 1 minute from now (default)
+  sudo shutdown +10                  # Schedules shutdown in 10 minutes
+  sudo shutdown 23:00                # Schedules shutdown at 11:00 PM
+  sudo shutdown now                  # Shut down the system immediately
+  sudo shutdown -c                   # Cancel a scheduled shutdown
+  ```
+
+- **`sudo reboot`** – Schedule or perform system reboot.  
+  ```bash
+  sudo reboot                         # Reboot immediately
+  sudo shutdown -r +10                # Schedule a reboot in 10 minutes
+  sudo shutdown -r 23:00              # Schedule a reboot at 11:00 PM
+  ```
+
+---
