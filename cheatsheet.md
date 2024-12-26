@@ -245,3 +245,55 @@ Wildcards help match patterns in filenames and simplify tasks like searching, co
   ```
   
 ---
+
+## **chmod Command - File and Directory Permissions**
+
+### **View File Permissions**
+- **`ls -l`** – View the permissions and details of files and directories.
+  ```bash
+  ls -l <file_or_directory>        # View file/directory permissions
+  ```
+
+### **Change Permissions with `chmod`**
+- **`chmod g-w`** – Remove write permission from the group.
+  ```bash
+  chmod g-w <file_name>            # Remove write permission from the group
+  ```
+
+- **`chmod a-r`** – Remove read permission for everyone (user, group, others).
+  ```bash
+  chmod a-r <file_name>            # Remove read permission for everyone
+  ```
+
+- **`chmod ug+rw`** – Grant read and write permissions to user and group.
+  ```bash
+  chmod ug+rw <file_name>          # Grant read and write permissions to user and group
+  ```
+
+- **`chmod u+x`** – Grant execute permission to the user.
+  ```bash
+  chmod u+x <file_name>            # Grant execute permission to user
+  ```
+
+- **`chmod a+x`** – Grant execute permission to everyone (user, group, others).
+  ```bash
+  chmod a+x <file_name>            # Grant execute permission to everyone
+  ```
+
+- **`chmod -R u+rw`** – Grant read and write permissions recursively to all files and subdirectories within a directory.
+  ```bash
+  chmod -R u+rw <directory_name>   # Grant read and write permissions recursively
+  ```
+
+### **Directory Permissions**
+- **`chmod a-x`** – Remove execute permission from a directory (prevents `cd` into the directory).
+  ```bash
+  chmod a-x <directory_name>       # Remove execute permission from a directory
+  ```
+
+- **`chmod a+x`** – Restore execute permission for a directory.
+  ```bash
+  chmod a+x <directory_name>       # Restore execute permission for a directory
+  ```
+  
+---
