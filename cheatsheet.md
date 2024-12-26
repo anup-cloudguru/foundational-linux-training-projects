@@ -206,5 +206,41 @@ Wildcards help match patterns in filenames and simplify tasks like searching, co
   ```bash
   ls file[A-C]*   # Matches fileA.txt, fileB.txt, fileC.txt
   ```
+## **🔗 Soft Links and Hard Links**  
 
+---
+
+### **Soft Links (Symbolic Links)**  
+- **`ln -s`** – Create a symbolic (soft) link to a file or directory.  
+  If the source file is deleted or renamed, the soft link breaks.
+  ```bash
+  ln -s <source_file> <link_name>    # Create a soft link
+  ```
+
+- **`ls -li`** – View the inode information for files and links. The soft link will show a different inode than the source file.
+  ```bash
+  ls -li                             # View the inode and details of files and links
+  ```
+
+- **`cat`** – View the content of the file or link. If the source file is deleted, the soft link will result in an error.
+  ```bash
+  cat <link_name>                    # View content of the soft link
+  ```
+
+### **Hard Links**  
+- **`ln`** – Create a hard link to a file. Both the source file and the hard link share the same inode.
+  ```bash
+  ln <source_file> <link_name>       # Create a hard link
+  ```
+
+- **`ls -li`** – View the inode information for files and links. Both the source file and the hard link will have the same inode number.
+  ```bash
+  ls -li                             # View inode of the hard link (same as source file)
+  ```
+
+- **`cat`** – View the content of the hard link. The content remains accessible even if the original file is deleted.
+  ```bash
+  cat <link_name>                    # View content of the hard link
+  ```
+  
 ---
