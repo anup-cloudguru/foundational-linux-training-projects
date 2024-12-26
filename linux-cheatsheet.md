@@ -105,3 +105,62 @@ ls -ltr                           # Reverse order of modification time
 ```
 
 ---
+
+## 📄 **Creating and Editing Files** ✍️
+
+### **Creating Empty Files**
+
+#### **`touch`** – Create a Blank File  
+Use this command to create an empty file.
+
+```bash
+touch filename                     # Create an empty file
+```
+
+---
+
+#### **`echo`** – Create a Blank File  
+Another way to create a blank file using `echo`.
+
+```bash
+echo "" > filename                 # Create a blank file
+```
+
+---
+
+### **Adding Content to Files**
+
+#### **`echo`** – Create a File with Content  
+Use this command to create a file and add content at the same time.
+
+```bash
+echo "Hello, World!" > filename    # Create a file with content
+```
+
+#### **`cat`** – Write or View File Content  
+Use `cat` to write content to a file or view its content.
+
+```bash
+cat > filename                     # Write content to a file (Ctrl + D to save)
+cat filename                       # View content of a file
+cat >> filename                    # Append content to an existing file
+```
+
+### **Editing Files Directly**
+
+#### **`nano`** – Beginner-Friendly Text Editor  
+A simple text editor for beginners.
+
+```bash
+nano filename                      # Open a file in Nano editor
+```
+
+#### **`vi` / `vim`** – Advanced Text Editors  
+`vi` and `vim` are powerful text editors for advanced users.
+
+```bash
+vi filename                        # Open a file in Vi editor
+vim filename                       # Open a file in Vim editor
+```
+
+---
