@@ -1,4 +1,4 @@
-# **Module 3: Linux Command Basics**
+# **Module 3: Linux Fundamentals**
 
 ## **Chapter 7: Mastering Keyboard Shortcuts: TAB and Up Arrow**
 
