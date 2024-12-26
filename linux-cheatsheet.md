@@ -396,3 +396,91 @@ chmod a+x <directory_name>       # Restore execute permission for a directory
 ```
 
 ---
+
+## 🔢 **chmod Command - File Permissions Using Numeric Mode**
+
+### **Understanding Numeric Mode**
+
+#### **Permission Types:**
+
+- **No Permission:** `0` (---)
+- **Execute:** `1` (--x)
+- **Write:** `2` (-w-)
+- **Write + Execute:** `3` (-wx)
+- **Read:** `4` (r--)
+- **Read + Execute:** `5` (r-x)
+- **Read + Write:** `6` (rw-)
+- **Read + Write + Execute:** `7` (rwx)
+
+### **Structure of Numeric Permissions**
+
+- **User (Owner):** First digit
+- **Group:** Second digit
+- **Others (Everyone):** Third digit
+
+#### **Formula:**  
+Add values for the desired permissions (e.g., Read = 4, Write = 2, Execute = 1)
+
+### **Examples:**
+
+#### **Assign `rwx` to Owner, `rw` to Group, and `r` to Others:**
+
+```bash
+chmod 764 filename
+```
+- **Owner:** `rwx = 7`
+- **Group:** `rw- = 6`
+- **Others:** `r-- = 4`
+- **Output:** `-rwxrw-r-- filename`
+
+#### **Remove All Permissions:**
+
+```bash
+chmod 000 filename
+```
+- **Owner, Group, Others:** `--- = 0`
+- **Output:** `---------- filename`
+
+#### **Assign `rw` to the Owner, and No Permissions to Group and Others:**
+
+```bash
+chmod 600 filename
+```
+- **Owner:** `rw- = 6`
+- **Group, Others:** `--- = 0`
+- **Output:** `-rw------- filename`
+
+#### **Assign `rw` to Owner, and `r` to Others:**
+
+```bash
+chmod 604 filename
+```
+- **Owner:** `rw- = 6`
+- **Group:** `--- = 0`
+- **Others:** `r-- = 4`
+- **Output:** `-rw----r-- filename`
+
+#### **Assign Execute to Everyone:**
+
+```bash
+chmod 111 filename
+```
+- **Owner, Group, Others:** `--x = 1`
+- **Output:** `--x--x--x filename`
+
+#### **Assign `r-x` to Owner, Group, and Others:**
+
+```bash
+chmod 555 filename
+```
+- **Owner:** `r-x = 5`
+- **Group:** `r-x = 5`
+- **Others:** `r-x = 5`
+- **Output:** `-r-xr-xr-x filename`
+
+### **Using Online Tools**
+
+You can use online `chmod` calculators to generate numeric values for desired permissions.  
+These tools visualize the permission combinations and their corresponding numeric values, making it easier to understand and set the correct permissions.
+
+---
