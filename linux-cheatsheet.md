@@ -117,7 +117,6 @@ Use this command to create an empty file.
 touch filename                     # Create an empty file
 ```
 
----
 
 #### **`echo`** – Create a Blank File  
 Another way to create a blank file using `echo`.
@@ -125,8 +124,6 @@ Another way to create a blank file using `echo`.
 ```bash
 echo "" > filename                 # Create a blank file
 ```
-
----
 
 ### **Adding Content to Files**
 
