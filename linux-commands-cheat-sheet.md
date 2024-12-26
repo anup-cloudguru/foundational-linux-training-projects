@@ -40,6 +40,17 @@ ssh -l username hostname_or_ip    # Specify the username explicitly
 
 ---
 
+## 🖥️ **User Information**
+
+### **`whoami`** – Show the Current Logged-in User  
+After logging into the system, use `whoami` to confirm which user you're logged in as.
+
+```bash
+whoami                       # Displays the current logged-in user
+```
+
+---
+
 ## ⏰ **Power Management** 
 ### **`sudo shutdown`** – Schedule or Perform System Shutdown
 Use this command to schedule or immediately shut down the system.
