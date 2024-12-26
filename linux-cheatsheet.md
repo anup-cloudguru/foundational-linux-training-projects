@@ -273,3 +273,53 @@ ls file[A-C]*   # Matches fileA.txt, fileB.txt, fileC.txt
 ```
 
 ---
+
+## 🔗 **Soft Links and Hard Links**
+
+### **Soft Links (Symbolic Links)**
+
+#### **`ln -s`** – Create a Symbolic (Soft) Link to a File or Directory  
+A soft link is a reference to another file. If the source file is deleted or renamed, the soft link will break.
+
+```bash
+ln -s <source_file> <link_name>    # Create a soft link
+```
+
+#### **`ls -li`** – View Inode Information for Files and Links  
+Use this command to view the inode details of the source file and the soft link. The soft link will show a different inode than the source file.
+
+```bash
+ls -li                             # View inode and details of files and links
+```
+
+#### **`cat`** – View the Content of the File or Link  
+If the source file is deleted, the soft link will result in an error when you try to view its content.
+
+```bash
+cat <link_name>                    # View content of the soft link
+```
+
+### **Hard Links**
+
+#### **`ln`** – Create a Hard Link to a File  
+Both the source file and the hard link share the same inode. The content remains accessible even if the original file is deleted.
+
+```bash
+ln <source_file> <link_name>       # Create a hard link
+```
+
+#### **`ls -li`** – View Inode Information for Files and Links  
+Both the source file and the hard link will have the same inode number.
+
+```bash
+ls -li                             # View inode of the hard link (same as source file)
+```
+
+#### **`cat`** – View the Content of the Hard Link  
+The content of the hard link remains accessible even if the original file is deleted.
+
+```bash
+cat <link_name>                    # View content of the hard link
+```
+
+---
