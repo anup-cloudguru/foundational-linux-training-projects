@@ -170,5 +170,6 @@ Use this command to update your password or reset another user's password (requi
 ```bash
 passwd                             # Update your own password
 sudo passwd username               # Update another user's password
+```
 
 ---
