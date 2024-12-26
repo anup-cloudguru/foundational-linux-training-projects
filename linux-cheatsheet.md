@@ -43,3 +43,26 @@ ssh -l username hostname_or_ip    # Specify the username explicitly
 ```
 
 ---
+
+## ⏰ **Power Management** 
+### **`sudo shutdown`** – Schedule or Perform System Shutdown
+Use this command to schedule or immediately shut down the system.
+
+```bash
+sudo shutdown                      # Schedules shutdown 1 minute from now (default)
+sudo shutdown +10                  # Schedules shutdown in 10 minutes
+sudo shutdown 23:00                # Schedules shutdown at 11:00 PM
+sudo shutdown now                  # Shut down the system immediately
+sudo shutdown -c                   # Cancel a scheduled shutdown
+```
+
+### **`sudo reboot`** – Schedule or Perform System Reboot
+Use this command to reboot the system immediately or schedule a reboot.
+
+```bash
+sudo reboot                         # Reboot immediately
+sudo shutdown -r +10                # Schedule a reboot in 10 minutes
+sudo shutdown -r 23:00              # Schedule a reboot at 11:00 PM
+```
+
+---
