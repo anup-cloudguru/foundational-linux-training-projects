@@ -980,3 +980,47 @@ This displays detailed documentation on changing file permissions with `chmod`.
 | `man`       | Displays detailed manual pages for commands.  | High                     | Explore full documentation for commands.  |
 
 ---
+
+## 🔄 **Input and Output Redirection**
+
+### **`>`** – Redirect Standard Output to a File  
+Use this command to redirect the output of a command to a file, overwriting its contents.
+
+```bash
+command > file             # Redirect standard output to a file, overwriting its contents
+ls -l > output.txt         # Save the output of `ls -l` into `output.txt`, overwriting if exists
+```
+
+### **`>>`** – Append Standard Output to a File  
+Use the `>>` operator to append the output of a command to a file without overwriting its existing contents.
+
+```bash
+command >> file            # Append standard output to a file
+ls -la >> output.txt       # Append the output of `ls -la` to `output.txt`
+```
+
+### **`<`** – Redirect Standard Input from a File  
+Use this command to feed a file's contents as input to a command.
+
+```bash
+command < file             # Feed input from a file to a command
+cat < output.txt           # Display the contents of `output.txt` using `cat`
+```
+
+### **`2>`** – Redirect Standard Error to a File  
+Use `2>` to redirect error messages (stderr) to a file.
+
+```bash
+command 2> file            # Redirect standard error to a file
+ls /invalidpath 2> error.txt # Save error messages to `error.txt`
+```
+
+### **`2>&1`** – Combine Standard Output and Standard Error  
+Use this command to combine both standard output (stdout) and standard error (stderr) into a single stream, usually redirected to a file.
+
+```bash
+command > file 2>&1        # Combine stdout and stderr, redirecting both to a file
+ls -l /root > combined.txt 2>&1 # Save both output and errors to `combined.txt`
+```
+
+---
