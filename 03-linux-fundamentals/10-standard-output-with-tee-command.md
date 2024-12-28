@@ -2,6 +2,9 @@
 
 ## **Chapter 10: Using the `tee` Command for Output Redirection**
 
+![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) ![tee](https://img.shields.io/badge/Topic-tee-blue)  
+
+
 ---
 
 ### **🔑 Introduction**  
