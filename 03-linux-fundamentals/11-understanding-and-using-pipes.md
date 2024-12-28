@@ -1,4 +1,4 @@
-# **Module 1: Linux Fundamentals**
+# **Module 3: Linux Fundamentals**
 
 ## **Chapter 11: Understanding and Using Pipes in Linux**
 
