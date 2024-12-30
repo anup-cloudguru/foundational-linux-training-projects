@@ -1024,3 +1024,42 @@ ls -l /root > combined.txt 2>&1 # Save both output and errors to `combined.txt`
 ```
 
 ---
+
+## 🔄 **Redirecting and Viewing Output with `tee`**
+
+### **`tee`** – Simultaneously Display and Save Output  
+The `tee` command allows you to display the output of a command on the terminal while saving it to a file. By default, it overwrites the content of the file, but it can also append output using the `-a` option.
+
+```bash
+command | tee filename               # Display and save output to a file
+command | tee -a filename            # Append output to an existing file
+command | tee file1 file2            # Save output to multiple files
+```
+
+#### **Examples**:
+- **View and Save Output**:  
+   ```bash
+   echo "Learning Linux is fun!" | tee output.txt
+   ```
+   Displays: `Learning Linux is fun!`  
+   Saves the output to `output.txt`.
+
+- **Append to a File**:  
+   ```bash
+   echo "This is appended text." | tee -a output.txt
+   ```
+   Adds `This is appended text.` to the existing `output.txt`.
+
+- **Capture Output of a Command**:  
+   ```bash
+   ls -l | tee directory-listing.txt
+   ```
+   Displays the directory listing on the terminal and saves it to `directory-listing.txt`.
+
+- **Save to Multiple Files**:  
+   ```bash
+   echo "Linux is powerful!" | tee linux1.txt linux2.txt
+   ```
+   Saves the same output to both `linux1.txt` and `linux2.txt`.
+
+---
