@@ -1149,3 +1149,48 @@ You can combine these commands with pipes to view and manipulate outputs in more
    Displays the last 10 lines of the directory listing and allows you to scroll through the output.
 
 ---
+
+## 🔄 **Using the `cut` Command (Text Processors)**
+
+### **`cut` Command** - Extract Sections of Text from Files
+
+#### **Purpose:**  
+The `cut` command is used to extract sections from each line of a file or input based on delimiters, positions, or characters. It's widely used for processing columns in text files or output.
+
+#### **Syntax:**
+
+```bash
+cut -<option> <file>
+```
+
+#### **Common Options:**
+- `-f <field>`: Select the specific field or column to cut (based on delimiters).
+- `-d <delimiter>`: Specify the delimiter for column separation (default is tab).
+- `-c <characters>`: Specify the character positions to extract.
+
+#### **Examples:**
+
+##### **Extract the First Column from a CSV File:**
+
+```bash
+cut -d ',' -f 1 data.csv
+```
+**Output:**
+```
+Name
+John
+Jane
+...
+```
+
+##### **Extract the First 10 Characters of Each Line:**
+
+```bash
+cut -c 1-10 filename.txt
+```
+**Output:**
+```
+First 10 characters from each line
+```
+
+---
