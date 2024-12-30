@@ -1063,3 +1063,92 @@ command | tee file1 file2            # Save output to multiple files
    Saves the same output to both `linux1.txt` and `linux2.txt`.
 
 ---
+
+## 🔄 **Using `more`, `tail`, and `head` with Pipes**
+
+### **`more`** – View Output One Page at a Time  
+The `more` command allows you to view large outputs one page at a time. It’s particularly useful when the output from a command exceeds the size of the terminal window.
+
+```bash
+command | more               # Display output one page at a time
+```
+
+#### **Examples**:
+- **View Long Directory Listings**:  
+   ```bash
+   ls -l | more
+   ```
+   Displays the output of `ls -l` one page at a time.
+
+- **View Detailed Directory Listings**:  
+   ```bash
+   ll | more
+   ```
+   Displays the detailed directory listing (`ll` is an alias for `ls -l` in many Linux systems) one page at a time.
+
+---
+
+### **`tail`** – View the Last Part of the Output  
+The `tail` command displays the last part of the output, typically useful for viewing the end of files, logs, or outputs from long-running processes.
+
+```bash
+command | tail               # Display the last 10 lines (default)
+command | tail -n 20         # Display the last 20 lines
+```
+
+#### **Examples**:
+- **View the Last 10 Entries of a Directory Listing**:  
+   ```bash
+   ls -l | tail
+   ```
+   Displays the last 10 lines of the directory listing.
+
+- **View the Last 20 Entries of a Detailed Directory Listing**:  
+   ```bash
+   ll | tail -n 20
+   ```
+   Displays the last 20 lines of the detailed directory listing.
+
+---
+
+### **`head`** – View the First Part of the Output  
+The `head` command displays the first part of the output, typically useful when you want to view the initial lines of files or command results.
+
+```bash
+command | head               # Display the first 10 lines (default)
+command | head -n 5          # Display the first 5 lines
+```
+
+#### **Examples**:
+- **View the First 10 Entries of a Directory Listing**:  
+   ```bash
+   ls -l | head
+   ```
+   Displays the first 10 lines of the directory listing.
+
+- **View the First 5 Entries of a Detailed Directory Listing**:  
+   ```bash
+   ll | head -n 5
+   ```
+   Displays the first 5 lines of the detailed directory listing.
+
+---
+
+### **Combining `more`, `tail`, and `head` with Pipes**
+
+You can combine these commands with pipes to view and manipulate outputs in more specific ways.
+
+#### **Examples**:
+- **View the First 20 Entries of a Directory Listing, Then Scroll Through the Rest**:  
+   ```bash
+   ls -l | head -n 20 | more
+   ```
+   Displays the first 20 lines of the directory listing and allows you to scroll through the rest.
+
+- **View the Last 10 Entries and Pipe to `more` for Scrolling**:  
+   ```bash
+   ls -l | tail | more
+   ```
+   Displays the last 10 lines of the directory listing and allows you to scroll through the output.
+
+---
