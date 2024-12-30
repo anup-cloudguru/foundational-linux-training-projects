@@ -1086,7 +1086,6 @@ command | more               # Display output one page at a time
    ```
    Displays the detailed directory listing (`ll` is an alias for `ls -l` in many Linux systems) one page at a time.
 
----
 
 ### **`tail`** – View the Last Part of the Output  
 The `tail` command displays the last part of the output, typically useful for viewing the end of files, logs, or outputs from long-running processes.
@@ -1109,7 +1108,6 @@ command | tail -n 20         # Display the last 20 lines
    ```
    Displays the last 20 lines of the detailed directory listing.
 
----
 
 ### **`head`** – View the First Part of the Output  
 The `head` command displays the first part of the output, typically useful when you want to view the initial lines of files or command results.
@@ -1132,7 +1130,6 @@ command | head -n 5          # Display the first 5 lines
    ```
    Displays the first 5 lines of the detailed directory listing.
 
----
 
 ### **Combining `more`, `tail`, and `head` with Pipes**
 
