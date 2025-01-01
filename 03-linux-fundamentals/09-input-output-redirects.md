@@ -19,16 +19,20 @@ With redirection, you can reroute these streams to files, devices, or other comm
 
 ### **🔍 Input and Output Streams Overview**  
 
-1. **Standard Input (stdin)**: File Descriptor `0`. Receives input for commands (e.g., a file).  
-2. **Standard Output (stdout)**: File Descriptor `1`. Sends normal output to the terminal.  
-3. **Standard Error (stderr)**: File Descriptor `2`. Displays error messages.  
+| Stream   | Descriptor | Description                                |
+|----------|------------|--------------------------------------------|
+| `stdin`  | 0          | Receives input for commands (e.g., a file). |
+| `stdout` | 1          | Sends normal output to the terminal.      |
+| `stderr` | 2          | Displays error messages.                  |
 
 #### **Key Operators for Redirection**  
-- `>`: Redirects stdout and **overwrites** a file.  
-- `>>`: Redirects stdout and **appends** to a file.  
-- `<`: Redirects stdin from a file.  
-- `2>`: Redirects stderr to a file.  
-- `2>&1`: Combines stdout and stderr into a single stream.  
+| Operator  | Description                                  |
+|-----------|----------------------------------------------|
+| `>`       | Redirects stdout and **overwrites** a file.  |
+| `>>`      | Redirects stdout and **appends** to a file.  |
+| `<`       | Redirects stdin from a file.                |
+| `2>`      | Redirects stderr to a file.                 |
+| `2>&1`    | Combines stdout and stderr into a single stream. |
 
 ---
 
@@ -38,24 +42,24 @@ The `>` operator sends the normal output of a command to a file, overwriting its
 #### **Example: Overwriting Output**  
 ```bash
 ls -l > output.txt
-```  
+```
 - Saves the output of `ls -l` into `output.txt`.  
 - If `output.txt` exists, its contents are replaced.  
 
 ```bash
 cat output.txt
-```  
+```
 - Displays the contents of `output.txt`.  
 
 ---
 
-### **⚙️ Append Output Redirect (>>)**
+### **⚙️ Append Output Redirect (>>) **
 The `>>` operator appends command output to an existing file, preserving its current contents.  
 
 #### **Example: Appending Output**  
 ```bash
 ls -la >> output.txt
-```  
+```
 - Appends the output of `ls -la` to `output.txt`.  
 
 ---
@@ -66,7 +70,7 @@ The `<` operator feeds a file’s content as input to a command.
 #### **Example: Redirect Input from File**  
 ```bash
 cat < output.txt
-```  
+```
 - Reads and displays the content of `output.txt` using `cat`.  
 
 ---
@@ -76,9 +80,9 @@ The `2>` operator redirects error messages (stderr) to a file.
 
 #### **Example: Redirecting Errors**  
 ```bash
-$ ls /nonexistentfolder 2> error_log.txt
-```    
-- Error messages are redirected to `error_log.txt`.  
+ls /nonexistentfolder 2> error_log.txt
+```
+- Error messages (stderr) are redirected to `error_log.txt`, ensuring the terminal remains uncluttered.  
 
 ---
 
@@ -88,37 +92,31 @@ To merge both stdout and stderr into a single file, use the `2>&1` syntax.
 #### **Example: Merging Streams**  
 ```bash
 ls -l /root > combined.txt 2>&1
-```  
+```
 - Both successful output and error messages are saved in `combined.txt`.  
+
+#### **Explanation**  
+- `2>&1` redirects stderr (2) to the location where stdout (1) is currently being sent.  
+- This ensures that both standard output and error messages are combined in the same file.  
 
 ---
 
-### **📂 Practical Examples**  
+### **⚙️ Separate stdout and stderr**  
+You can also redirect stdout and stderr to separate files.  
 
-1. **Redirect stdout to a File**:  
-   ```bash
-   echo "Hello, World!" > hello.txt
-   ```  
+#### **Example: Redirecting to Separate Files**  
+```bash
+command > output.txt 2> error.txt
+```
+- `output.txt` contains the command’s standard output.  
+- `error.txt` contains any error messages.  
 
-2. **Append stdout to a File**:  
-   ```bash
-   echo "Appended Text" >> hello.txt
-   ```  
+---
 
-3. **Redirect stderr to a File**:  
-   ```bash
-   ls nonexistentfile 2> errorlog.txt
-   ```  
-
-4. **Redirect stdout and stderr Together**:  
-   ```bash
-   ls /invalidpath > output.txt 2>&1
-   ```  
-
-5. **Use stdin to Read a File**:  
-   ```bash
-   cat < hello.txt
-   ```  
+### **🛠️ Common Mistakes to Avoid**  
+- **Accidental Overwriting**: Be cautious when using `>` as it overwrites files without warning. Use `>>` if you want to append instead.
+- **File Permissions**: Ensure you have the necessary permissions to write to the file or access the directory.
+- **Order of Redirection**: Remember that `2>&1` must follow the stdout redirection (e.g., `> file 2>&1`).  
 
 ---
 
@@ -130,6 +128,7 @@ ls -l /root > combined.txt 2>&1
   - Save command output to files.  
   - Capture error messages for debugging.  
   - Automate input using files.  
+- **Advanced Use**: Combine or separate stdout and stderr for flexible redirection.  
 
 Mastering these redirection techniques is essential for efficient file handling and troubleshooting in Linux.  
 
