@@ -76,10 +76,9 @@ The `2>` operator redirects error messages (stderr) to a file.
 
 #### **Example: Redirecting Errors**  
 ```bash
-ls /invalidpath > stdout.txt 2> stderr.txt
-```  
-- Normal output is saved in `stdout.txt`.  
-- Error messages are redirected to `stderr.txt`.  
+$ ls /nonexistentfolder 2> error_log.txt
+```    
+- Error messages are redirected to `error_log.txt`.  
 
 ---
 
