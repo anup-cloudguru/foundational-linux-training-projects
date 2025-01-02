@@ -1,5 +1,5 @@
-## **Module 3: Linux Fundamentals**
-### **Chapter 21: Truncating Files in Linux**
+# **Module 3: Linux Fundamentals**
+## **Chapter 21: Truncating Files in Linux**
 
 ![Linux](https://img.shields.io/badge/Linux-Fundamentals-green) ![Truncate Command](https://img.shields.io/badge/Truncate-Command-blue)
 
