@@ -2,6 +2,7 @@
 ## **Chapter 22: Combining and Splitting Files in Linux**
 
 ![Linux Fundamentals](https://img.shields.io/badge/Linux-Fundamentals-green) ![Commands](https://img.shields.io/badge/Commands-File_Management-blue)
+
 ---
 
 ### **🔑 Introduction**
