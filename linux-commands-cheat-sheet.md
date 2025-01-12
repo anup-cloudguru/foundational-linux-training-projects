@@ -1194,3 +1194,52 @@ First 10 characters from each line
 ```
 
 ---
+
+### **🔧 `vi` Editor Quick Reference**  
+
+#### **Modes**  
+- **Command Mode**: Default mode for actions (e.g., saving, quitting). Press `Esc` to enter.  
+- **Insert Mode**: For editing text. Press `i` to enter.  
+
+#### **Basic Commands**  
+- **Open a File**:  
+  ```bash
+  vi filename
+  ```  
+
+- **Save and Exit**:  
+  - Save changes and exit: `:wq`  
+  - Save without exiting: `:w`  
+  - Exit without saving: `:q!`  
+
+#### **Navigation**  
+- **Move Cursor**:  
+  - Left: `h`  
+  - Right: `l`  
+  - Up: `k`  
+  - Down: `j`  
+- **Start of line**: `0`  
+- **End of line**: `$`  
+
+#### **Editing**  
+- **Delete**:  
+  - Character: `x`  
+  - Line: `dd`  
+  - From cursor to end of line: `d$`  
+- **Copy & Paste**:  
+  - Copy line: `yy`  
+  - Paste after cursor: `p`  
+  - Paste before cursor: `P`  
+
+#### **Search**  
+- **Search forward**: `/pattern`  
+- **Search backward**: `?pattern`  
+- **Repeat search**:  
+  - Forward: `n`  
+  - Backward: `N`  
+
+#### **Undo & Redo**  
+- Undo: `u`  
+- Redo: `Ctrl + r`  
+
+---
