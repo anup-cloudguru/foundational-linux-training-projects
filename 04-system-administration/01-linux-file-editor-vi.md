@@ -76,7 +76,6 @@ vi myfile.txt
 
 - **Delete a character**: `x`
 - **Delete a line**: `dd`
-- **Delete from cursor to end of line**: `d$`
 
 **Example**:
 ```bash
