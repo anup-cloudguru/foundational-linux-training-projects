@@ -1243,3 +1243,69 @@ First 10 characters from each line
 - Redo: `Ctrl + r`  
 
 ---
+
+### **🔄 Using the `sed` Command (Stream Editor)**
+
+#### **Purpose**  
+The `sed` command performs text transformations like search-and-replace, deletion, and insertion on files or streams.
+
+---
+
+#### **Basic Syntax**  
+```bash
+sed 'command' file.txt
+```
+
+---
+
+#### **Key Commands**
+1. **Substitute (`s`)**: Replace text.  
+   ```bash
+   sed 's/old/new/' file.txt      # Replace first match in each line  
+   sed 's/old/new/g' file.txt     # Replace all matches in each line
+   ```
+
+2. **Delete Lines (`d`)**: Remove lines matching a pattern.  
+   ```bash
+   sed '/pattern/d' file.txt
+   ```
+
+3. **Print (`p`)**: Print matching lines (with `-n`).  
+   ```bash
+   sed -n '/pattern/p' file.txt
+   ```
+
+4. **Insert (`i`)**: Add text before a matching line.  
+   ```bash
+   sed '/pattern/i\New Text' file.txt
+   ```
+
+5. **Append (`a`)**: Add text after a matching line.  
+   ```bash
+   sed '/pattern/a\New Text' file.txt
+   ```
+
+---
+
+#### **Quick Examples**
+- **Replace "foo" with "bar":**  
+  ```bash
+  sed 's/foo/bar/' file.txt
+  ```
+
+- **Delete lines containing "ERROR":**  
+  ```bash
+  sed '/ERROR/d' file.txt
+  ```
+
+- **Print lines with "Linux":**  
+  ```bash
+  sed -n '/Linux/p' file.txt
+  ```
+
+- **Extract lines 5 to 10:**  
+  ```bash
+  sed -n '5,10p' file.txt
+  ```
+
+---
